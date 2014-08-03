@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Web Developer from Scratch]]></title>
+  <link href="http://webdeveloperfromscratch.com/atom.xml" rel="self"/>
+  <link href="http://webdeveloperfromscratch.com/"/>
+  <updated>2014-08-04T00:36:54+02:00</updated>
+  <id>http://webdeveloperfromscratch.com/</id>
+  <author>
+    <name><![CDATA[Piotr Klosinski]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Test Post]]></title>
+    <link href="http://webdeveloperfromscratch.com/blog/test-post/"/>
+    <updated>2014-08-02T11:39:43+02:00</updated>
+    <id>http://webdeveloperfromscratch.com/blog/test-post</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>

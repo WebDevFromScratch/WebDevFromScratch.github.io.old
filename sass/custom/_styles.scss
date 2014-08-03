@@ -1,0 +1,76 @@
+/* nice sticky footer, from http://getbootstrap.com/examples/sticky-footer/ */
+html, body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+footer[role=contentinfo] {
+    height: 60px;
+}
+
+/* ------------- BOOTSTRAP OVERRIDE ------------------ */
+
+
+@media (min-width: 768px){
+    .navbar-nav{
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
+}
+
+.navbar-brand {
+  padding-left: 30px;
+  text-align: center;
+}
+
+/* ----------------- TYPOGRAPHY ----------------------*/
+
+p, a, nav {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.open-sans-condensed-font {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.satisfy-font {
+  font-family: 'Satisfy', cursive;
+}
+
+.smaller-font {
+  font-size: 0.9em;
+}
+
+.bigger-font {
+  font-size: 1.2em;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.title {
+  font-size: 5em;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------ HOMEPAGE ------------ */

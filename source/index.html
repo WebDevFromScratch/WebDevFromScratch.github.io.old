@@ -1,0 +1,10 @@
+---
+layout: default
+title: writing.deeeet.com
+---
+
+This is a static content here!!!!
+
+{% for post in site.posts reverse %}
+	{% include archive_post.html %}
+{% endfor %}
