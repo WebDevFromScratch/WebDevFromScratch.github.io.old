@@ -39,11 +39,15 @@ footer[role=contentinfo] {
 /* ----------------- TYPOGRAPHY ----------------------*/
 
 p, a, nav {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  font-size: 1.2em;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Lato', sans-serif;
   text-align: center;
 }
 
@@ -98,7 +102,8 @@ h1, h2, h3, h4 {
 }
 
 #section1 {
-  background-image: image-url("home/bg1.jpg");
+  background-image: image-url("home/macbook.jpg");
+  color: white;
   position: relative;
   h5 {
     position: absolute;
@@ -111,7 +116,7 @@ h1, h2, h3, h4 {
 }
 
 #section2 {
-  /*background-image: image-url("home/bg2.jpg");*/
+  /*background-image: image-url("home/wood.jpg");*/
 }
 
 #section3 {
@@ -120,7 +125,7 @@ h1, h2, h3, h4 {
 }
 
 #section4 {
-  background-image: image-url("home/wall.jpg");
+  background-image: image-url("home/sky.jpg");
   color: white;
   position: relative;
 
@@ -138,7 +143,7 @@ h1, h2, h3, h4 {
 }
 
 #about-top {
-  background-image: image-url("home/grass.jpg");
+  background-image: image-url("home/wood.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -203,6 +208,6 @@ ul li {
 
 /* --------- BLOG -----------------*/
 
-.blog-title {
+.with-top-margin {
   margin-top: 80px;
 }

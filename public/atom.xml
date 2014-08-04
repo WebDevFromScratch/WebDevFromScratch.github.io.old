@@ -4,7 +4,7 @@
   <title><![CDATA[Web Developer from Scratch]]></title>
   <link href="http://webdeveloperfromscratch.com/atom.xml" rel="self"/>
   <link href="http://webdeveloperfromscratch.com/"/>
-  <updated>2014-08-04T15:04:09+02:00</updated>
+  <updated>2014-08-04T17:35:22+02:00</updated>
   <id>http://webdeveloperfromscratch.com/</id>
   <author>
     <name><![CDATA[Piotr Klosinski]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Lorem]]></title>
+    <title type="html"><![CDATA[LOREM]]></title>
     <link href="http://webdeveloperfromscratch.com/blog/lorem/"/>
     <updated>2014-08-04T13:51:49+02:00</updated>
     <id>http://webdeveloperfromscratch.com/blog/lorem</id>
@@ -31,11 +31,12 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[One More Test]]></title>
+    <title type="html"><![CDATA[ONE MORE TEST]]></title>
     <link href="http://webdeveloperfromscratch.com/blog/one-more-test/"/>
     <updated>2014-08-04T13:32:29+02:00</updated>
     <id>http://webdeveloperfromscratch.com/blog/one-more-test</id>
-    <content type="html"><![CDATA[<p>Text text text, I can write whatever I want in here. Pretty cool! Gotta go for a little bit longer with this nonsense to create some random bits of text, so that we can test the looks a little bit more. But oh well, that&rsquo;s pretty cool still! Okay, one last sentence, especially for you:</p>
+    <content type="html"><![CDATA[<p class="open-sans-condensed-font bigger-font">Text text text, I can write whatever I want in here. Pretty cool! Gotta go for a little bit longer with this nonsense to create some random bits of text, so that we can test the looks a little bit more. But oh well, that&#8217;s pretty cool still! Okay, one last sentence, especially for you:</p>
+
 
 <h2>Testing Stuff Out</h2>
 
@@ -50,7 +51,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Test Post]]></title>
+    <title type="html"><![CDATA[TEST POST]]></title>
     <link href="http://webdeveloperfromscratch.com/blog/test-post/"/>
     <updated>2014-08-02T11:39:43+02:00</updated>
     <id>http://webdeveloperfromscratch.com/blog/test-post</id>

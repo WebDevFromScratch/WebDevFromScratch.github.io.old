@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Test Post"
+title: "TEST POST"
 date: 2014-08-02 11:39:43 +0200
 comments: true
 categories: [Test Category, Sports]
