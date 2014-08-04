@@ -1,0 +1,15 @@
+---
+layout: default
+navbar: Archives
+title: Blog
+---
+
+<!-- copied from source/index -->
+
+<div class="container">
+  <h1 class="text-center title blog-title">BLOG</h1>
+
+  {% for post in site.posts reverse %}
+    {% include archive_post.html %}
+  {% endfor %}
+</div>
