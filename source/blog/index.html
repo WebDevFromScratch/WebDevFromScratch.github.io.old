@@ -8,8 +8,14 @@ title: Blog
 
 <div class="container">
   <h1 class="text-center title blog-title">BLOG</h1>
+  <hr/>
 
   {% for post in site.posts reverse %}
-    {% include archive_post.html %}
+    {% include index_post.html %}
   {% endfor %}
+
+  <br/>
+  <br/>
+  <br/>
+  {% include footer.html %}
 </div>

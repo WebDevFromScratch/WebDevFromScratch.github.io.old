@@ -6,6 +6,9 @@
   <div class="col-md-8 col-md-offset-2">
     <p class="meta text-muted text-center">
       {% include post/date.html %}{{ time }}
+      {% include post/categories.html %}
     </p>
+    {{ post.content }}
+    <hr/>
   </div>
 </div>
