@@ -1,10 +1,85 @@
 ---
 layout: default
-title: writing.deeeet.com
+title: WebDevFromScratch
 ---
 
-This is a static content here!!!!
+<div id="fullpage">
+  <a href="#home" role="button" class="btn btn-sm btn-default" id="toTop">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <div class="section" id="section1">
+    <h1 class="title white">
+      Web Developer
+      <br/>
+      <span class="satisfy-font smaller-font">from</span>
+      <br/>
+      Scratch
+    </h1>
+    <h3 class="white">from zero to hero in web development</h3>
+    <h5 class="white blinking">scroll down to see more</h5>
+  </div>
+  <div class="section" id="section2">
+    <div class="row height-30" id="about-top">
+    </div>
+    <div class="row height-70" id="about-bottom">
+      <div class="container">
+        <h3 class="by white">AUTHOR</h3>
+        <h1 class="white">Piotr Klosinski</h1>
+        <div class="thumbnail-photo" id="resume-photo"></div>
+        <div class="row">
+          <h3 class="smaller-text">aspiring full-stack web developer</h3>        
+          <ul>
+            <li><span class="glyphicon glyphicon-map-marker"></span><h5>Cracow, Poland</h5></li>
+            <li><span class="glyphicon glyphicon-flag"></span><h5>@WebDevScratch</h5></li>
+            <li><span class="glyphicon glyphicon-envelope"></span><h5>piotr@example.com</h5></li>
+            <li><span class="glyphicon glyphicon-heart-empty"></span><h5>Lorem Ipsum</h5></li>
+          </ul>
+          <h4>
+            On my way to becoming a professional full-stack web developer. Currently learning and diving deep into Rails (4.0+) framework, but it's just the beginning.
+            Want to learn more about me, my skills and story behind?
+          </h4>
+          <h2><span class="glyphicon glyphicon-user"></span></h2>
+          <button class="btn btn-sm btn-default">
+            MORE ABOUT ME
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="section3">
+    <h3>BLOG</h3>
+    <div class="container">      
+      <h1>Thoughts, Struggles, Code...</h1>
+      <h4>
+        Follow my journey from knowing absolutely nothing about programming, to (hopefully) becoming a well-respected web developer. 
+        I have an endless thirst of knowledge and I fell in love with web development from the very first day. 
+        I'm only a few months into the craft and am currently working hard on getting a good grasp of Ruby on Rails before my first job search in the business.
+        There's a long and bumpy road ahead but nothing is impossible!
+      </h4>
+      <h2><span class="glyphicon glyphicon-bookmark"></span></h2>
+      <button class="btn btn-sm btn-default">
+        READ MORE ON THE BLOG
+      </button>      
+    </div>
+  </div>
+  <div class="section" id="section4">
+    <h3 class="white">PROJECTS</h3>
+    <h1 class="white">Recently Accomplished</h1>
+    <div class="container">
+      <ul>
+        <li>
+          <div class="thumbnail-photo" id="todo">
+            <h2>ToDo!</h2>
+          </div>
+        </li>
+        <li>
+          <div class="thumbnail-photo" id="postit">
+            <h2>PostIt</h2>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-{% for post in site.posts reverse %}
-	{% include archive_post.html %}
-{% endfor %}
+<script type="text/javascript" src="{{ root_url }}/javascripts/home.js"></script>

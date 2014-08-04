@@ -3,15 +3,8 @@
     <div id="wrap">
       <header role="banner">
         {% include navigation.html %}
-        <h1 class="text-center">{{ site.title }}</h1>
       </header>
-      <div id="main" class="container">
-        <div id="content">
-          {{ content | expand_urls: root_url }}
-        </div>
-      </div>
+      {{ content | expand_urls: root_url }}
     </div>
-    <footer role="contentinfo">{% include footer.html %}</footer>
-    {% include after_footer.html %}
   </body>
 </html>
