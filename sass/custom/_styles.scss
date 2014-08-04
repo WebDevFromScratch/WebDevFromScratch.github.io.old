@@ -121,6 +121,9 @@ h1, h2, h3, h4 {
 
 #section4 {
   background-image: image-url("home/wall.jpg");
+  color: white;
+  position: relative;
+
 }
 
 /* ------------- About Me ----------------*/
@@ -185,6 +188,15 @@ ul li {
 
 #postit {
   background-color: #95BF6B;
+}
+
+#footer-home {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 30px;
 }
 
 /* --------- END OF HOMEPAGE --------- */

@@ -10,18 +10,18 @@ $(document).ready(function() {
   },1800);
 
   $('#section2').mouseover(function() {
-    $("#toTop").fadeIn("slow");
+    $("#toTop").fadeIn();
   });
 
   $('#section3').mouseover(function() {
-    $("#toTop").fadeIn("slow");
+    $("#toTop").fadeIn();
   });
 
   $('#section4').mouseover(function() {
-    $("#toTop").fadeIn("slow");
+    $("#toTop").fadeIn();
   });
 
   $('#section1').mouseover(function() {
-    $("#toTop").fadeOut("slow");
+    $("#toTop").fadeOut();
   });
 });
