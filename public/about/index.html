@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>ONE MORE TEST - Web Developer from Scratch</title>
+  <title>About - Web Developer from Scratch</title>
   <meta name="author" content="Piotr Klosinski">
 
   
@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://webdeveloperfromscratch.com/blog/one-more-test">
+  <link rel="canonical" href="http://webdeveloperfromscratch.com/about">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/atom.xml" rel="alternate" title="Web Developer from Scratch" type="application/atom+xml">
 
@@ -75,97 +75,52 @@
 
 
       </header>
-      <div class="container">
-  <div class="row with-top-margin">
-    <div class="page-content col-md-8 col-md-offset-2" itemscope itemtype="http://schema.org/Blog">
-      <meta itemprop="name" content="Web Developer from Scratch" />
-      <meta itemprop="description" content="" />
-      <meta itemprop="url" content="http://webdeveloperfromscratch.com" />
-      <article class="hentry" role="article" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">        
-        
-  <header class="page-header">
-    
-      <p class="meta text-center text-muted">
-        
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-08-04T13:32:29+02:00"  data-updated="true" itemprop="datePublished dateCreated">Aug 4<sup>th</sup>, 2014</time>
-        
-      </p>
-      
-    
-    <h1 class="entry-title" itemprop="name headline">
-        ONE MORE TEST
-        
-    </h1>
-    
-  </header>
-
-
-<div class="entry-content clearfix" itemprop="articleBody"><p class="open-sans-condensed-font bigger-font">Text text text, I can write whatever I want in here. Pretty cool! Gotta go for a little bit longer with this nonsense to create some random bits of text, so that we can test the looks a little bit more. But oh well, that&#8217;s pretty cool still! Okay, one last sentence, especially for you:</p>
-
-
-<h2>Testing Stuff Out</h2>
-
-<p>I am really digging this Octopress so far! One could achieve a whole lot with it and really make it stand out and look awesome :)</p>
-
-<p><em>THIS IS ITALIC?</em></p>
-
-<h3>A test of an h3 tag</h3>
-
-<p><strong>And yet this is bold, cool!</strong> How about if I try to post a link here? Let&rsquo;s do just that: <a href="http://github.com">Visit Github!</a></p>
-</div>
-<br/>
-
-  <p class="meta text-center text-muted">        
-    
-
-
-  </p>
-
-
-
-        <hr/>
-        <footer>
-          
-            <div class="sharing text-center">
-  
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://webdeveloperfromscratch.com/blog/one-more-test/" data-via="" data-counturl="http://webdeveloperfromscratch.com/blog/one-more-test/" >Tweet</a>
-  
-  
-  
-</div>
-
-          
-          
-            <ul class="meta text-muted pager">
-              
-              <li class="previous"><a href="/blog/test-post/" title="Previous Post: TEST POST">&laquo; TEST POST</a></li>
-              
-              
-              <li class="next"><a href="/blog/lorem/" title="Next Post: longer in and to title test">longer in and to title test &raquo;</a></li>
-              
-            </ul>
-          
-        </footer>
-      </article>
-      
+      <div id="fullpage">
+  <div class="section white" id="about-section">
+    <h1 class>ABOUT ME</h1>
+    <br/>
+    <div class="thumbnail-photo" id="about-photo">
     </div>
-
-    
+    <br/>
+    <ul>
+      <li><i class="fa fa-twitter fa-3x"></i></li>&nbsp;
+      <li><i class="fa fa-github fa-3x"></i></li>
+    </ul>
+    <br/>
+    <div class="container">
+      <button class="btn btn-default btn-sm button-about">ME</button>
+      <button class="btn btn-default btn-sm button-about">SKILLS</button>
+      <button class="btn btn-default btn-sm button-about">COURSES</button><br/>
+      <button class="btn btn-default btn-sm button-about">PREVIOUSLY</button>
+      <button class="btn btn-default btn-sm button-about">EDUCATION</button>
+      <button class="btn btn-default btn-sm button-about">CONTACT</button>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="about-description" id="about-me">
+            <h2><span class="glyphicon glyphicon-user"></span></h2>
+            <p>I&#8217;m a 28-year-old guy living in Cracow, Poland. In the beginnings of this year I discovered <a href="http://codecademy.com">Codecademy</a> and it helped me find my new way in life. Since then I&#8217;ve been using various sources to set foundations in the craft. My aim is to become a kickass full stack web developer and with time, learn as many languages and tools as it gets.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
+
+<!-- fullPage.js -->
+
+<link rel="stylesheet" type="text/css" href="/assets/fullpage_js/jquery.fullPage.css" />
+<!-- This following line is needed in case of using the default easing option or when using another
+ one rather than "linear" or "swing". You can also add the full jQuery UI instead of this file if you prefer -->
+<script src="/assets/fullpage_js/vendors/jquery.easings.min.js"></script>
+
+
+<!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
+<script type="text/javascript" src="/assets/fullpage_js/vendors/jquery.slimscroll.min.js"></script>
+
+<script type="text/javascript" src="/assets/fullpage_js/jquery.fullPage.js"></script>
+
+<script type="text/javascript" src="/javascripts/about.js"></script>
     </div>
   </body>
 </html>

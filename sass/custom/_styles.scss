@@ -32,6 +32,10 @@ footer[role=contentinfo] {
 }
 
 .navbar-brand {
+
+}
+
+.navbar-brand-centered {
   padding-left: 30px;
   text-align: center;
 }
@@ -135,7 +139,7 @@ h1, h2, h3, h4 {
 
 .height-30 {
   height: 30%;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid grey;background-image: image-url("home/macbook.jpg");
 }
 
 .height-70 {
@@ -143,12 +147,13 @@ h1, h2, h3, h4 {
 }
 
 #about-top {
-  background-image: image-url("home/wood.jpg");
+  background-image: image-url("about/dark-canvas-background.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #about-bottom {
+  background-image: image-url("home/subtle-mosaic-pattern.png")
 }
 
 .by {
@@ -210,4 +215,25 @@ ul li {
 
 .with-top-margin {
   margin-top: 80px;
+}
+
+/* ---------- END OF BLOG --------- */
+
+/* ----------- ABOUT ------------- */
+
+#about-section {
+  background-image: image-url("/images/about/dark-canvas-background.png");
+}
+
+#about-photo {
+  background-color: white;
+}
+
+.button-about {
+  width: 100px;
+  margin-bottom: 5px;
+}
+
+.about-description {
+  font-size: 16px;
 }

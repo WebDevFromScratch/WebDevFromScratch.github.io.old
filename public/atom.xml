@@ -4,7 +4,7 @@
   <title><![CDATA[Web Developer from Scratch]]></title>
   <link href="http://webdeveloperfromscratch.com/atom.xml" rel="self"/>
   <link href="http://webdeveloperfromscratch.com/"/>
-  <updated>2014-08-04T17:35:22+02:00</updated>
+  <updated>2014-08-05T11:40:38+02:00</updated>
   <id>http://webdeveloperfromscratch.com/</id>
   <author>
     <name><![CDATA[Piotr Klosinski]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[LOREM]]></title>
+    <title type="html"><![CDATA[Longer in and to Title Test]]></title>
     <link href="http://webdeveloperfromscratch.com/blog/lorem/"/>
     <updated>2014-08-04T13:51:49+02:00</updated>
     <id>http://webdeveloperfromscratch.com/blog/lorem</id>

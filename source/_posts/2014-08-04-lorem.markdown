@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "LOREM"
+title: "longer in and to title test"
 date: 2014-08-04 13:51:49 +0200
 comments: true
 categories: 

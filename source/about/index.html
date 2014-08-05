@@ -1,0 +1,51 @@
+---
+layout: default
+title: "about"
+---
+
+<div id="fullpage">
+  <div class="section white" id="about-section">
+    <h1 class>ABOUT ME</h1>
+    <br/>
+    <div class="thumbnail-photo" id="about-photo">
+    </div>
+    <br/>
+    <ul>
+      <li><i class="fa fa-twitter fa-3x"></i></li>&nbsp;
+      <li><i class="fa fa-github fa-3x"></i></li>
+    </ul>
+    <br/>
+    <div class="container">
+      <button class="btn btn-default btn-sm button-about">ME</button>
+      <button class="btn btn-default btn-sm button-about">SKILLS</button>
+      <button class="btn btn-default btn-sm button-about">COURSES</button><br/>
+      <button class="btn btn-default btn-sm button-about">PREVIOUSLY</button>
+      <button class="btn btn-default btn-sm button-about">EDUCATION</button>
+      <button class="btn btn-default btn-sm button-about">CONTACT</button>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="about-description" id="about-me">
+            <h2><span class="glyphicon glyphicon-user"></span></h2>
+            <p>I'm a 28-year-old guy living in Cracow, Poland. In the beginnings of this year I discovered <a href="http://codecademy.com">Codecademy</a> and it helped me find my new way in life. Since then I've been using various sources to set foundations in the craft. My aim is to become a kickass full stack web developer and with time, learn as many languages and tools as it gets.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- fullPage.js -->
+
+<link rel="stylesheet" type="text/css" href="{{ root_url }}/assets/fullpage_js/jquery.fullPage.css" />
+<!-- This following line is needed in case of using the default easing option or when using another
+ one rather than "linear" or "swing". You can also add the full jQuery UI instead of this file if you prefer -->
+<script src="{{ root_url }}/assets/fullpage_js/vendors/jquery.easings.min.js"></script>
+
+
+<!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
+<script type="text/javascript" src="{{ root_url }}/assets/fullpage_js/vendors/jquery.slimscroll.min.js"></script>
+
+<script type="text/javascript" src="{{ root_url }}/assets/fullpage_js/jquery.fullPage.js"></script>
+
+<script type="text/javascript" src="{{ root_url }}/javascripts/about.js"></script>
