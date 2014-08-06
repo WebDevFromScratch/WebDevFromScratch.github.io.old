@@ -62,11 +62,11 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li><a href="/">HOME</a></li>
-                <li><a href="/blog">BLOG</a></li>
+                <li><a href="/about">ABOUT</a></li>
                 <a href="/" class="navbar-brand navbar-brand-centered hidden-xs">
                     <span>WD<span class="satisfy-font">f</span>S</span>
                 </a>
-                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/blog">BLOG</a></li>
                 <li><a href="/work">WORK</a></li>
             </ul>
         </div>
@@ -77,141 +77,157 @@
       </header>
       <div id="fullpage">
   <div class="section white" id="about-section">
-    <div class="row height-5"></div>
-    <div class="row height-95">
-      <h1>ABOUT ME</h1>
-      <br/>
-      <div class="thumbnail-photo" id="about-photo">
-      </div>
-      <br/>
-      <ul class="inline-list">
-        <li><i class="fa fa-twitter fa-3x"></i></li>&nbsp;
-        <li><i class="fa fa-github fa-3x"></i></li>
-      </ul>
-      <br/>
-      <div class="container">
-        <button class="btn btn-default btn-sm button-about button-about-sm" id="button-about-me">ME</button>
-        <button class="btn btn-default btn-sm button-about button-about-sm" id="button-about-skills">SKILLS</button>
-        <button class="btn btn-default btn-sm button-about button-about-sm" id="button-about-courses">COURSES</button>
-        <button class="btn btn-default btn-sm button-about button-about-sm" id="button-about-previously">PREVIOUSLY</button>
-        <button class="btn btn-default btn-sm button-about button-about-sm" id="button-about-education">EDUCATION</button>
-        <button class="btn btn-default btn-sm button-about button-about-sm" id="button-about-contact">CONTACT</button>
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <div class="description-about" id="about-me" style="display: none">
-              <h2><i class="fa fa-user fa-lg"></i></h2>
-              <hr/>
-              <p>I am a 28-year-old guy living in Cracow, Poland. In January of this year I discovered <a href="http://codecademy.com">Codecademy</a> and it helped me find my new way in life. Since then I have been using various sources to set foundations in the web development craft. My aim is to become a kickass full-stack web developer and with time, learn as many languages and tools as it gets.</p>
+    <h1>ABOUT ME</h1>
+    <br/>
+    <div class="thumbnail-photo with-white-border" id="about-photo">
+    </div>
+    <br/>
+    <ul class="inline-list">
+      <li><i class="fa fa-twitter fa-3x"></i></li>&nbsp;
+      <li><i class="fa fa-github fa-3x"></i></li>
+    </ul>
+    <br/>
+    <div class="container">
+      <button class="btn btn-default btn-sm button-about button-about-sm" id="button-about-me">ME</button>
+      <button class="btn btn-default btn-sm button-about button-about-sm" id="button-about-skills">SKILLS</button>
+      <button class="btn btn-default btn-sm button-about button-about-sm" id="button-about-courses">COURSES</button>
+      <button class="btn btn-default btn-sm button-about button-about-sm" id="button-about-previously">PREVIOUSLY</button>
+      <button class="btn btn-default btn-sm button-about button-about-sm" id="button-about-education">EDUCATION</button>
+      <button class="btn btn-default btn-sm button-about button-about-sm" id="button-about-contact">CONTACT</button>
+      <div class="row" id="about-page-content">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="description-about" id="about-me">
+            <h2><i class="fa fa-user fa-lg"></i></h2>
+            <hr/>
+            <p>Hi! My name is Piotr. I am a 28-year-old guy living in Cracow, Poland. In January of this year I discovered <a href="http://codecademy.com">Codecademy</a> and it helped me find my new way in life. Since then I have been using various sources to set foundations in the web development craft. My aim is to become a kickass full-stack web developer and with time, learn as many languages and tools as it gets.</p>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+          </div>
+          <div class="description-about" id="about-skills" style="display: none">
+            <h2><i class="fa fa-rocket fa-lg"></i></h2>
+            <hr/>
+            <ul>
+              <li><p>Ruby (1.9+) <i>(with Rails (4.0+) and Sinatra)</i></p></li>
+              <li><p>HTML <i>(with HAML)</i> & CSS <i>(with Sass)</i></p></li>
+              <li><p>JavaScript <i>(with jQuery)</i></p></li>
+              <li><p>SQL <i>(SQLite)</i></p></li>
+              <li><p>GIT <i>(plus Github, Heroku)</i></p></li>
+              <li><p>HTTP protocol</p></li>
+              <li><p>Python (basics)</p></li>
+            </ul>
+          </div>
+          <div class="description-about" id="about-courses" style="display: none">
+            <h2><i class="fa fa-university fa-lg"></i></h2>
+            <hr/>
+            <div class="col-md-4">
+              <button class="btn btn-default button-about button-about-lg" id="button-courses-tealeaf"><h4>TEALEAF ACADEMY</h4></button>
+              <button class="btn btn-default button-about button-about-lg" id="button-courses-odin"><h4>THE ODIN PROJECT</h4></button>
+              <button class="btn btn-default button-about button-about-lg" id="button-courses-coursera"><h4>COURSERA</h4></button>
+              <button class="btn btn-default button-about button-about-lg" id="button-courses-codecademy"><h4>CODECADEMY</h4></button>
             </div>
-            <div class="description-about" id="about-skills" style="display: none">
-              <h2><i class="fa fa-rocket fa-lg"></i></h2>
-              <hr/>
-              <ul>
-                <li><p>Ruby (1.9+) <i>(with Rails (4.0+) and Sinatra)</i></p></li>
-                <li><p>HTML <i>(with HAML)</i> & CSS <i>(with Sass)</i></p></li>
-                <li><p>JavaScript <i>(with jQuery)</i></p></li>
-                <li><p>SQL <i>(SQLite)</i></p></li>
-                <li><p>GIT <i>(plus Github, Heroku)</i></p></li>
-                <li><p>HTTP protocol</p></li>
-                <li><p>Python (basics)</p></li>
-              </ul>
+            <div class="col-md-8">
+                <div class="description-courses" id="description-tealeaf" style="display: none">
+                  <h3><a href="http://www.gotealeaf.com">TEALEAF ACADEMY</a></h3>
+                  <br/>
+                  <ul class="list-courses">
+                    <li><p><i class="fa fa-check-square-o"></i> <a href="http://www.gotealeaf.com/curriculum#!ruby">Introduction to Ruby and Web Development</a></p></li>
+                    <li><p><i class="fa fa-check-square-o"></i> <a href="http://www.gotealeaf.com/curriculum#!rails">Rapid Prototyping with Ruby on Rails</a></p></li>
+                    <li><p><i class="fa fa-square-o"></i> <a href="http://www.gotealeaf.com/curriculum#!production-apps">Build Robust and Production Quality Applications</a></p></li>                                          
+                  </ul>
+                </div>
+                <div class="description-courses" id="description-odin" style="display: none">
+                  <h3><a href="http://www.theodinproject.com/">THE ODIN PROJECT</a></h3>
+                  <br/>
+                  <ul class="list-courses">
+                    <li><p><i class="fa fa-check-square-o"></i> <a href="http://www.theodinproject.com/web-development-101">Web Development 101</a></p></li>
+                    <li><p><i class="fa fa-square-o"></i> <a href="http://www.theodinproject.com/ruby-programming">Ruby Programming</a></p></li>
+                  </ul>
+                </div>
+                <div class="description-courses" id="description-coursera" style="display: none">
+                  <h3><a href="http://www.coursera.org">COURSERA</a></h3>
+                  <br/>
+                  <ul class="list-courses">
+                    <li><p><i class="fa fa-check-square-o"></i> <a href="http://www.coursera.org/course/interactivepython">An Introduction to Interactive Programming in Python</a></p></li>
+                  </ul>
+                </div>
+                <div class="description-courses" id="description-codecademy" style="display: none">
+                  <h3><a href="http://www.codecademy.com">CODECADEMY</a></h3>
+                  <br/>
+                  <ul class="list-courses">
+                    <li><p><i class="fa fa-check-square-o"></i> <a href="http://www.codecademy.com/en/tracks/web">HTML & CSS Track</a></p></li>
+                    <li><p><i class="fa fa-check-square-o"></i> <a href="http://www.codecademy.com/en/tracks/javascript">JavaScript Track</a></p></li>
+                    <li><p><i class="fa fa-check-square-o"></i> <a href="http://www.codecademy.com/en/tracks/jquery">jQuery Track</a></p></li>
+                    <li><p><i class="fa fa-square-o"></i> <a href="http://www.codecademy.com/en/tracks/ruby">Ruby Track</a></p></li>
+                    <li><p><i class="fa fa-square-o"></i> <a href="http://www.codecademy.com/en/tracks/python">Python Track</a></p></li>
+                    <li><p><i class="fa fa-square-o"></i> <a href="http://www.codecademy.com/en/tracks/php">PHP Track</a></p></li>
+                  </ul>
+                </div>
             </div>
-            <div class="description-about" id="about-courses" style="display: none">
-              <h2><i class="fa fa-university fa-lg"></i></h2>
-              <hr/>
-              <div class="col-md-4">
-                <button class="btn btn-default button-about button-about-lg" id="button-courses-tealeaf"><h4>TEALEAF ACADEMY</h4></button>
-                <button class="btn btn-default button-about button-about-lg" id="button-courses-odin"><h4>THE ODIN PROJECT</h4></button>
-                <button class="btn btn-default button-about button-about-lg" id="button-courses-coursera"><h4>COURSERA</h4></button>
-                <button class="btn btn-default button-about button-about-lg" id="button-courses-codecademy"><h4>CODECADEMY</h4></button>
-              </div>
-              <div class="col-md-8">
-                  <div class="description-courses" id="description-tealeaf" style="display: none">
-                    <h3>TEALEAF ACADEMY</h3>
-                    <br/>
-                    <ul class="list-courses">
-                      <li><p><i class="fa fa-check-square-o"></i> Introduction to Ruby and Web Development</p></li>
-                      <li><p><i class="fa fa-check-square-o"></i> Rapid Prototyping with Ruby on Rails</p></li>
-                      <li><p><i class="fa fa-square-o"></i> Build Robust and Production Quality Applications</p></li>                                          
-                    </ul>
-                  </div>
-                  <div class="description-courses" id="description-odin" style="display: none">
-                    <h3>THE ODIN PROJECT</h3>
-                    <br/>
-                    <ul class="list-courses">
-                      <li><p><i class="fa fa-check-square-o"></i> Web Development 101</p></li>
-                      <li><p><i class="fa fa-square-o"></i> Ruby Programming</p></li>
-                    </ul>
-                  </div>
-                  <div class="description-courses" id="description-coursera" style="display: none">
-                    <h3>COURSERA</h3>
-                    <br/>
-                    <ul class="list-courses">
-                      <li><p><i class="fa fa-check-square-o"></i> An Introduction to Interactive Programming in Python</p></li>
-                    </ul>
-                  </div>
-                  <div class="description-courses" id="description-codecademy" style="display: none">
-                    <h3>CODECADEMY</h3>
-                    <br/>
-                    <ul class="list-courses">
-                      <li><p><i class="fa fa-check-square-o"></i> HTML & CSS Track</p></li>
-                      <li><p><i class="fa fa-check-square-o"></i> JavaScript Track</p></li>
-                      <li><p><i class="fa fa-check-square-o"></i> jQuery Track</p></li>
-                      <li><p><i class="fa fa-square-o"></i> Ruby Track</p></li>
-                      <li><p><i class="fa fa-square-o"></i> Python Track</p></li>
-                      <li><p><i class="fa fa-square-o"></i> PHP Track</p></li>
-                    </ul>
-                  </div>
-              </div>
-            </div>
-            <div class="description-about" id="about-previously" style="display: none">
-              <h2><i class="fa fa-backward fa-lg"></i></h2>
-              <hr/>
-              <ul>
-                <li>
-                  <small>Jan 2013 - Nov 2013</small>
-                  <p>Commodity Trader <small><i>@OSTC Poland Sp. z o.o.</i></small></p>
-                </li>
-                <li>
-                  <small>Aug 2009 - Jul 2012</small>
-                  <p>Online Poker Player <small><i>@self employed</i></small></p>
-                </li>
-                <li>
-                  <small>Dec 2008 - Jul 2009</small>
-                  <p>Community Manager <small><i>@Swerford Holdings Ltd (PokerStrategy.com)</i></small></p>
-                </li>
-                <li>
-                  <small>Apr 2008 - Oct 2008</small>
-                  <p>Translator <small><i>@Swerford Holdings Ltd (PokerStrategy.com)</i></small></p>
-                </li>
-                <li>
-                  <small>Feb 2008 - Oct 2008</small>
-                  <p>Junior Associate <small><i>@PwC Polska</i></small></p>
-                </li>
-              </ul>
-            </div>
-            <div class="description-about" id="about-education" style="display: none">
-              <h2><i class="fa fa-graduation-cap fa-lg"></i></h2>
-              <hr/>
-              <ul>
-                <li>
-                  <small>Oct 2005 - Jul 2010</small>
-                  <p>Cracow University of Economics <small><i>MA in Economics</i></small></p>
-                </li>
-                <li>
-                  <small>Sep 2000 - Jun 2004</small>
-                  <p>High School no.1 in Krasnystaw</p>
-                </li>
-              </ul>
-            </div>
-            <div class="description-about" id="about-contact" style="display: none">
-              <h2><i class="fa fa-envelope fa-lg"></i></h2>
-              <hr/>
-              <p>
-                Just Mail Me:<br/>
-                <a href="mailto:piotr@webdeveloperfromscratch.com">piotr@webdeveloperfromscratch.com</a>
-              </p>
-            </div>
+          </div>
+          <div class="description-about" id="about-previously" style="display: none">
+            <h2><i class="fa fa-backward fa-lg"></i></h2>
+            <hr/>
+            <ul>
+              <li>
+                <small>Jan 2013 - Nov 2013</small>
+                <p>Commodity Trader <small><i>@OSTC Poland Sp. z o.o.</i></small></p>
+              </li>
+              <li>
+                <small>Aug 2009 - Jul 2012</small>
+                <p>Online Poker Player <small><i>@self employed</i></small></p>
+              </li>
+              <li>
+                <small>Dec 2008 - Jul 2009</small>
+                <p>Community Manager <small><i>@Swerford Holdings Ltd (PokerStrategy.com)</i></small></p>
+              </li>
+              <li>
+                <small>Apr 2008 - Oct 2008</small>
+                <p>Translator <small><i>@Swerford Holdings Ltd (PokerStrategy.com)</i></small></p>
+              </li>
+              <li>
+                <small>Feb 2008 - Oct 2008</small>
+                <p>Junior Associate <small><i>@PwC Polska</i></small></p>
+              </li>
+            </ul>
+          </div>
+          <div class="description-about" id="about-education" style="display: none">
+            <h2><i class="fa fa-graduation-cap fa-lg"></i></h2>
+            <hr/>
+            <ul>
+              <li>
+                <small>Oct 2005 - Jul 2010</small>
+                <p>Cracow University of Economics <small><i>MA in Economics</i></small></p>
+              </li>
+              <li>
+                <small>Sep 2000 - Jun 2004</small>
+                <p>High School no.1 in Krasnystaw</p>
+              </li>
+            </ul>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+          </div>
+          <div class="description-about" id="about-contact" style="display: none">
+            <h2><i class="fa fa-envelope fa-lg"></i></h2>
+            <hr/>
+            <p>
+              Just Mail Me:<br/>
+              <a href="mailto:piotr@webdeveloperfromscratch.com">piotr@webdeveloperfromscratch.com</a>
+            </p>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
           </div>
         </div>
       </div>
