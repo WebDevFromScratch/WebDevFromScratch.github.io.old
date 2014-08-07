@@ -33,6 +33,8 @@
 
 <!-- Font Awesome -->
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- fonts mfizz -->
+<link href="/assets/font-mfizz/font-mfizz.css" rel="stylesheet">
 
 
   
@@ -78,7 +80,74 @@
       <div id="fullpage">
   <div class="section white" id="projects-section">
     <div id="project-expanded">
-      <div class="project-details"></div>
+      <button class="transparent-button" id="close-expanded">
+        <span><i class="fa fa-times-circle-o fa-2x"></i></span>
+      </button>
+      <div class="project-details" id="wdfs-details">
+        <h3>WEB DEVELOPER FROM SCRATCH</h3>
+        <p>This is my web-home, built as a practice of the front-end skills. Mostly static pages, where I went for an elegant design, with the help of Bootstrap and fullPage.js plugin. The whole site has been set on Octopress, which suits my personal needs well for blogging purposes.</p>
+        <br/>
+        <ul class="my-slideshow" id="wdfs-slideshow">
+          <li><img class="my-slide" src="/images/work/wdfs.png" alt="1"/></li>
+          <li><img class="my-slide" src="/images/work/wdfs-2.png" alt="2"/></li>
+          <li><img class="my-slide" src="/images/work/wdfs-3.png" alt="3"/></li>
+        </ul>
+        <br/>
+        <button class="transparent-button control prev">
+          <span><i class="fa fa-chevron-left fa-2x"></i></span>
+        </button>
+        <button class="transparent-button control next">
+          <span><i class="fa fa-chevron-right fa-2x"></i></span>
+        </button>
+      </div>
+      <div class="project-details" id="todo-details">
+        <h3>TODO!</h3>
+        <p>A Rails app, built as a practice of skills gained throughout first few months of my web development road. I tried to use as many basic Rails features as possible.</p>
+        <ul class="inline-list">
+          <li>
+            <a href="">
+              <i class="icon-heroku fa-2x"></i>
+              <h5 class="h5-no-margin">HEROKU</h5>
+            </a>
+          </li>&nbsp;
+          <li>
+            <a href="">
+              <i class="fa fa-github fa-2x"></i>
+              <h5>GITHUB</h5>
+            </a>
+          </li>
+        </ul>
+        <br/>
+        <ul class="my-slideshow" id="todo-slideshow">
+          <li><img class="my-slide" src="/images/work/todo.png" alt="1"/></li>
+          <li><img class="my-slide" src="/images/work/todo-2.png" alt="2"/></li>
+          <li><img class="my-slide" src="/images/work/todo-3.png" alt="3"/></li>
+        </ul>
+        <br/>
+        <button class="transparent-button control prev">
+          <span><i class="fa fa-chevron-left fa-2x"></i></span>
+        </button>
+        <button class="transparent-button control next">
+          <span><i class="fa fa-chevron-right fa-2x"></i></span>
+        </button>
+      </div>
+      <div class="project-details" id="postit-details">
+        <h3>WEB DEVELOPER FROM SCRATCH</h3>
+        <p>This is my web-home, built as a practice of the front-end skills. Mostly static pages, where I went for an elegant design, with the help of Bootstrap and fullPage.js plugin. The whole site has been set on Octopress, which suits my personal needs well for blogging purposes.</p>
+        <br/>
+        <ul class="my-slideshow" id="postit-slideshow">
+          <li><img class="my-slide" src="/images/work/postit.png" alt="1"/></li>
+          <li><img class="my-slide" src="/images/work/postit-2.png" alt="2"/></li> 
+          <li><img class="my-slide" src="/images/work/postit-3.png" alt="3"/></li> 
+        </ul>
+        <br/>
+        <button class="transparent-button control prev">
+          <span><i class="fa fa-chevron-left fa-2x"></i></span>
+        </button>
+        <button class="transparent-button control next">
+          <span><i class="fa fa-chevron-right fa-2x"></i></span>
+        </button>
+      </div>
     </div>
     <h1>MY PROJECTS</h1>
     <br/>
@@ -93,7 +162,7 @@
                 <li><i class="fa fa-desktop fa-lg"></i><h6>FRONT END</h6></li>
                 <li><i class="fa fa-code fa-lg"></i><h6>BACK END</h6></li>
               </ul>
-              <button class="btn btn-default btn-sm">SEE MORE</button>
+              <button class="btn btn-default btn-sm" id="wdfs-button">SEE MORE</button>
             </div>
           </div>
         </li><li>
@@ -105,7 +174,7 @@
                 <li><i class="fa fa-desktop fa-lg"></i><h6>FRONT END</h6></li>
                 <li><i class="fa fa-code fa-lg"></i><h6>BACK END</h6></li>
               </ul>
-              <button class="btn btn-default btn-sm">SEE MORE</button>
+              <button class="btn btn-default btn-sm" id="todo-button">SEE MORE</button>
             </div>
           </div>
         </li><li>
@@ -116,7 +185,7 @@
                 <li><i class="fa fa-desktop fa-lg"></i><h6>FRONT END</h6></li>
                 <li><i class="fa fa-code fa-lg"></i><h6>BACK END</h6></li>
               </ul>
-              <button class="btn btn-default btn-sm">SEE MORE</button>
+              <button class="btn btn-default btn-sm" id="postit-button">SEE MORE</button>
             </div>
           </div>
         </li><li>
@@ -146,6 +215,8 @@
 <script type="text/javascript" src="/assets/fullpage_js/jquery.fullPage.js"></script>
 
 <script type="text/javascript" src="/javascripts/work.js"></script>
+
+<!-- mySlider -->
     </div>
   </body>
 </html>
