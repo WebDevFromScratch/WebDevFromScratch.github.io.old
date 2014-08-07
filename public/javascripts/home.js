@@ -1,7 +1,8 @@
 $(document).ready(function() {
   $('#fullpage').fullpage({
     navigation: true,
-    anchors: ['home', 'about', 'blog', 'work']
+    anchors: ['home', 'about', 'blog', 'work'],
+    scrollOverflow: true
   });
 
   setInterval(function(){ 
@@ -23,5 +24,11 @@ $(document).ready(function() {
 
   $('#section1').mouseover(function() {
     $("#toTop").fadeOut();
+  });
+
+  $(".thumbnail-photo").on("mouseenter", function() {
+    $(this).find(".thumbnail-description").fadeIn();
+  }).on("mouseleave", function(){
+    $(this).find(".thumbnail-description").fadeOut();
   });
 });

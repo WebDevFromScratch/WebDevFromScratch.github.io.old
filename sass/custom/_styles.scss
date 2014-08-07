@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5 {
 }
 
 #about-bottom {
-  background-image: image-url("home/subtle-mosaic-pattern.png")
+  background-image: image-url("home/subtle-mosaic-pattern.png");
 }
 
 .by {
@@ -235,6 +235,10 @@ ul.inline-list li {
 
 #about-photo {
   background-color: white;
+}
+
+#social-icons a {
+  color: white;
 }
 
 .button-about {
@@ -342,6 +346,10 @@ ul.inline-list li {
     bottom: 20px;
     width: 100px;
   }
+  button.button-to-work-page {
+    width: 200px;
+    bottom: 100px;
+  }
   ul {
     position: absolute;
     margin-left: auto;
@@ -387,7 +395,7 @@ ul.inline-list li {
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -400px;
+  margin-top: -450px;
   margin-left: -300px;
   a {
     color: #FFFFFF;
