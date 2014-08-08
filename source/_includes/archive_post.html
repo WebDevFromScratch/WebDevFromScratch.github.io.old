@@ -1,11 +1,12 @@
 {% capture category %}{{ post.categories | size }}{% endcapture %}
 <h1 itemprop="name headline" class="text-center">
-  <a class="open-sans-condensed-font" href="{{ root_url }}{{ post.url }}" itemprop="url">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a>
+  <a href="{{ root_url }}{{ post.url }}" itemprop="url">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a>
 </h1>
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
     <p class="meta text-muted text-center">
       {% include post/date.html %}{{ time }}
     </p>
+    <hr/>
   </div>
 </div>

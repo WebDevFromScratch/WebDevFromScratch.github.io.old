@@ -3,7 +3,7 @@ layout: post
 title: "longer in and to title test"
 date: 2014-08-04 13:51:49 +0200
 comments: true
-categories: 
+categories: [Sports]
 ---
 
 Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim.
