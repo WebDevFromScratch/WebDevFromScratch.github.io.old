@@ -218,6 +218,16 @@ ul.inline-list li {
   bottom: 30px;
 }
 
+.project-text {
+  display: none;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 60px;
+}
+
 /* --------- END OF HOMEPAGE --------- */
 
 /* --------- BLOG -----------------*/
@@ -259,6 +269,10 @@ ul.inline-list li {
 
 .button-about-lg {
   width: 200px;
+}
+
+.button-lg-text-small {
+  display: none;
 }
 
 .description-about {
@@ -446,5 +460,82 @@ ul.inline-list li {
   }
   li:first-child {
     display: block;
+  }
+}
+
+/* -------------- MEDIA QUERIES ---------- */
+
+@media (max-width: 1280px) {
+  .thumbnail-photo {
+    display: block;
+    width: 180px;
+    height: 180px; 
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  body {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 2.6em;
+  }
+
+  h2 {
+    font-size: 2.3em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1.8em;
+  }
+
+  .about-icon-list {
+    display: none;
+  }
+
+  .description-about {
+    font-size: 14px;
+  }
+
+  .visible-small {
+    display: block;
+  }
+
+  .hidden-small {
+    display: none;
+  }
+
+  .project-details {
+    width: 400px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -200px;
+  }
+
+  .my-slideshow {
+    width: 400px;
+    height: 400px;
+    position: relative;
+
+    overflow: hidden;
+    list-style: none outside none;
+    padding: 0;
+    margin: 0;
+    li {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+    }
+    li:first-child {
+      display: block;
+    }
   }
 }
