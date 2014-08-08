@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Sports | Web Developer from Scratch]]></title>
-  <link href="http://webdeveloperfromscratch.com/blog/categories/sports/atom.xml" rel="self"/>
-  <link href="http://webdeveloperfromscratch.com/"/>
-  <updated>2014-08-08T11:36:43+02:00</updated>
-  <id>http://webdeveloperfromscratch.com/</id>
+  <link href="http://WebDevFromScratch.github.io/blog/categories/sports/atom.xml" rel="self"/>
+  <link href="http://WebDevFromScratch.github.io/"/>
+  <updated>2014-08-08T16:17:53+02:00</updated>
+  <id>http://WebDevFromScratch.github.io/</id>
   <author>
     <name><![CDATA[Piotr Klosinski]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Longer in and to Title Test]]></title>
-    <link href="http://webdeveloperfromscratch.com/blog/lorem/"/>
+    <link href="http://WebDevFromScratch.github.io/blog/lorem/"/>
     <updated>2014-08-04T13:51:49+02:00</updated>
-    <id>http://webdeveloperfromscratch.com/blog/lorem</id>
+    <id>http://WebDevFromScratch.github.io/blog/lorem</id>
     <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim.</p>
 
 <h2>Lorem Plorem</h2>
@@ -32,9 +32,9 @@
   
   <entry>
     <title type="html"><![CDATA[TEST POST]]></title>
-    <link href="http://webdeveloperfromscratch.com/blog/test-post/"/>
+    <link href="http://WebDevFromScratch.github.io/blog/test-post/"/>
     <updated>2014-08-02T11:39:43+02:00</updated>
-    <id>http://webdeveloperfromscratch.com/blog/test-post</id>
+    <id>http://WebDevFromScratch.github.io/blog/test-post</id>
     <content type="html"><![CDATA[<p>This is essentially just testing stuff. I don&rsquo;t even know how to write in markdown, so I just push some keys here to get some tets input. I&rsquo;ll even paste some lorem ipsum below to see how it looks.</p>
 
 <p>Let&rsquo;s see what comes off it!</p>
