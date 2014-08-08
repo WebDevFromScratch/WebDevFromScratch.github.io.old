@@ -22,7 +22,7 @@ So I've been having some time off learning. I stayed at my family's for almost a
 
 
 
-As I promised [the last time](http://www.webdeveloperfromscratch.com/become-a-web-developer-for-free/), I decided to check [The Odin Project](http://www.theodinproject.com/) while I was away. Of course I had less time than I hoped (don't even ask...). Still, I did make some progress with it. I skimmed through ['Web Development 101'](http://www.theodinproject.com/web-development-101) and dived into ['Ruby Programming'](http://www.theodinproject.com/ruby-programming/) section.
+As I promised [the last time](http://www.webdeveloperfromscratch.com/blog/become-a-web-developer-for-free/), I decided to check [The Odin Project](http://www.theodinproject.com/) while I was away. Of course I had less time than I hoped (don't even ask...). Still, I did make some progress with it. I skimmed through ['Web Development 101'](http://www.theodinproject.com/web-development-101) and dived into ['Ruby Programming'](http://www.theodinproject.com/ruby-programming/) section.
 
 I thought I'm already not too bad with my Ruby skills, but TOP exercises proved me wrong. Due to time constraints, I was only able to complete the basic 'Building Blocks' part. And it was not easy... After doing some required reading (Very helpful! I not only refreshed my knowledge, but learned a few new tricks) I tried to tackle the building part. 'Estimated time: 3-5 hrs' did not apply to me. I didn't measured it anyhow, but I think it was more like 7 hrs in my case. And I don't think my code is too great. I had to rely on the help from google quite a few times. Below are my solutions to the problems from this chapter:
 

@@ -44,7 +44,7 @@ Since I finally feel I am able to build simple apps from start to finish, I thin
 * A simple TO-DO app (never really found one that suits me well)
 * Personal Finance Tracker (as above)
 * Two apps that I've found as an initial challenge for an internship/junior dev job (those should be a good practice of what I've learned so far)
-* Building a blog from scratch using Rails ([I've always wanted to do this!](http://www.webdeveloperfromscratch.com/1st-project-lets-go/))
+* Building a blog from scratch using Rails ([I've always wanted to do this!](http://www.webdeveloperfromscratch.com/blog/1st-project-lets-go/))
 
 
 I plan on spending 1-2 hrs a day building those. Hopefully this will make most of what I've learned so far really stick and become natural.

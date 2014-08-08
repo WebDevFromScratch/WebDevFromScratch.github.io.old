@@ -12,7 +12,7 @@ tags:
 - Tealeaf Academy
 ---
 
-Yeah, I was finally able to wrap the second [Tealeaf Academy](http://www.gotealeaf.com) course up! It was a lot of work for me, not everything is yet superclear. But I definitely learned a lot and now it's all a matter of practice, so the freshly aquired knowledge could sunk in for good. That's why I decided that before I start the third (and final) course, I should build some stuff on my own, as I mentioned in [my last post](http://www.webdeveloperfromscratch.com/crawling-forward-with-rails/). Let me sum up the course, as I did the [first one](http://www.webdeveloperfromscratch.com/tealeaf-progress-check-no-2-course-1-done/).
+Yeah, I was finally able to wrap the second [Tealeaf Academy](http://www.gotealeaf.com) course up! It was a lot of work for me, not everything is yet superclear. But I definitely learned a lot and now it's all a matter of practice, so the freshly aquired knowledge could sunk in for good. That's why I decided that before I start the third (and final) course, I should build some stuff on my own, as I mentioned in [my last post](http://www.webdeveloperfromscratch.com/blog/crawling-forward-with-rails/). Let me sum up the course, as I did the [first one](http://www.webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-2-course-1-done/).
 
 
 
