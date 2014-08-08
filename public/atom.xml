@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Web Developer from Scratch]]></title>
-  <link href="http://webdeveloperfromscratch.com/atom.xml" rel="self"/>
-  <link href="http://webdeveloperfromscratch.com/"/>
-  <updated>2014-08-08T15:00:39+02:00</updated>
-  <id>http://webdeveloperfromscratch.com/</id>
+  <link href="http://WebDevFromScratch.github.io/atom.xml" rel="self"/>
+  <link href="http://WebDevFromScratch.github.io/"/>
+  <updated>2014-08-08T16:07:24+02:00</updated>
+  <id>http://WebDevFromScratch.github.io/</id>
   <author>
     <name><![CDATA[Piotr Klosinski]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Building Is Fun!]]></title>
-    <link href="http://webdeveloperfromscratch.com/blog/building-is-fun/"/>
+    <link href="http://WebDevFromScratch.github.io/blog/building-is-fun/"/>
     <updated>2014-07-24T14:50:34+02:00</updated>
-    <id>http://webdeveloperfromscratch.com/blog/building-is-fun</id>
+    <id>http://WebDevFromScratch.github.io/blog/building-is-fun</id>
     <content type="html"><![CDATA[<p><a href="http://www.webdeveloperfromscratch.com/tealeaf-progress-check-no-3-course-2-done/">Last time</a> I reported I&rsquo;ll be taking a few days off Tealeaf to practice my skills by building something on my own. While I thought I&rsquo;d be able to accomplish more, I have to say that after six days of hard work (I think I put about 30-35 hours into this) I was able to build a relatively simple, yet still useful ToDo list app. Yeah, I know - everyone is writing todo lists, nothing new under the sun, everybody could do it, etc. Well you know what? Maybe so, but this is the first real, working app that I built totally from scratch. And I&rsquo;m f*cking happy about it :)</p>
 
 <h2>ToDo!</h2>
@@ -52,9 +52,9 @@
   
   <entry>
     <title type="html"><![CDATA[Tealeaf Progress Check No. 3 - Course 2 Done!]]></title>
-    <link href="http://webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-3-course-2-done/"/>
+    <link href="http://WebDevFromScratch.github.io/blog/tealeaf-progress-check-no-3-course-2-done/"/>
     <updated>2014-07-14T12:21:30+02:00</updated>
-    <id>http://webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-3-course-2-done</id>
+    <id>http://WebDevFromScratch.github.io/blog/tealeaf-progress-check-no-3-course-2-done</id>
     <content type="html"><![CDATA[<p>Yeah, I was finally able to wrap the second <a href="http://www.gotealeaf.com">Tealeaf Academy</a> course up! It was a lot of work for me, not everything is yet superclear. But I definitely learned a lot and now it&rsquo;s all a matter of practice, so the freshly aquired knowledge could sunk in for good. That&rsquo;s why I decided that before I start the third (and final) course, I should build some stuff on my own, as I mentioned in <a href="http://www.webdeveloperfromscratch.com/crawling-forward-with-rails/">my last post</a>. Let me sum up the course, as I did the <a href="http://www.webdeveloperfromscratch.com/tealeaf-progress-check-no-2-course-1-done/">first one</a>.</p>
 
 <h2>About the Course</h2>
@@ -96,9 +96,9 @@
   
   <entry>
     <title type="html"><![CDATA[Crawling Forward With Rails]]></title>
-    <link href="http://webdeveloperfromscratch.com/blog/crawling-forward-with-rails/"/>
+    <link href="http://WebDevFromScratch.github.io/blog/crawling-forward-with-rails/"/>
     <updated>2014-07-08T00:06:05+02:00</updated>
-    <id>http://webdeveloperfromscratch.com/blog/crawling-forward-with-rails</id>
+    <id>http://WebDevFromScratch.github.io/blog/crawling-forward-with-rails</id>
     <content type="html"><![CDATA[<p>This will likely be a random rant about what I&rsquo;ve been doing for the last week or so. I feel really tired and don&rsquo;t have a real plan for a post right now but I do feel it&rsquo;s been quiet here for too long and I need to try and keep at least some consistency if this blog is to prevail.</p>
 
 <h2>Never Stop TeaLeaf-ing</h2>
@@ -133,9 +133,9 @@
   
   <entry>
     <title type="html"><![CDATA[Rails Code - Check_box_tag vs Collection_check_boxes]]></title>
-    <link href="http://webdeveloperfromscratch.com/blog/rails-code-check_box_tag-vs-collection_check_boxes/"/>
+    <link href="http://WebDevFromScratch.github.io/blog/rails-code-check_box_tag-vs-collection_check_boxes/"/>
     <updated>2014-06-27T10:11:44+02:00</updated>
-    <id>http://webdeveloperfromscratch.com/blog/rails-code-check_box_tag-vs-collection_check_boxes</id>
+    <id>http://WebDevFromScratch.github.io/blog/rails-code-check_box_tag-vs-collection_check_boxes</id>
     <content type="html"><![CDATA[<p>Just a short post, that shows two ways of implementing checkbox feature in a Rails form. First using <strong>check_box_tag</strong> helper. I have to say I was quite happy getting to this:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -200,9 +200,9 @@
   
   <entry>
     <title type="html"><![CDATA[It's Not a Sprint]]></title>
-    <link href="http://webdeveloperfromscratch.com/blog/its-not-a-sprint/"/>
+    <link href="http://WebDevFromScratch.github.io/blog/its-not-a-sprint/"/>
     <updated>2014-06-25T10:24:10+02:00</updated>
-    <id>http://webdeveloperfromscratch.com/blog/its-not-a-sprint</id>
+    <id>http://WebDevFromScratch.github.io/blog/its-not-a-sprint</id>
     <content type="html"><![CDATA[<p>So I&rsquo;ve been having some time off learning. I stayed at my family&rsquo;s for almost a week and when I came back, it was my time to be a host for the weekend. My study time suffered a hard blow. I did what I could, but it wasn&rsquo;t much. The last two days though have been very fruitful learning-wise and I feel like I&rsquo;m regaining the good rhytm again. Here&rsquo;s what I&rsquo;ve been able to accomplish since the last blog post.</p>
 
 <h2>The Odin Project</h2>
@@ -414,9 +414,9 @@
   
   <entry>
     <title type="html"><![CDATA[Become a Web Developer for Free?]]></title>
-    <link href="http://webdeveloperfromscratch.com/blog/become-a-web-developer-for-free/"/>
+    <link href="http://WebDevFromScratch.github.io/blog/become-a-web-developer-for-free/"/>
     <updated>2014-06-15T13:38:44+02:00</updated>
-    <id>http://webdeveloperfromscratch.com/blog/become-a-web-developer-for-free</id>
+    <id>http://WebDevFromScratch.github.io/blog/become-a-web-developer-for-free</id>
     <content type="html"><![CDATA[<p>I have been slacking a bit for the last couple of days. Watching World Cup apparently is not good for my free time! I wasn&rsquo;t feeling too good physically-wise and it wasn&rsquo;t helping either. As with everything in life though, a coin have two sides. For this past month I tried to do everything I could to learn and be that several steps closer to hopefully getting my first web developer job and finally I had a while to gain different perspective.</p>
 
 <p>I&rsquo;ve been thinking lot and figured out that I shouldn&rsquo;t really be speeding through <a href="http://www.gotealeaf.com">Tealeaf</a> courses as fast as possible. I should rather focus on making more effort to really grasp the material I&rsquo;m learning and allow it to really sink in. And the best way to do it is again, through practice. I could probably just make some exercises on my own, but I figured I may as well check what the internet has to offer first. Needless to say, I was hoping there were some free (or really cheap) options available. That&rsquo;s how I found out (or rather re-discovered, because I heard about it before) <a href="http://www.theodinproject.com/">The Odin Project</a>.</p>
@@ -447,9 +447,9 @@
   
   <entry>
     <title type="html"><![CDATA[The Learning Continues - Some Rails Magic]]></title>
-    <link href="http://webdeveloperfromscratch.com/blog/the-learning-continues-some-rails-magic/"/>
+    <link href="http://WebDevFromScratch.github.io/blog/the-learning-continues-some-rails-magic/"/>
     <updated>2014-06-12T10:09:35+02:00</updated>
-    <id>http://webdeveloperfromscratch.com/blog/the-learning-continues-some-rails-magic</id>
+    <id>http://WebDevFromScratch.github.io/blog/the-learning-continues-some-rails-magic</id>
     <content type="html"><![CDATA[<p>I&rsquo;m long due another update on how my progress with <a href="http://www.gotealeaf.com">Tealeaf</a> is going, but I just can&rsquo;t force myself to write it&hellip; Let me just say I dived deep into Rails and am trying to wrap my head around it&rsquo;s magic (actually, there&rsquo;s no magic at all, just conventions that Rails assumes - definitely need to write something about it soon!).</p>
 
 <p>Meanwhile, I figured I&rsquo;ll post notes on the latest video lecture I watched. If you stumbled upon this blog of mine and are thinking about joining Tealeaf, this is an example of what we learn there. Making these sort of notes is not mandatory of course, everything you need is in video format. But I like to make them, it helps me memorize more. Okay, no more rambling, move on the notes (these are from Lecture 3 of the Rails course).</p>
@@ -928,9 +928,9 @@ make sure to test all the paths that we use/redirect to (especially error cases)
   
   <entry>
     <title type="html"><![CDATA[TicTacToe Ruby Game]]></title>
-    <link href="http://webdeveloperfromscratch.com/blog/tictactoe-ruby-game/"/>
+    <link href="http://WebDevFromScratch.github.io/blog/tictactoe-ruby-game/"/>
     <updated>2014-06-09T10:11:03+02:00</updated>
-    <id>http://webdeveloperfromscratch.com/blog/tictactoe-ruby-game</id>
+    <id>http://WebDevFromScratch.github.io/blog/tictactoe-ruby-game</id>
     <content type="html"><![CDATA[<p>After writing a post here yesterday (<a href="http://www.webdeveloperfromscratch.com/tealeaf-progress-check-no-2-course-1-done/">Tealeaf Progress Check No. 2 – Course 1 Done!</a>), I went back to review the course 1 for the last time and found out that there was a new task to be done, building a simple command line TicTacToe game. As exercises is definitely something I need, I instantly decided that I want to try and write this of course :) Couple of hours later (and with a little help from the video on how to tackle this), my game was ready. I figured this should be a good piece of code to share as the first of hopefully many more here on the blog. So here it is:</p>
 
 <h2>Ruby TicTacToe</h2>
@@ -1114,9 +1114,9 @@ make sure to test all the paths that we use/redirect to (especially error cases)
   
   <entry>
     <title type="html"><![CDATA[Tealeaf Progress Check No. 2 - Course 1 Done!]]></title>
-    <link href="http://webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-2-course-1-done/"/>
+    <link href="http://WebDevFromScratch.github.io/blog/tealeaf-progress-check-no-2-course-1-done/"/>
     <updated>2014-06-08T11:55:07+02:00</updated>
-    <id>http://webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-2-course-1-done</id>
+    <id>http://WebDevFromScratch.github.io/blog/tealeaf-progress-check-no-2-course-1-done</id>
     <content type="html"><![CDATA[<p>Okay, so I&rsquo;m through with the Ruby course and I feel I should do a little sum up of that one. I actually finished about a week ago and am now well into the Rails (second) course, but let&rsquo;s not get ahead of myself</p>
 
 <h2>A Bit About the Course</h2>
@@ -1163,18 +1163,18 @@ make sure to test all the paths that we use/redirect to (especially error cases)
   
   <entry>
     <title type="html"><![CDATA[Program or Be Programmed]]></title>
-    <link href="http://webdeveloperfromscratch.com/blog/program-or-be-programmed/"/>
+    <link href="http://WebDevFromScratch.github.io/blog/program-or-be-programmed/"/>
     <updated>2014-05-27T14:26:59+02:00</updated>
-    <id>http://webdeveloperfromscratch.com/blog/program-or-be-programmed</id>
+    <id>http://WebDevFromScratch.github.io/blog/program-or-be-programmed</id>
     <content type="html"><![CDATA[<p>A cool video I was going to post some time ago and forgot.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Tealeaf Progress Check No.1]]></title>
-    <link href="http://webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-1/"/>
+    <link href="http://WebDevFromScratch.github.io/blog/tealeaf-progress-check-no-1/"/>
     <updated>2014-05-22T16:48:17+02:00</updated>
-    <id>http://webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-1</id>
+    <id>http://WebDevFromScratch.github.io/blog/tealeaf-progress-check-no-1</id>
     <content type="html"><![CDATA[<p>So I finished first two weeks&#8217; material from the first <a href="http://www.gotealeaf.com">Tealeaf</a> course. Time for some first impressions is due!</p>
 
 <h2>Procedural vs OOP</h2>
@@ -1199,9 +1199,9 @@ make sure to test all the paths that we use/redirect to (especially error cases)
   
   <entry>
     <title type="html"><![CDATA[The New Hope - Ruby on Rails FTW]]></title>
-    <link href="http://webdeveloperfromscratch.com/blog/the-new-hope-ruby-on-rails-ftw/"/>
+    <link href="http://WebDevFromScratch.github.io/blog/the-new-hope-ruby-on-rails-ftw/"/>
     <updated>2014-05-19T12:15:58+02:00</updated>
-    <id>http://webdeveloperfromscratch.com/blog/the-new-hope-ruby-on-rails-ftw</id>
+    <id>http://WebDevFromScratch.github.io/blog/the-new-hope-ruby-on-rails-ftw</id>
     <content type="html"><![CDATA[<p>I&rsquo;ve been quiet for quite a while now. I got kind of lost in the process of learning so many various things related to web development, that I forgot about what I initially aimed for. And that is, building real things. Until recently, I tried so many different things and with each of these tools (languages, frameworks, whatever have you), I only barely scratched the surface. Luckily, I finally realized that it&rsquo;s not the best way to go about it all. I realized what I should&rsquo;ve been doing from the start is trying to master one thing. And if I succeed, then try something else. So I tried to follow this approach and actually become good at something.</p>
 
 <h2>Dig Deeper</h2>
@@ -1247,9 +1247,9 @@ make sure to test all the paths that we use/redirect to (especially error cases)
   
   <entry>
     <title type="html"><![CDATA["Programming's Dirtiest Little Secret"]]></title>
-    <link href="http://webdeveloperfromscratch.com/blog/programmings-dirtiest-little-secret/"/>
+    <link href="http://WebDevFromScratch.github.io/blog/programmings-dirtiest-little-secret/"/>
     <updated>2014-04-17T10:01:27+02:00</updated>
-    <id>http://webdeveloperfromscratch.com/blog/programmings-dirtiest-little-secret</id>
+    <id>http://WebDevFromScratch.github.io/blog/programmings-dirtiest-little-secret</id>
     <content type="html"><![CDATA[<p>I did not come up with that title (maybe you figured by the quotes). I found a great blog post that explains what is the &ldquo;secret&rdquo;, it&rsquo;s a pretty good read in itself and it addresses the case so well: <a href="http://steve-yegge.blogspot.com/2008/09/programmings-dirtiest-little-secret.html">Stevey&rsquo;s Blog Rants</a>.</p>
 
 <p>I was actually already looking for ways to learn how to touchtype. I tried it once before a few months ago but I lacked persistence then. After reading Steve&rsquo;s post I don&rsquo;t anymore. I&rsquo;m not writing all that slow to be honest, but my technique is far from perfect. And I know this is something I simply need if I want to have a headstart in any type of programming career. So I practiced for the last four days, 30 minutes each day. And I&rsquo;m going to carry on for at least the next month and see where it takes me!</p>
@@ -1262,9 +1262,9 @@ make sure to test all the paths that we use/redirect to (especially error cases)
   
   <entry>
     <title type="html"><![CDATA[1st Project, Let's Go!]]></title>
-    <link href="http://webdeveloperfromscratch.com/blog/1st-project-lets-go/"/>
+    <link href="http://WebDevFromScratch.github.io/blog/1st-project-lets-go/"/>
     <updated>2014-04-14T12:53:14+02:00</updated>
-    <id>http://webdeveloperfromscratch.com/blog/1st-project-lets-go</id>
+    <id>http://WebDevFromScratch.github.io/blog/1st-project-lets-go</id>
     <content type="html"><![CDATA[<p>Okay, so it&rsquo;s high time to start really doing something real! I am already engaged in a few non-commercial projects, but here&rsquo;s my highest priority for some time to come: make Web Developer from Scratch my personal, custom website.</p>
 
 <p>While I have nothing against the WordPress theme I started here on (I actually think it&rsquo;s looking really nice(Hexa theme, I&rsquo;ll make some screenshot before I change looks to keep the good memories)), I did already see a couple blogs running on the very same one. Well, I want mine to be personalized. Plus, I want to do a little showing-off my web development skills ;)</p>
@@ -1288,9 +1288,9 @@ make sure to test all the paths that we use/redirect to (especially error cases)
   
   <entry>
     <title type="html"><![CDATA[The Journey Starts Here]]></title>
-    <link href="http://webdeveloperfromscratch.com/blog/the-journey-starts-here/"/>
+    <link href="http://WebDevFromScratch.github.io/blog/the-journey-starts-here/"/>
     <updated>2014-04-10T17:28:12+02:00</updated>
-    <id>http://webdeveloperfromscratch.com/blog/the-journey-starts-here</id>
+    <id>http://WebDevFromScratch.github.io/blog/the-journey-starts-here</id>
     <content type="html"><![CDATA[<p>Hi there!</p>
 
 <p>This is the first post on this soon-to-be-very-cool-and-popular (lol, probably not!) website, so I am kind of excited about this. The site is supposed to be a way of keeping track of my progress in the web development world. Hopefully, it sticks with me for good and a few years from now I&rsquo;ll look at this post and think: &ldquo;Thank god I founded this site!&rdquo;.</p>
