@@ -7,7 +7,6 @@
       var i;
       var next;
       var previous;
-      var next;
       var stoptimeout;
 
       function run() {
@@ -48,8 +47,8 @@
       slides = $('.active-slider').children();
       amount = slides.length;
       i = 0;
-      next = $('.next');
-      previous = $('.prev');
+      next = $('.next-button');
+      previous = $('.previous-button');
       stoptimeout = $('#close-expanded');
 
       $(next).click(nextSlide);

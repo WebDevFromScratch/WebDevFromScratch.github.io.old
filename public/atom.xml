@@ -4,7 +4,7 @@
   <title><![CDATA[Web Developer from Scratch]]></title>
   <link href="http://webdeveloperfromscratch.com/atom.xml" rel="self"/>
   <link href="http://webdeveloperfromscratch.com/"/>
-  <updated>2014-08-08T11:36:43+02:00</updated>
+  <updated>2014-08-08T15:00:39+02:00</updated>
   <id>http://webdeveloperfromscratch.com/</id>
   <author>
     <name><![CDATA[Piotr Klosinski]]></name>
@@ -14,52 +14,1304 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Longer in and to Title Test]]></title>
-    <link href="http://webdeveloperfromscratch.com/blog/lorem/"/>
-    <updated>2014-08-04T13:51:49+02:00</updated>
-    <id>http://webdeveloperfromscratch.com/blog/lorem</id>
-    <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim.</p>
+    <title type="html"><![CDATA[Building Is Fun!]]></title>
+    <link href="http://webdeveloperfromscratch.com/blog/building-is-fun/"/>
+    <updated>2014-07-24T14:50:34+02:00</updated>
+    <id>http://webdeveloperfromscratch.com/blog/building-is-fun</id>
+    <content type="html"><![CDATA[<p><a href="http://www.webdeveloperfromscratch.com/tealeaf-progress-check-no-3-course-2-done/">Last time</a> I reported I&rsquo;ll be taking a few days off Tealeaf to practice my skills by building something on my own. While I thought I&rsquo;d be able to accomplish more, I have to say that after six days of hard work (I think I put about 30-35 hours into this) I was able to build a relatively simple, yet still useful ToDo list app. Yeah, I know - everyone is writing todo lists, nothing new under the sun, everybody could do it, etc. Well you know what? Maybe so, but this is the first real, working app that I built totally from scratch. And I&rsquo;m f*cking happy about it :)</p>
 
-<h2>Lorem Plorem</h2>
+<h2>ToDo!</h2>
 
-<p>Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus, pellentesque eget, bibendum a, gravida ullamcorper quam.</p>
+<p>So what exactly did I put into the app? Well, my goal was to practice the basics, so there&rsquo;s no incredible features, shining effects, stunning graphics, and all that. The idea was, that the user should be able to create his/her own account, where he/she could add tasks to do and mark them &lsquo;accomplished&rsquo; after they are done. Simple as that. Of course, this was not enough when I wrote these basic features, so I figured I could add something more.</p>
 
-<h2>El Mucho Loco</h2>
+<p>I added categories for tasks and the ability for user to create his own categories if he&rsquo;d like. I also added priorities, so tasks could be sorted by their importance. Finally, I figured a way of how to use <a href="http://ruby-doc.org/stdlib-2.1.2/libdoc/date/rdoc/Date.html">Ruby Date</a> so tasks can be shown for each day (I also added deadlines for tasks). In the very end I took advantage of <a href="http://getbootstrap.com/">Bootstrap</a> to made it look a little better (I tried with <a href="http://foundation.zurb.com/">Foundation</a> first, but it&rsquo;s not as intuitive as I heard it is).</p>
 
-<p>Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus. Sed vel lectus. Ut sagittis, ipsum dolor quam.</p>
+<p>It&rsquo;s still nothing great, obviously. But the thing is, it served my purpose very well. I got another confidence boost about how much I&rsquo;ve learned through these couple of months I&rsquo;ve worked with <a href="http://www.gotealeaf.com">Tealeaf</a> curriculum. And I am convinced I could implement more features into this app, it would be just a matter of how long would it take. With basic Ruby and Rails knowledge, plus using Google, one could really accomplish a lot. I had more ideas for this app, but figured I&rsquo;d better get back to learning before building something more complicated next time.</p>
+
+<h2>Play with It!</h2>
+
+<p>If you wonder how does the app look, you can see a little preview on the screenshot attached to this post. And you can check it out yourself, if you like! I deployed it to <a href="http://herokuapp.com/">Heroku</a> production environment, where you can see the working version. Here&rsquo;s the link:</p>
+
+<p><strong><a href="http://intense-reaches-6598.herokuapp.com/">My ToDo! App on Heroku</a></strong></p>
+
+<p>If you&rsquo;d prefer to see how the code looks, no problem either. Just take a look at the repo on my Github:</p>
+
+<p><strong><a href="https://github.com/WebDevFromScratch/todo-app">My ToDo! App Code on Github</a></strong></p>
+
+<p>Also, if you have any questions about it, shoot me a comment.</p>
+
+<h2>What&rsquo;s Ahead</h2>
+
+<p>After those few days break for writing the app, I registered for the third Tealeaf course, which focuses on TDD for the large part. I&rsquo;m already past pre-course and am about to wrap the first week in one or two days. So far, it&rsquo;s been great! The teaching style changed along with the main lecturer. There&rsquo;s no holding hands anymore, people who take this course are assumed to know basic Rails and know how to do certain tasks. Explaining new things is also reduced, so that we can figure out most of it ourselves. And I have to say I love this attitude! Of course if I get stuck, there are always TAs available to help on the forums. One thing I&rsquo;m disappointed with, is how empty the forums appear&hellip; People don&rsquo;t seem to be willing to talk much there, compared to previous courses. Maybe this will change over time though.</p>
+
+<p>About the blog, <a href="http://www.webdeveloperfromscratch.com/tealeaf-progress-check-no-3-course-2-done/">last time</a> I wrote about some plans I had for it. I was thinking about writing a blogging app from scratch but after putting some more thought to it, this is probably not the best idea, there are many problems with this I could think off the top of my head even now. Plus, all the time I wanted to give to practice was gone working on the ToDo! app. Still, I don&rsquo;t fully like how this site looks rigth now. I&rsquo;ll likely switch to some other theme, maybe leave <a href="https://wordpress.com/">Wordpress</a> for good. I also would like to add some pages, like &lsquo;about me&rsquo;, resources I like and recommend and stuff like that. Oh yeah, and I want to stop being lazy here and update more often :P I really want to write this series about basic Rails and I do need to start working on this, so here&rsquo;s my promise to myself: I&rsquo;ll be writing at least one post a week here on WebDevFromScratch (let&rsquo;s say for two months, as a beginning). Let&rsquo;s end this post with that.</p>
+
+<p>Fruitful learning!</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[ONE MORE TEST]]></title>
-    <link href="http://webdeveloperfromscratch.com/blog/one-more-test/"/>
-    <updated>2014-08-04T13:32:29+02:00</updated>
-    <id>http://webdeveloperfromscratch.com/blog/one-more-test</id>
-    <content type="html"><![CDATA[<p class="open-sans-condensed-font bigger-font">Text text text, I can write whatever I want in here. Pretty cool! Gotta go for a little bit longer with this nonsense to create some random bits of text, so that we can test the looks a little bit more. But oh well, that&#8217;s pretty cool still! Okay, one last sentence, especially for you:</p>
+    <title type="html"><![CDATA[Tealeaf Progress Check No. 3 - Course 2 Done!]]></title>
+    <link href="http://webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-3-course-2-done/"/>
+    <updated>2014-07-14T12:21:30+02:00</updated>
+    <id>http://webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-3-course-2-done</id>
+    <content type="html"><![CDATA[<p>Yeah, I was finally able to wrap the second <a href="http://www.gotealeaf.com">Tealeaf Academy</a> course up! It was a lot of work for me, not everything is yet superclear. But I definitely learned a lot and now it&rsquo;s all a matter of practice, so the freshly aquired knowledge could sunk in for good. That&rsquo;s why I decided that before I start the third (and final) course, I should build some stuff on my own, as I mentioned in <a href="http://www.webdeveloperfromscratch.com/crawling-forward-with-rails/">my last post</a>. Let me sum up the course, as I did the <a href="http://www.webdeveloperfromscratch.com/tealeaf-progress-check-no-2-course-1-done/">first one</a>.</p>
+
+<h2>About the Course</h2>
+
+<p>The course is intended as a thorought introduction to <a href="http://rubyonrails.org/">Ruby on Rails</a> framework and it definitely fulfills that and more. Again, I can tell you from a perspective of a guy who has zero previous experience with Rails, that you can absolutely go from a mindblow to a somewhat competent level in a month with this Tealeaf course. The learning is tied with building your first app and with each week you dive deeper into the framework. As a precourse exercise, you learn how easy it is to just go with Rails generators and built stuff this way. Then along the course you learn why this is actually not the best way to go about it and how to do it properly.</p>
+
+<p>The second course is definitely way harder than the first one, it requires more work from you and more time as well. I often found myself not understanding the concepts and having to re-watch the video lectures a few times before I finally grasped it (but hey, maybe that&rsquo;s just me). I estimate I put almost twice as much time into learning compared to the first course. In the end though, I feel great about how much I was able to take from it and I definitely feel a little dangerous when it comes to Rails now. And again, I had tons of fun learning!</p>
+
+<h2>What I Learned</h2>
+
+<ul>
+<li><p>Request/Response in Rails</p></li>
+<li><p>MVC in Rails</p></li>
+<li><p>Migrations</p></li>
+<li><p>Associations (1:M, M:M, polymorphic)</p></li>
+<li><p>RESTful (resourceful) routing</p></li>
+<li><p>Model-backed and non-model-backed forms</p></li>
+<li><p>Helpers</p></li>
+<li><p>Partials</p></li>
+<li><p>AJAX in Rails</p></li>
+<li><p>Authentication from scratch</p></li>
+<li><p>Intro to APIs</p></li>
+</ul>
 
 
-<h2>Testing Stuff Out</h2>
+<p>And much more in the process! I can&rsquo;t emphasize enough how hard it was (and to a point, still is) but also truly fulfilling. I realize how much I still don&rsquo;t know and I can&rsquo;t wait to learn as much as I can in the near future.</p>
 
-<p>I am really digging this Octopress so far! One could achieve a whole lot with it and really make it stand out and look awesome :)</p>
+<h2>What&rsquo;s Next?</h2>
 
-<p><em>THIS IS ITALIC?</em></p>
+<p>As I said, I will be taking a few days break now to build some stuff. I plan on starting with a simple &lsquo;ToDo&rsquo; list app. And then I will try to create a blogging up and move my blog there. This will definitely be much harder and I&rsquo;m not sure I will be able to accomplish this, but I&rsquo;m going to try either way. I&rsquo;ll maybe also work on some other apps on the way, depending on how much time will those two take.</p>
 
-<h3>A test of an h3 tag</h3>
+<p>Then I will start the third course, which is supposed to take 8-10 weeks. It&rsquo;s promised to be twice as hard as this one, so I&rsquo;ll definitely have my struggles with it. When I&rsquo;m around mid-way through with it, I&rsquo;ll likely start scoping the market for opportunities for my first job as a junior developer.</p>
 
-<p><strong>And yet this is bold, cool!</strong> How about if I try to post a link here? Let&rsquo;s do just that: <a href="http://github.com">Visit Github!</a></p>
+<p>I also plan on writing a series of posts detailing what I learned through the second <a href="http://www.gotealeaf.com">Tealeaf</a> course, with code examples and explanations. Hopefully this will help some people who are this one step behind me on their way to Rails developer (and definitely will help remembering what I learned).</p>
+
+<p>So lots of stuff to do. Let&rsquo;s better get to work! Over and out!</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[TEST POST]]></title>
-    <link href="http://webdeveloperfromscratch.com/blog/test-post/"/>
-    <updated>2014-08-02T11:39:43+02:00</updated>
-    <id>http://webdeveloperfromscratch.com/blog/test-post</id>
-    <content type="html"><![CDATA[<p>This is essentially just testing stuff. I don&rsquo;t even know how to write in markdown, so I just push some keys here to get some tets input. I&rsquo;ll even paste some lorem ipsum below to see how it looks.</p>
+    <title type="html"><![CDATA[Crawling Forward With Rails]]></title>
+    <link href="http://webdeveloperfromscratch.com/blog/crawling-forward-with-rails/"/>
+    <updated>2014-07-08T00:06:05+02:00</updated>
+    <id>http://webdeveloperfromscratch.com/blog/crawling-forward-with-rails</id>
+    <content type="html"><![CDATA[<p>This will likely be a random rant about what I&rsquo;ve been doing for the last week or so. I feel really tired and don&rsquo;t have a real plan for a post right now but I do feel it&rsquo;s been quiet here for too long and I need to try and keep at least some consistency if this blog is to prevail.</p>
 
-<p>Let&rsquo;s see what comes off it!</p>
+<h2>Never Stop TeaLeaf-ing</h2>
 
-<p>&ldquo;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?&rdquo;</p>
+<p>No surprises here, I carry on with the <a href="http://www.gotealeaf.com">Tealeaf</a> curriculum. I&rsquo;ve been taking a little more time on each subject lately, but I really feel like the knowledge sticks with me more often and it all start to tie together for real. I have one last week left on the second course and am now 100% sure I&rsquo;m going to keep learning with the final one.</p>
+
+<p>Even though I kind of feel I could have learned all I&rsquo;ve learned so far on my own, I&rsquo;m also quite convinced it would take me (at least) twice as much time. And time is of the highest value to me. I do love how the curriculum is structured and how we dive deeper at some places, really getting to know how Rails ties many technologies together. I also love how we learn how to make things from scratch and really understand what we&rsquo;re doing, instead of relying on various gems from the start. I do have some &lsquo;buts&rsquo; as well, though I&rsquo;m going to leave them until I write a sum up post of the second course.</p>
+
+<h2>Odin is Calling</h2>
+
+<p>In regards to <a href="http://www.theodinproject.com/">The Odin Project</a>, I didn&rsquo;t really do anything here since the last time, so not much to write about. I do have big plans for it though, as I really see the potential to take a lot from it. Hopefully, next update on TOP will provide more content.</p>
+
+<h2>Time to Build</h2>
+
+<p>Since I finally feel I am able to build simple apps from start to finish, I think this is a good time to start creating some stuff. This will hopefully help me to get my first job some time from now. And I do already have a few ideas up my sleeve that I can start working on and hopefully be able to accomplish:</p>
+
+<ul>
+<li>A simple TO-DO app (never really found one that suits me well)</li>
+<li>Personal Finance Tracker (as above)</li>
+<li>Two apps that I&rsquo;ve found as an initial challenge for an internship/junior dev job (those should be a good practice of what I&rsquo;ve learned so far)</li>
+<li>Building a blog from scratch using Rails (<a href="http://www.webdeveloperfromscratch.com/1st-project-lets-go/">I&rsquo;ve always wanted to do this!</a>)</li>
+</ul>
+
+
+<p>I plan on spending 1-2 hrs a day building those. Hopefully this will make most of what I&rsquo;ve learned so far really stick and become natural.</p>
+
+<h2>Meetup Time</h2>
+
+<p>Tommorow I&rsquo;m going to my first live Ruby meetup (with <a href="http://www.meetup.com/Krakow-Ruby-Users-Group/">KRUG</a>) and am pretty excited about it. I&rsquo;m not really sure what to expect from it but I do hope to meet some more experienced developers and see where that might take me. Also, there&rsquo;s supposed to be free beer, so who wouldn&rsquo;t go? ;) I&rsquo;ll report on how the meetup went soon.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Rails Code - Check_box_tag vs Collection_check_boxes]]></title>
+    <link href="http://webdeveloperfromscratch.com/blog/rails-code-check_box_tag-vs-collection_check_boxes/"/>
+    <updated>2014-06-27T10:11:44+02:00</updated>
+    <id>http://webdeveloperfromscratch.com/blog/rails-code-check_box_tag-vs-collection_check_boxes</id>
+    <content type="html"><![CDATA[<p>Just a short post, that shows two ways of implementing checkbox feature in a Rails form. First using <strong>check_box_tag</strong> helper. I have to say I was quite happy getting to this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sx">% Category.all.each </span><span class="k">do</span> <span class="o">|</span><span class="n">cat</span><span class="o">|</span> <span class="sx">%&gt;</span>
+</span><span class='line'><span class="sx">  &lt;%= cat.name %&gt;</span>
+</span><span class='line'>  <span class="o">&lt;%=</span> <span class="n">check_box_tag</span> <span class="ss">:category_ids</span><span class="p">,</span>
+</span><span class='line'>                     <span class="n">cat</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+</span><span class='line'>                     <span class="vi">@post</span><span class="o">.</span><span class="n">categories</span><span class="o">.</span><span class="n">include?</span><span class="p">(</span><span class="n">cat</span><span class="p">),</span>
+</span><span class='line'>                     <span class="nb">name</span><span class="p">:</span> <span class="s1">&#39;post[category_ids][]&#39;</span> <span class="sx">%&gt;</span>
+</span><span class='line'><span class="sx">&lt;% end %&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>But then I discovered there is a more elegant way, using <strong>collection_check_boxes</strong>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;%=</span> <span class="n">collection_check_boxes</span> <span class="ss">:post</span><span class="p">,</span> <span class="ss">:category_ids</span><span class="p">,</span> <span class="no">Category</span><span class="o">.</span><span class="n">all</span><span class="p">,</span> <span class="ss">:id</span><span class="p">,</span> <span class="ss">:category_name</span> <span class="o">%&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Yup, just that accomplishes pretty much the same. Below a more elegant way, with labels added. Also, the object is already set (as &lsquo;f&rsquo;) by our model backed form (see below, under (&lsquo;Form&rsquo;)):</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;%=</span> <span class="n">f</span><span class="o">.</span><span class="n">collection_check_boxes</span> <span class="ss">:category_ids</span><span class="p">,</span> <span class="no">Category</span><span class="o">.</span><span class="n">all</span><span class="p">,</span> <span class="ss">:id</span><span class="p">,</span> <span class="ss">:category_name</span> <span class="k">do</span> <span class="o">|</span><span class="n">cb</span><span class="o">|</span> <span class="sx">%&gt;</span>
+</span><span class='line'><span class="sx">  &lt;% cb.label {cb.check_box + cb.text} %&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="sx">% end </span><span class="o">%&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Form</h2>
+
+<p>These snippets above assumes we have this form set up:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sx">%= form_for @post do |f| %&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sx">  #our code goes here</span>
+</span><span class='line'>
+</span><span class='line'><span class="sx">  &lt;%=</span> <span class="n">f</span><span class="o">.</span><span class="n">submit</span> <span class="n">action_description</span><span class="p">,</span> <span class="ss">class</span><span class="p">:</span> <span class="s1">&#39;btn btn-primary&#39;</span> <span class="sx">%&gt;</span>
+</span><span class='line'><span class="sx">&lt;% end %&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Above checkboxes describes <strong>has_many :through</strong> relationship, between <strong>Post</strong> and <strong>Category</strong> classes (models).</p>
+
+<p>More on Rails helpers for checkboxes can be found in the various docs, for example on <a href="http://apidock.com/">Apidock</a>: <a href="http://apidock.com/rails/ActionView/Helpers/FormTagHelper/check_box_tag">check_box_tag</a>, <a href="http://apidock.com/rails/v4.0.2/ActionView/Helpers/FormOptionsHelper/collection_check_boxes">collection_check_boxes</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[It's Not a Sprint]]></title>
+    <link href="http://webdeveloperfromscratch.com/blog/its-not-a-sprint/"/>
+    <updated>2014-06-25T10:24:10+02:00</updated>
+    <id>http://webdeveloperfromscratch.com/blog/its-not-a-sprint</id>
+    <content type="html"><![CDATA[<p>So I&rsquo;ve been having some time off learning. I stayed at my family&rsquo;s for almost a week and when I came back, it was my time to be a host for the weekend. My study time suffered a hard blow. I did what I could, but it wasn&rsquo;t much. The last two days though have been very fruitful learning-wise and I feel like I&rsquo;m regaining the good rhytm again. Here&rsquo;s what I&rsquo;ve been able to accomplish since the last blog post.</p>
+
+<h2>The Odin Project</h2>
+
+<p>As I promised <a href="http://www.webdeveloperfromscratch.com/become-a-web-developer-for-free/">the last time</a>, I decided to check <a href="http://www.theodinproject.com/">The Odin Project</a> while I was away. Of course I had less time than I hoped (don&rsquo;t even ask&hellip;). Still, I did make some progress with it. I skimmed through <a href="http://www.theodinproject.com/web-development-101">&lsquo;Web Development 101&rsquo;</a> and dived into <a href="http://www.theodinproject.com/ruby-programming/">&lsquo;Ruby Programming&rsquo;</a> section.</p>
+
+<p>I thought I&rsquo;m already not too bad with my Ruby skills, but TOP exercises proved me wrong. Due to time constraints, I was only able to complete the basic &lsquo;Building Blocks&rsquo; part. And it was not easy&hellip; After doing some required reading (Very helpful! I not only refreshed my knowledge, but learned a few new tricks) I tried to tackle the building part. &lsquo;Estimated time: 3-5 hrs&rsquo; did not apply to me. I didn&rsquo;t measured it anyhow, but I think it was more like 7 hrs in my case. And I don&rsquo;t think my code is too great. I had to rely on the help from google quite a few times. Below are my solutions to the problems from this chapter:</p>
+
+<p><strong>Caesar&rsquo;s Cipher</strong></p>
+
+<figure class='code'><figcaption><span>ceasars_cipher.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="vi">@letters</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="o">.</span><span class="n">.</span><span class="s1">&#39;z&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">to_a</span> <span class="c1">#size = 26</span>
+</span><span class='line'><span class="vi">@capital_letters</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="o">.</span><span class="n">.</span><span class="s1">&#39;Z&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">to_a</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">caesar_cipher</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;Write a message to decode!&quot;</span>
+</span><span class='line'>  <span class="n">string</span> <span class="o">=</span> <span class="nb">gets</span><span class="o">.</span><span class="n">chomp</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;What should the shift be?&quot;</span>
+</span><span class='line'>  <span class="n">shift</span> <span class="o">=</span> <span class="nb">gets</span><span class="o">.</span><span class="n">chomp</span><span class="o">.</span><span class="n">to_i</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">string</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sr">//</span><span class="p">)</span> <span class="c1">#turned into an array</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">string</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">char</span><span class="o">|</span>
+</span><span class='line'>    <span class="k">if</span> <span class="o">!</span><span class="vi">@letters</span><span class="o">.</span><span class="n">include?</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="vi">@capital_letters</span><span class="o">.</span><span class="n">include?</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+</span><span class='line'>      <span class="nb">print</span> <span class="n">char</span>
+</span><span class='line'>    <span class="k">elsif</span> <span class="vi">@capital_letters</span><span class="o">.</span><span class="n">include?</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+</span><span class='line'>      <span class="n">index</span> <span class="o">=</span> <span class="vi">@capital_letters</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+</span><span class='line'>      <span class="n">index</span> <span class="o">+=</span> <span class="n">shift</span>
+</span><span class='line'>      <span class="n">index</span> <span class="sx">%= @capital_letters.size</span>
+</span><span class='line'>
+</span><span class='line'><span class="sx">      print @capital_letters[index]</span>
+</span><span class='line'><span class="sx">    else</span>
+</span><span class='line'><span class="sx">      index =</span> <span class="vi">@letters</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+</span><span class='line'>      <span class="n">index</span> <span class="o">+=</span> <span class="n">shift</span>
+</span><span class='line'>      <span class="n">index</span> <span class="o">%=</span> <span class="vi">@letters</span><span class="o">.</span><span class="n">size</span>
+</span><span class='line'>
+</span><span class='line'>      <span class="nb">print</span> <span class="vi">@letters</span><span class="o">[</span><span class="n">index</span><span class="o">]</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">caesar_cipher</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Stock Picker</strong></p>
+
+<figure class='code'><figcaption><span>stock_picker.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">array</span> <span class="o">=</span> <span class="o">[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">122</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">54</span><span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">puts</span> <span class="s2">&quot;Prices of a stock in time: </span><span class="si">#{</span><span class="n">array</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'><span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">stock_picker</span><span class="p">(</span><span class="n">some_array</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">diff_array</span> <span class="o">=</span> <span class="nb">Array</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'>  <span class="n">diff_hash</span> <span class="o">=</span> <span class="no">Hash</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">some_array</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">num</span><span class="o">|</span>
+</span><span class='line'>    <span class="k">unless</span> <span class="n">some_array</span><span class="o">[</span><span class="n">some_array</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="o">]</span> <span class="o">==</span> <span class="kp">nil</span>
+</span><span class='line'>      <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span class='line'>      <span class="k">until</span> <span class="n">some_array</span><span class="o">[</span><span class="n">some_array</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="n">x</span><span class="o">]</span> <span class="o">==</span> <span class="kp">nil</span>
+</span><span class='line'>        <span class="n">diff</span> <span class="o">=</span> <span class="n">some_array</span><span class="o">[</span><span class="n">some_array</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="n">x</span><span class="o">]</span> <span class="o">-</span> <span class="n">num</span>
+</span><span class='line'>        <span class="n">diff_array</span> <span class="o">&lt;&lt;</span> <span class="n">diff</span>
+</span><span class='line'>        <span class="n">diff_hash</span><span class="o">[</span><span class="n">diff</span><span class="o">]</span> <span class="o">=</span> <span class="o">[</span><span class="n">some_array</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">num</span><span class="p">),</span> <span class="n">some_array</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="n">x</span><span class="o">]</span>
+</span><span class='line'>        <span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1"># get the biggest difference and print the correct statement (corrected so that days starts at 1)</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;Best day to buy is </span><span class="si">#{</span><span class="n">diff_hash</span><span class="o">[</span><span class="n">diff_array</span><span class="o">.</span><span class="n">max</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2"> and to sell is </span><span class="si">#{</span><span class="n">diff_hash</span><span class="o">[</span><span class="n">diff_array</span><span class="o">.</span><span class="n">max</span><span class="o">][</span><span class="mi">1</span><span class="o">]</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">.&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;This would make you $</span><span class="si">#{</span><span class="n">diff_array</span><span class="o">.</span><span class="n">max</span><span class="si">}</span><span class="s2">.&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">stock_picker</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Substrings</strong></p>
+
+<figure class='code'><figcaption><span>substrings.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">my_dictionary</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;below&quot;</span><span class="p">,</span><span class="s2">&quot;down&quot;</span><span class="p">,</span><span class="s2">&quot;go&quot;</span><span class="p">,</span><span class="s2">&quot;going&quot;</span><span class="p">,</span><span class="s2">&quot;horn&quot;</span><span class="p">,</span><span class="s2">&quot;how&quot;</span><span class="p">,</span><span class="s2">&quot;howdy&quot;</span><span class="p">,</span><span class="s2">&quot;it&quot;</span><span class="p">,</span><span class="s2">&quot;i&quot;</span><span class="p">,</span>
+</span><span class='line'>              <span class="s2">&quot;low&quot;</span><span class="p">,</span><span class="s2">&quot;own&quot;</span><span class="p">,</span><span class="s2">&quot;part&quot;</span><span class="p">,</span><span class="s2">&quot;partner&quot;</span><span class="p">,</span><span class="s2">&quot;sit&quot;</span><span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">puts</span> <span class="s2">&quot;Please enter text to check with our dictionary:&quot;</span>
+</span><span class='line'><span class="n">my_string</span> <span class="o">=</span> <span class="nb">gets</span><span class="o">.</span><span class="n">chomp</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">substrings</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="n">dictionary</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">substrings_hash</span> <span class="o">=</span> <span class="no">Hash</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">string</span><span class="o">.</span><span class="n">downcase!</span> <span class="c1">#to catch capital letters</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">dictionary</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">word</span><span class="o">|</span>
+</span><span class='line'>    <span class="c1">#new_string = string #how to make them not being the same var?</span>
+</span><span class='line'>    <span class="n">new_string</span> <span class="o">=</span> <span class="nb">String</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">string</span><span class="p">)</span> <span class="c1">#this works perfectly!</span>
+</span><span class='line'>    <span class="k">while</span> <span class="n">new_string</span><span class="o">.</span><span class="n">include?</span> <span class="n">word</span>
+</span><span class='line'>      <span class="n">substrings_hash</span><span class="o">[</span><span class="n">word</span><span class="o">]</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span class='line'>      <span class="n">new_string</span><span class="o">.</span><span class="n">slice!</span> <span class="n">word</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">#sorting by occurence (additional feature)</span>
+</span><span class='line'>  <span class="n">substrings_hash</span> <span class="o">=</span> <span class="n">substrings_hash</span><span class="o">.</span><span class="n">sort_by</span> <span class="p">{</span> <span class="o">|</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="o">|</span> <span class="n">value</span> <span class="p">}</span><span class="o">.</span><span class="n">reverse</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;These words from our dictionary occur in your text:&quot;</span>
+</span><span class='line'>  <span class="nb">p</span> <span class="n">substrings_hash</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">substrings</span><span class="p">(</span><span class="n">my_string</span><span class="p">,</span> <span class="n">my_dictionary</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I once got stuck for a really long time (during &lsquo;stockpicker&rsquo;) and thought this is too difficult. But the key was to just set what I need to achieve clearly, using pseudo code and then I just started from scratch again and it was a pretty smooth process from then on. I have to say though that I felt really, really bad having to spend so much time on so little code. I thought I&rsquo;m not that bad at Ruby! I definitely need to carry on with TOP to improve in this area, I will probably set aside one day a week for this.</p>
+
+<h2>Tealeaf</h2>
+
+<p>I also didn&rsquo;t do too much in regard to <a href="http://www.gotealeaf.com">Tealeaf</a>. I&rsquo;m catching on for the last two days though, I refreshed my knowledge by re-reading my notes and watched the lectures vids that appeared in the meanwhile. After that, I started implementing a Twitter-clone app on my own and I was able to get quite far! I feel like I got a good grasp of Rails basics by now and this makes me really happy. I know there&rsquo;s a long way to go from here, but I&rsquo;m glad I&rsquo;m actually able to make stuff on my own and understand what I&rsquo;m doing. That&rsquo;s exactly what I was expecting from Tealeaf Academy, so I&rsquo;m even more convinced now that what I paid for it is a money well spent.</p>
+
+<p>For the next few days I&rsquo;m going to work some more on my Twitter app and also my Postit app (Reddit clone) implementation. I&rsquo;ll hopefully also catch up with lessons a little, wrap up Week 2 and maybe even do the whole Week 3. I have a lot of time for these this week. Fingers crossed!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Become a Web Developer for Free?]]></title>
+    <link href="http://webdeveloperfromscratch.com/blog/become-a-web-developer-for-free/"/>
+    <updated>2014-06-15T13:38:44+02:00</updated>
+    <id>http://webdeveloperfromscratch.com/blog/become-a-web-developer-for-free</id>
+    <content type="html"><![CDATA[<p>I have been slacking a bit for the last couple of days. Watching World Cup apparently is not good for my free time! I wasn&rsquo;t feeling too good physically-wise and it wasn&rsquo;t helping either. As with everything in life though, a coin have two sides. For this past month I tried to do everything I could to learn and be that several steps closer to hopefully getting my first web developer job and finally I had a while to gain different perspective.</p>
+
+<p>I&rsquo;ve been thinking lot and figured out that I shouldn&rsquo;t really be speeding through <a href="http://www.gotealeaf.com">Tealeaf</a> courses as fast as possible. I should rather focus on making more effort to really grasp the material I&rsquo;m learning and allow it to really sink in. And the best way to do it is again, through practice. I could probably just make some exercises on my own, but I figured I may as well check what the internet has to offer first. Needless to say, I was hoping there were some free (or really cheap) options available. That&rsquo;s how I found out (or rather re-discovered, because I heard about it before) <a href="http://www.theodinproject.com/">The Odin Project</a>.</p>
+
+<h2>The Odin Project</h2>
+
+<p>So what is it? Well, in essence <a href="http://www.theodinproject.com/">The Odin Project</a> (or TOP) is not that much different to <a href="http://www.gotealeaf.com">Tealeaf Academy</a>. They provide you with a curriculum, which includes a broad range of subjects, form learning the basics about web development, through Ruby and Rails, HTML and CSS and Javascript and it&rsquo;s jQuery library. There is also one more section related to getting your first job as a web developer. Sounds awesome, right? Yeah, I think so too. Especially because TOP is open-source, with constantly evolving curricullum and a nice, helpful community (at least from what I&rsquo;ve heard). Just yesterday I decided that I should see what are they about.</p>
+
+<p>I didn&rsquo;t have a chance to look closer at it since, but I will have the next few days for doing so. I have to pay a visit to my family and since I won&rsquo;t have my personal machine while I&rsquo;m there (it&rsquo;s a desktop computer), I figured I&rsquo;ll spend the time trying out what TOP has to offer. I should give my first impression about it around the next weekend I guess. I&rsquo;m really excited for it!</p>
+
+<h2>Make it With Code</h2>
+
+<p>During my internet research for alternative learning sources, I also came across <a href="https://www.makeitwithcode.com/">Make it With Code</a>. Their credo is something I especially came to like: &ldquo;Learn to Code by Making Things&rdquo;, which sounds like exactly what I was looking for. The idea is, you get a lesson a week, for 10 weeks (lessons are text-format, combining a balance of challenges with instruction). With each lesson you build one working thing. Sounds good to me!</p>
+
+<p>There is one caveat: it&rsquo;s not free. The course costs $99, which isn&rsquo;t all that much considering what I&rsquo;m paying for <a href="http://www.gotealeaf.com">Tealeaf</a> courses. I will likely be trying it out in the future. I couldn&rsquo;t find too many reviews on <a href="https://www.makeitwithcode.com/">Make it With Code</a>, so if you decide to try it before I do, please let me know if it&rsquo;s worth it.</p>
+
+<h2>And Just a Quick Tealeaf Progress Check</h2>
+
+<p>I am currently about to wrap up the 2nd week of the Rails course. It&rsquo;s not going too smoothy so far. I understand most of the concepts (mostly thanks too the understanding of Ruby, which I gained through the 1st course) but I don&rsquo;t really feel too comfortable in Rails just yet. I think after finishing this course I will try to go through the materials once more and see how much of it I was able to truly absorb.</p>
+
+<p>I have to say though, that I really like what we&rsquo;re building. It&rsquo;s a <a href="http://www.reddit.com/">Reddit</a>-alike app which has quite a few cool features about it. And we&rsquo;re learning some front-end along, with the use of <a href="http://getbootstrap.com/">Bootstrap</a> too. I could really see how useful this all could be in the future. I guess I should write a longer post (with code examples) of what I&rsquo;ve learned sometime soon.</p>
+
+<hr />
+
+<p>Meanwhile, I also noticed some traffic here, on <a href="http://www.webdeveloperfromscratch.com">Web Developer from Scratch</a>, which is likely caused by a cool domain name I was able to pick for it (score!) and google already indexing my little blog. Thus I encourage everyone who visits to leave comments if you have questions or words of encouragement (this really helps!). Or if you are in a similar situation to mine and want to become a web developer starting from nothing. Get in touch!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Learning Continues - Some Rails Magic]]></title>
+    <link href="http://webdeveloperfromscratch.com/blog/the-learning-continues-some-rails-magic/"/>
+    <updated>2014-06-12T10:09:35+02:00</updated>
+    <id>http://webdeveloperfromscratch.com/blog/the-learning-continues-some-rails-magic</id>
+    <content type="html"><![CDATA[<p>I&rsquo;m long due another update on how my progress with <a href="http://www.gotealeaf.com">Tealeaf</a> is going, but I just can&rsquo;t force myself to write it&hellip; Let me just say I dived deep into Rails and am trying to wrap my head around it&rsquo;s magic (actually, there&rsquo;s no magic at all, just conventions that Rails assumes - definitely need to write something about it soon!).</p>
+
+<p>Meanwhile, I figured I&rsquo;ll post notes on the latest video lecture I watched. If you stumbled upon this blog of mine and are thinking about joining Tealeaf, this is an example of what we learn there. Making these sort of notes is not mandatory of course, everything you need is in video format. But I like to make them, it helps me memorize more. Okay, no more rambling, move on the notes (these are from Lecture 3 of the Rails course).</p>
+
+<h2>Rails Forms</h2>
+
+<p>sidenote: in Rails we can refer to a key by a symbol (in params hash, for example) even though it&rsquo;s a string (a hash with indifferent access)</p>
+
+<p>Creating a form
+- how to do that using 3 ways (on an example of a new (creating) post form)</p>
+
+<h3>1. Pure HTML</h3>
+
+<figure class='code'><figcaption><span>HTML form</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&#39;/posts&#39;</span> <span class="na">method=</span><span class="s">&#39;POST&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>  Title: <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&#39;text&#39;</span> <span class="na">name=</span><span class="s">&#39;my_title&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;br/&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&#39;submit&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;/form&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>this wouldn&rsquo;t as a deault work in Rails, because of a &lsquo;protect_from_forgery&rsquo; validation error (if we removed protect_from_forgery from application_controller.rb, this would work)</p>
+
+<p>this is not the best from the point of security of our app</p>
+
+<p>This is the most manual way, we never do this in Rails. We&rsquo;d need to hack our application_controller and we definitely don&rsquo;t want that.</p>
+
+<h3>2. Rails form helper</h3>
+
+<figure class='code'><figcaption><span>Form Helper</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sx">%= form_tag &#39;/posts&#39; do %&gt;</span>
+</span><span class='line'><span class="sx">  &lt;%=</span> <span class="n">label_tag</span> <span class="ss">:title</span> <span class="sx">%&gt;</span>
+</span><span class='line'><span class="sx">  &lt;%= text_field_tag :title %&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>  <span class="o">&lt;%=</span> <span class="n">submit_tag</span> <span class="s2">&quot;Create Post&quot;</span> <span class="sx">%&gt;</span>
+</span><span class='line'><span class="sx">&lt;% end %&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>this adds authenticity_token (which is hidden in html), which is needed for this &lsquo;protect_from_forgery&rsquo; validation to work
+helpers give us these little things that speeds up the work and saves us from some weird edge case errors</p>
+
+<p>label element is correlated with input element (refers to it); is used for screenreaders that recognizes what&rsquo;s what (useful for blind internet users for example, to help them) &lt;&mdash; try to develop a habit of setting label elements</p>
+
+<p>This would work just as the above HTML form.</p>
+
+<h3>3. Rails model-backed form</h3>
+
+<figure class='code'><figcaption><span>Model-Backed Form</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sx">%= form_for @post do |f| %&gt;</span>
+</span><span class='line'><span class="sx">  &lt;%=</span> <span class="n">f</span><span class="o">.</span><span class="n">label</span> <span class="ss">:title</span> <span class="sx">%&gt;</span>
+</span><span class='line'><span class="sx">  &lt;%= f.text_field :title %&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>  <span class="o">&lt;%=</span> <span class="n">f</span><span class="o">.</span><span class="n">submit</span> <span class="s2">&quot;Create Post&quot;</span> <span class="sx">%&gt;</span>
+</span><span class='line'><span class="sx">&lt;% end %&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>we need to set our @something variable in the controller (PostsController in case of @post) for it to work of course</p>
+
+<p>  it assumes a lot of things for us</p>
+
+<p>  creates an additional nested structure in our session params (adding another nested hash for &lsquo;post&rsquo; key, where it assigns stuff specific to post, like title, etc.)</p>
+
+<p>  naming conventions for how Rails saves these variables to create that nested structure can be seen when inspecting the HTML code (in browser), it has this format: post[title]</p>
+
+<p>  !(that&rsquo;s why in code (especially Rails 3.x) we can see a lot of code that looks like this: Post.new(params[:post]))</p>
+
+<p>  !also, thus we can do a mass assignment to Post object like this: Post.new(&lsquo;title&rsquo;=>&lsquo;some title&rsquo;) or Post.new(title: &lsquo;some title&rsquo;, url: &lsquo;some url&rsquo;) &lt;&mdash; these keys are our setter methods that come from ActiveRecord::Base; essentially that&rsquo;s because we have the columns called that in our database &lsquo;posts&rsquo; table</p>
+
+<p>  we can also use virtual attributes as keys here (like user:, category:, etc. &lt;&mdash; we set associations to these earlier)</p>
+
+<p>  we can&rsquo;t just add random fields here though (like f.text_field :whatever) do to the connection we have with other layers (that Rails assumes) - we can only use variables that we can use mass assignments with (our table columns) as keys</p>
+
+<p>  otherwise the connection (assumption, convention) breaks and we&rsquo;d get a &lsquo;NoMethod&rsquo; error
+  we can add whatever variable we please in case of &lsquo;Rails form helpers&rsquo;, because then we just save them in our session params and not using these model-backed relations</p>
+
+<p>Use whenever we can!</p>
+
+<p>To use this model-backed form, we need to appropriately set our &lsquo;create&rsquo; action in posts_controller.rb file:</p>
+
+<figure class='code'><figcaption><span>posts_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="vi">@post</span> <span class="o">=</span> <span class="no">Post</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:post</span><span class="o">]</span><span class="p">)</span> <span class="c1">#this way we access params specific for our post</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Strong parameters can be a cause of a lot of silent bugs (because they are security-related, there are usually no specific error messages)</p>
+
+<p>!note: we don&rsquo;t want to use .create, because first we need to fulfill validation requirements - strong parameters (check below, then continue here) - so we need to change this like:</p>
+
+<figure class='code'><figcaption><span>posts_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">create</span>
+</span><span class='line'>  <span class="vi">@post</span> <span class="o">=</span> <span class="no">Post</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">post_params</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">if</span> <span class="vi">@post</span><span class="o">.</span><span class="n">save</span>
+</span><span class='line'>    <span class="n">flash</span><span class="o">[</span><span class="ss">:notice</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;Your post was created!&quot;</span>
+</span><span class='line'>    <span class="n">redirect_to</span> <span class="n">posts_path</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="n">render</span> <span class="s1">&#39;new&#39;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>!!!!! This above is very important pattern that needs to be memorized !!!!!</p>
+
+<p>  if we create (.save method) our post, we want to redirect</p>
+
+<p>  else (in case we hit a validation error, etc.), we want to render our template where we tried to create from again (which would now show our errors, letting the user know what needs to be done to create)</p>
+
+<h3>Strong Parameters</h3>
+
+<p>back in Rails 3.x this was solved through &lsquo;attr_accessible&rsquo;, which we set in our models
+example:</p>
+
+<p>  attr_accessible :title, :url, :description</p>
+
+<p>this above essentially whitelisted the mentioned variables for mass assignment</p>
+
+<p>  Cons of this approach:</p>
+
+<ul>
+<li><p>people overdid that and whitelisted everything, whenever hit an error (thus, losing security)</p></li>
+<li><p>this needed to be set in the &lsquo;Model&rsquo; layer, and the concern is actually in the actions (&lsquo;Controller&rsquo;)</p></li>
+</ul>
+
+
+<p>Rails 4 solves this by using strong parameters instead of attr_accessible</p>
+
+<ul>
+<li><p>we can set this in the Controller</p></li>
+<li><p>we can set this based on an user</p></li>
+</ul>
+
+
+<p>We set it as a private method:</p>
+
+<figure class='code'><figcaption><span>posts_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">PostsController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+</span><span class='line'>  <span class="c1">#code code code</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">create</span>
+</span><span class='line'>    <span class="n">post</span> <span class="o">=</span> <span class="no">Post</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">post_params</span><span class="o">[</span><span class="ss">:post</span><span class="o">]</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kp">private</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">post_params</span>
+</span><span class='line'>    <span class="n">params</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="ss">:post</span><span class="p">)</span><span class="o">.</span><span class="n">permit</span><span class="p">(</span><span class="ss">:title</span><span class="p">,</span> <span class="ss">:url</span><span class="p">,</span> <span class="ss">:creator</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><p>this require(:post) relates to our nested structured hash (we need a :post top-level key in our params, and then we set which lower-level (post) keys we want to permit to mass assignment)</p></li>
+<li><p>.permit! - permits everything
+thus we can use it like this:</p></li>
+</ul>
+
+
+<figure class='code'><figcaption><span>posts_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">post_params</span>
+</span><span class='line'>  <span class="k">if</span> <span class="n">user</span><span class="o">.</span><span class="n">admin?</span>
+</span><span class='line'>    <span class="n">params</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="ss">:post</span><span class="p">)</span><span class="o">.</span><span class="n">permit!</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="n">params</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="ss">:post</span><span class="p">)</span><span class="o">.</span><span class="n">permit</span><span class="p">(</span><span class="ss">:title</span><span class="p">,</span> <span class="ss">:url</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Strong parameters can be a cause of a lot of silent bugs (because they are security-related, there are usually no specific error messages)</p>
+
+<h3>Validations</h3>
+
+<p>Always added to the &lsquo;Model&rsquo; layer</p>
+
+<p>We use them like this:</p>
+
+<figure class='code'><figcaption><span>post.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Post</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span>
+</span><span class='line'>  <span class="c1">#code code code</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">validates</span> <span class="ss">:title</span><span class="p">,</span> <span class="n">presence</span> <span class="ss">:true</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>this above means we need to have a title when creating a Post object</p>
+
+<p>if we try to create the Post without the title, we get a rollback (we get returned &lsquo;false&rsquo;; why? because we use if statement in our pattern in the Controller)</p>
+
+<p>note: we can create our post &lsquo;in memory&rsquo;, the error will only appear when we try to hit a database with a query (try to save it)</p>
+
+<p>to check what the error is, we can use .errors method (e.g. post.errors) in the console</p>
+
+<p>when we hit that, we get a @messages hash with errors</p>
+
+<p>then we can use a pre-set syntax post.error.full_messages, to return all the error communicates in an array (e.g. [&ldquo;Title can&rsquo;t be blank&rdquo;, &ldquo;Url can&rsquo;t be blank&rdquo;])</p>
+
+<p>This above is a weird way to save validation errors, but this is Rails convention (to set these types of errors on an object itself)</p>
+
+<p>Looking back at our model-backed form:</p>
+
+<figure class='code'><figcaption><span>posts_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="vi">@post</span> <span class="o">=</span> <span class="no">Post</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">post_params</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">if</span> <span class="vi">@post</span><span class="o">.</span><span class="n">save</span>
+</span><span class='line'>    <span class="n">flash</span><span class="o">[</span><span class="ss">:notice</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;Your post was created!&quot;</span>
+</span><span class='line'>    <span class="n">redirect_to</span> <span class="n">posts_path</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="n">render</span> <span class="s1">&#39;new&#39;</span> <span class="c1">#validation error</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We can see that if there&rsquo;s an error, we render the view with the form again. We do it, so the user (client) will be able to fix their mistakes (we also need to add specific error communicates to the view - need to display the errors):</p>
+
+<figure class='code'><figcaption><span>new.html.erb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='erb'><span class='line'><span class="cp">&lt;%</span> <span class="k">if</span> <span class="vi">@post</span><span class="o">.</span><span class="n">errors</span><span class="o">.</span><span class="n">any?</span> <span class="cp">%&gt;</span><span class="x"></span>
+</span><span class='line'><span class="x">  There were some errors:</span>
+</span><span class='line'><span class="x">  </span><span class="cp">&lt;%</span> <span class="vi">@post</span><span class="o">.</span><span class="n">errors</span><span class="o">.</span><span class="n">full_messages</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">msg</span><span class="o">|</span> <span class="cp">%&gt;</span><span class="x"></span>
+</span><span class='line'><span class="x">    </span><span class="cp">&lt;%=</span> <span class="n">msg</span> <span class="cp">%&gt;</span><span class="x"></span>
+</span><span class='line'><span class="x">  </span><span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span><span class="x"> </span>
+</span><span class='line'><span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span><span class="x"></span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>we can style these above appropriately ofc</p>
+
+<p>this is another pro to using model-backed forms, because we get those nice errors</p>
+
+<p>!Careful: if we hit an error, in our view (HTML in browser), our errors &lsquo;error fields&rsquo; automatically gets wrapped in an additional div (class=&ldquo;field_with_errors&rdquo;) - this is somethign Rails adds for us out of the box, then it&rsquo;s up to us to only give it a whatever style we want (CSS) (we can highlight the field, etc.)</p>
+
+<h3>Re-using our previously created form for edit and update action</h3>
+
+<figure class='code'><figcaption><span>posts_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">edit</span>
+</span><span class='line'>  <span class="vi">@post</span> <span class="o">=</span> <span class="no">Post</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span> <span class="c1">#GET method</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">update</span>
+</span><span class='line'>  <span class="vi">@post</span> <span class="o">=</span> <span class="no">Post</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span> <span class="c1">#PATCH/PUT method</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">if</span> <span class="vi">@post</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">post_params</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">flash</span><span class="o">[</span><span class="ss">:update</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;The post was updated&quot;</span> <span class="c1">#this will print us an alert</span>
+</span><span class='line'>    <span class="n">redirect_to</span> <span class="n">posts_path</span> <span class="c1">#we can redirect whenever feels logical (specific post ok too)</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="n">render</span> <span class="ss">:edit</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>looking at HTML, this issues a POST request to /posts/id, but we have no route for this - instead it goes to the &lsquo;update&rsquo; action</p>
+
+<p>if we look closer inspecting HTML, there are a few hidden things wrapped in a div, one of them looking like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;_method&quot;</span> <span class="na">type=</span><span class="s">&quot;hidden&quot;</span> <span class="na">value=</span><span class="s">&quot;patch&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>this is where our HTML verb (method) is actually re-assigned to PATCH (Rails uses session params for this, because some browsers only supports GET and POST methods &lt;&mdash; another Rails convention)</p>
+
+<p>!!!!! - form_for is smart enough to recognize if our instance variable (@post in the example) refers to an existing object or creating a new one and will set the correct verb/method (in the hidden element) accordingly &mdash;- thus we can extract our form to a partial and use it for different actions (create, edit, etc.) !!!!!</p>
+
+<p>Our form partial that we could create here would effectively be used by 4 actions (new, create, edit, update) - thus we need to be very careful here.</p>
+
+<p>since our form uses @post instance variable, each action needs to have it defined
+make sure to test all the paths that we use/redirect to (especially error cases)</p>
+
+<h3>before_action (in Rails 3.x - before_filters)</h3>
+
+<p>If we notice that in many of our actions we use some code many times, we can extract this to before_actions (which works like before filter in Sinatra):</p>
+
+<figure class='code'><figcaption><span>posts_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">PostController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+</span><span class='line'>  <span class="n">before_action</span> <span class="ss">:set_post</span><span class="p">,</span> <span class="ss">only</span><span class="p">:</span> <span class="o">[</span><span class="ss">:show</span><span class="p">,</span> <span class="ss">:edit</span><span class="p">,</span> <span class="ss">:update</span><span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">#code code code</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kp">private</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">set_post</span>
+</span><span class='line'>    <span class="no">Post</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>&lsquo;:set_post&rsquo; sets our action to be executed before each action</p>
+
+<p>&lsquo;only:&rsquo; filters this to certain actions we want</p>
+
+<p>since we can set some repeating actions to that kind of before filter, we can end up having some empty methods (Rails conventions again!)</p>
+
+<p>before_action is usually used for two purposes:</p>
+
+<ol>
+<li><p>to set up instance variable for action</p></li>
+<li><p>redirect based on some condition</p></li>
+</ol>
+
+
+<h3>Non-stadard flow</h3>
+
+<p>Example of non-standard flow: create comment form that appears on the post page (in opposition to stadard flow, where it would be on create comment page).</p>
+
+<figure class='code'><figcaption><span>posts/show.html.erb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1">#code code code</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">#Create a comment</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="sx">%= form_for [@post, @comment] do |f| %&gt;</span>
+</span><span class='line'><span class="sx">  &lt;%=</span> <span class="n">f</span><span class="o">.</span><span class="n">text_area</span> <span class="ss">:body</span> <span class="sx">%&gt;</span>
+</span><span class='line'><span class="sx">    </span>
+</span><span class='line'><span class="sx">  &lt;%= f.submit &quot;Create Comment&quot; %&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="sx">% end </span><span class="o">%&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>posts_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1">#code code code</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">show</span>
+</span><span class='line'>  <span class="vi">@comment</span> <span class="o">=</span> <span class="no">Comment</span><span class="o">.</span><span class="n">new</span> <span class="c1">#we need to set that for our form to work</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>comments_controller.rb      </span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1">#code code code</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">create</span>
+</span><span class='line'>  <span class="vi">@post</span> <span class="o">=</span> <span class="no">Post</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:post_id</span><span class="o">]</span><span class="p">)</span> <span class="c1">#this is how we need to refer to id here (post_id in opposition to just id when we&#39;re in post controller - that&#39;s because of how we get that saved by Rails in our params hash)</span>
+</span><span class='line'>  <span class="vi">@comment</span> <span class="o">=</span> <span class="no">Comment</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">params</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="ss">:comment</span><span class="p">)</span><span class="o">.</span><span class="n">permit</span><span class="p">(</span><span class="ss">:body</span><span class="p">))</span> <span class="c1">#strong parameters - normally we&#39;d extract that to a private method, but with no update action there is not much point there</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">if</span> <span class="vi">@comment</span><span class="o">.</span><span class="n">save</span>
+</span><span class='line'>    <span class="n">flash</span><span class="o">[</span><span class="ss">:notice</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;Your comment was added&quot;</span> <span class="c1">#need to ask how that works in next live session</span>
+</span><span class='line'>    <span class="n">redirect_to</span> <span class="n">post_path</span><span class="p">(</span><span class="vi">@post</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="n">render</span> <span class="s1">&#39;posts/show&#39;</span> <span class="c1">#we can&#39;t render comment view here, because we don&#39;t have that action (only create) and we want to see our comments on the post page</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The path we want here is: /posts/:post_id/comments(.:format)
+      - @post needs to be an existing object (we&rsquo;re on show post page, so that&rsquo;s okat)
+      - @comment needs to be a new object</p>
+
+<h2>Sum Up</h2>
+
+<p>And that&rsquo;s it. Quite some notes, as I look at it right now. I know that it&rsquo;s not too pretty (and really chaotic!), I&rsquo;m making notes in my text editor (<a href="http://www.sublimetext.com/3">Sublime 3</a>) and formatting it would take a lot of my precious time ;) But it&rsquo;s the content that matters, right? The least I could do was to extract and format the code, which I did with a help of a cool Wordpress plugin I just found yesterday, <a href="http://wordpress.org/plugins/codecolorer/">CodeColorer</a>.</p>
+
+<p>The video lasted for about 2.5 hours (split into two parts) and is just one in a series that there are in each Tealeaf course.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[TicTacToe Ruby Game]]></title>
+    <link href="http://webdeveloperfromscratch.com/blog/tictactoe-ruby-game/"/>
+    <updated>2014-06-09T10:11:03+02:00</updated>
+    <id>http://webdeveloperfromscratch.com/blog/tictactoe-ruby-game</id>
+    <content type="html"><![CDATA[<p>After writing a post here yesterday (<a href="http://www.webdeveloperfromscratch.com/tealeaf-progress-check-no-2-course-1-done/">Tealeaf Progress Check No. 2 – Course 1 Done!</a>), I went back to review the course 1 for the last time and found out that there was a new task to be done, building a simple command line TicTacToe game. As exercises is definitely something I need, I instantly decided that I want to try and write this of course :) Couple of hours later (and with a little help from the video on how to tackle this), my game was ready. I figured this should be a good piece of code to share as the first of hopefully many more here on the blog. So here it is:</p>
+
+<h2>Ruby TicTacToe</h2>
+
+<figure class='code'><figcaption><span>tictactoe.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">board_fields</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">2</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">3</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">4</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">5</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">6</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span>
+</span><span class='line'>                <span class="mi">7</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">8</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">9</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">}</span>
+</span><span class='line'><span class="n">empty_fields</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="o">]</span>
+</span><span class='line'><span class="vi">@game</span> <span class="o">=</span> <span class="kp">true</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">draw_board</span><span class="p">(</span><span class="n">bf</span><span class="p">)</span>
+</span><span class='line'>  <span class="nb">system</span> <span class="s2">&quot;clear&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;Fields Numbers:&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot; 1 | 2 | 3 &quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;---+---+---&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot; 4 | 5 | 6 &quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;---+---+---&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot; 7 | 8 | 9 &quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;Game Board:&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot; </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="si">}</span><span class="s2"> | </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span><span class="si">}</span><span class="s2"> | </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="si">}</span><span class="s2"> &quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;---+---+---&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot; </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">4</span><span class="o">]</span><span class="si">}</span><span class="s2"> | </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">5</span><span class="o">]</span><span class="si">}</span><span class="s2"> | </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">6</span><span class="o">]</span><span class="si">}</span><span class="s2"> &quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;---+---+---&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot; </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">7</span><span class="o">]</span><span class="si">}</span><span class="s2"> | </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">8</span><span class="o">]</span><span class="si">}</span><span class="s2"> | </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">9</span><span class="o">]</span><span class="si">}</span><span class="s2"> &quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">fill_field</span><span class="p">(</span><span class="n">bf</span><span class="p">,</span> <span class="n">ef</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">bf</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="o">|</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">value</span> <span class="o">!=</span> <span class="s2">&quot; &quot;</span>
+</span><span class='line'>      <span class="n">ef</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">all_fields_filled?</span><span class="p">(</span><span class="n">ef</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">if</span> <span class="n">ef</span> <span class="o">==</span> <span class="o">[]</span>
+</span><span class='line'>    <span class="nb">puts</span> <span class="s2">&quot;It&#39;s a tie!&quot;</span>
+</span><span class='line'>    <span class="vi">@game</span> <span class="o">=</span> <span class="kp">false</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">winner?</span><span class="p">(</span><span class="n">bf</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">winning_routes</span> <span class="o">=</span> <span class="o">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="o">]</span><span class="p">,</span>
+</span><span class='line'>                   <span class="o">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="o">]]</span>
+</span><span class='line'>  <span class="n">winning_routes</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">elem</span><span class="o">|</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">bf</span><span class="o">[</span><span class="n">elem</span><span class="o">[</span><span class="mi">0</span><span class="o">]]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">bf</span><span class="o">[</span><span class="n">elem</span><span class="o">[</span><span class="mi">1</span><span class="o">]]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">bf</span><span class="o">[</span><span class="n">elem</span><span class="o">[</span><span class="mi">2</span><span class="o">]]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span>
+</span><span class='line'>      <span class="nb">puts</span> <span class="s2">&quot;Congratulations! You win!&quot;</span>
+</span><span class='line'>      <span class="vi">@game</span> <span class="o">=</span> <span class="kp">false</span>
+</span><span class='line'>      <span class="nb">exit</span> <span class="c1">#else there could be two winners</span>
+</span><span class='line'>    <span class="k">elsif</span> <span class="n">bf</span><span class="o">[</span><span class="n">elem</span><span class="o">[</span><span class="mi">0</span><span class="o">]]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">bf</span><span class="o">[</span><span class="n">elem</span><span class="o">[</span><span class="mi">1</span><span class="o">]]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">bf</span><span class="o">[</span><span class="n">elem</span><span class="o">[</span><span class="mi">2</span><span class="o">]]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span>
+</span><span class='line'>      <span class="nb">puts</span> <span class="s2">&quot;Sorry! You lost!&quot;</span>
+</span><span class='line'>      <span class="vi">@game</span> <span class="o">=</span> <span class="kp">false</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">#game starts</span>
+</span><span class='line'><span class="n">draw_board</span><span class="p">(</span><span class="n">board_fields</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">while</span> <span class="vi">@game</span>
+</span><span class='line'>  <span class="c1">#player turn</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;Choose an empty field (1-9):&quot;</span>
+</span><span class='line'>  <span class="n">chosen_field</span> <span class="o">=</span> <span class="nb">gets</span><span class="o">.</span><span class="n">chomp</span><span class="o">.</span><span class="n">to_i</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">until</span> <span class="n">empty_fields</span><span class="o">.</span><span class="n">include?</span> <span class="n">chosen_field</span>
+</span><span class='line'>    <span class="nb">puts</span> <span class="s2">&quot;Wrong field number. Please choose again.&quot;</span>
+</span><span class='line'>    <span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'>    <span class="n">chosen_field</span> <span class="o">=</span> <span class="nb">gets</span><span class="o">.</span><span class="n">chomp</span><span class="o">.</span><span class="n">to_i</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">board_fields</span><span class="o">[</span><span class="n">chosen_field</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;X&quot;</span>
+</span><span class='line'>  <span class="n">fill_field</span><span class="p">(</span><span class="n">board_fields</span><span class="p">,</span> <span class="n">empty_fields</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">draw_board</span><span class="p">(</span><span class="n">board_fields</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">winner?</span><span class="p">(</span><span class="n">board_fields</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">all_fields_filled?</span><span class="p">(</span><span class="n">empty_fields</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">#computer turn</span>
+</span><span class='line'>  <span class="n">comp_chosen_field</span> <span class="o">=</span> <span class="n">empty_fields</span><span class="o">.</span><span class="n">sample</span> <span class="c1">#this picks a random element</span>
+</span><span class='line'>  <span class="n">board_fields</span><span class="o">[</span><span class="n">comp_chosen_field</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;O&quot;</span>
+</span><span class='line'>  <span class="n">fill_field</span><span class="p">(</span><span class="n">board_fields</span><span class="p">,</span> <span class="n">empty_fields</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">draw_board</span><span class="p">(</span><span class="n">board_fields</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">winner?</span><span class="p">(</span><span class="n">board_fields</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">all_fields_filled?</span><span class="p">(</span><span class="n">empty_fields</span><span class="p">)</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">#think about how to implement AI (google for it maybe)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Computer&rsquo;s decision are random at this point, implementing some AI for this is probably beyond me right now. But I&rsquo;d love to go back to this little game some time from now and add this feature. This can also be very easily changed into a game for two players, which would work nicely (no AI needed there!).</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tealeaf Progress Check No. 2 - Course 1 Done!]]></title>
+    <link href="http://webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-2-course-1-done/"/>
+    <updated>2014-06-08T11:55:07+02:00</updated>
+    <id>http://webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-2-course-1-done</id>
+    <content type="html"><![CDATA[<p>Okay, so I&rsquo;m through with the Ruby course and I feel I should do a little sum up of that one. I actually finished about a week ago and am now well into the Rails (second) course, but let&rsquo;s not get ahead of myself</p>
+
+<h2>A Bit About the Course</h2>
+
+<p>So before I started the <a href="http://www.gotealeaf.com">Tealeaf Academy</a> I had basically zero Ruby knowledge. Haven&rsquo;t written a single line of code in Ruby. I was cruising through the course a little faster than the program suggests (it took me about 3 weeks altogether, including pre-course) but that was due to the fact that I had a lot of free time and was putting every second of that into learning Ruby. So do I feel I mastered the language after the course? Well, no, not really. But I do feel I can understand the code I read (for the most part). This is something that Tealeaf really excel in. Chris is doing a great job in explaining how everything works together. But I kind of wished that there was a little bit more of practice exercises. Yes, it is a valid point that practice is something I can do on my own, but still. I would love it there was more simple things that we had built throughout the course that would really helps the gained knowledge stick for good. One more thing I didn&rsquo;t like too much was that even though we built three programs/apps during the course, each of them was a Blackjack game. Sure, they were not the same, since we were using different concepts and tools on the way, but again, a little more variance here would be great. These things are something Tealeaf guys should probably do better in the future. Overall though, I have to say I was not disappointed by the course at all. I learned a lot. I learned in a nice, structured way. I learned fast. And it was fun!</p>
+
+<h2>What I learned</h2>
+
+<p>So let&rsquo;s move on to what I was able to learn. Starting with Ruby:</p>
+
+<ul>
+<li><p>how to install Ruby and it&rsquo;s gems and how they work</p></li>
+<li><p>Ruby syntax and style</p></li>
+<li><p>Ruby basics: variables (and their scope, methods, iterations, basic objects (arrays &amp; hashes), classes and more)</p></li>
+<li><p>procedural and OOP in Ruby</p></li>
+<li><p>how to tie all these concepts together to create a working program</p></li>
+</ul>
+
+
+<p>Aside of Ruby, I also learned a lot of stuff on the side:</p>
+
+<ul>
+<li><p>Git and Github</p></li>
+<li><p>choosing and working with text/code editor</p></li>
+<li><p>basics of command line</p></li>
+<li><p>pseudo code</p></li>
+<li><p>HTTP protocol</p></li>
+<li><p>HTML and CSS</p></li>
+<li><p>Javascript and jQuery</p></li>
+<li><p>AJAX</p></li>
+<li><p>Bootstrap front-end framework</p></li>
+<li><p>Sinatra Ruby framework</p></li>
+<li><p>Heroku deployment</p></li>
+</ul>
+
+
+<p>And most importantly, I learned how to solve problems/bugs on my own. And if I am not able to do so, how to explain the problem I&rsquo;m having to more experienced programmers, so that they would be able to help me.</p>
+
+<p>Needless to say, it was a lot of stuff in a very short time. I still don&rsquo;t feel super comfortable using all of that stuff, but I can now use this knowledge and gain practice on my own. I definitely need to look for a few simple Ruby programs that I can try to write on my own. I also need to review the things I&rsquo;m not 100% sure about and try to understand them fully when I have a while to spare. Oh, and I guess I should start posting some code on the blog as well!</p>
+
+<p>Still, I&rsquo;m not stopping here and am now going further with Rails. Loving it so far!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Program or Be Programmed]]></title>
+    <link href="http://webdeveloperfromscratch.com/blog/program-or-be-programmed/"/>
+    <updated>2014-05-27T14:26:59+02:00</updated>
+    <id>http://webdeveloperfromscratch.com/blog/program-or-be-programmed</id>
+    <content type="html"><![CDATA[<p>A cool video I was going to post some time ago and forgot.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tealeaf Progress Check No.1]]></title>
+    <link href="http://webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-1/"/>
+    <updated>2014-05-22T16:48:17+02:00</updated>
+    <id>http://webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-1</id>
+    <content type="html"><![CDATA[<p>So I finished first two weeks&#8217; material from the first <a href="http://www.gotealeaf.com">Tealeaf</a> course. Time for some first impressions is due!</p>
+
+<h2>Procedural vs OOP</h2>
+
+<p>Let&rsquo;s start with what I&rsquo;ve learned through this time.</p>
+
+<p>First of all, it really is true that the more time you have for it, the faster you&rsquo;ll finish the course. It took me about 10 days to finish those first two weeks + pre-course. And pre-course is basically designed as a material for an additional week. So it&rsquo;s fair to say I was speeding through it quite nicely so far. But I have been really putting in the time. I haven&rsquo;t been tracking it or anything but most of my days I spent sitting in front of my computer from early morning right until well after dark (I did have breaks during the day though, sometimes they were pretty long - but still I was kind of thinking &lsquo;programming&rsquo; the whole time). I also had some advantage because the project we&rsquo;re building (Blackjack) is really something I did in the Python <a href="http://www.coursera.org">Coursera</a> course not too long ago. I was also introduced to <a href="http://en.wikipedia.org/wiki/Object-oriented_programming">Object Oriented Programming</a> before I started here (during the very same Python course). That definitely gave me a head start and I could focus on the most important thing at the beginning (in my opinion).</p>
+
+<h2>Basics of Ruby</h2>
+
+<p>This thing is of course learning the basics of Ruby programming language. Ruby is a foundation of Rails framework, so to learn Rails one should first (at least) familiarize oneself with Ruby. I have to say I really like how Tealeaf goes about it (I know, praising them again, but it&rsquo;s deserved so far). They wrote their own introduction book, which lays the backgrounds nicely. You learn the syntax and methods while doing (not too hard) exercises at the end of each chapter. I like that I was able to pick it up quite fast and move straight to writing my own first program in Ruby, which was the Blackjack project.</p>
+
+<p>We done it two ways, first using procedural code and then OOP. I have to say I am already falling in love with OOP. Once again, I have to say Tealeaf did their job very nicely explaining how to use OOP in Ruby and most importantly, why to use it at all. As I said before, with my limited programming experience, I was able to go through this pretty smoothly, with just a little help from TAs on the forum.</p>
+
+<p>I understand it&rsquo;s different for everyone and if you have an absolute zero programming experience, this would probably take a little more time and effort to accomplish. Fortunately, the course materials are structured in a way that you can learn with the help of solution videos. You may think it&rsquo;s not that effective, but I can guarantee you it works. I learned Python by mostly leaning on help from videos and code from others and I could see the difference now, I can do a lot of stuff that I wouldn&rsquo;t actually expect me to on my own.</p>
+
+<h2>Week Three</h2>
+
+<p>I moved to week three and well&hellip; I&rsquo;m confused so far. The material touches on a lot of new subjects, like details of the HTTP protocol (I never even though about how it works, always just took it all for granted) and Sinatra framework. My edge I had for the first two weeks of the course is gone. I&rsquo;ve watched the lectures for the material, did some required reading and I guess I need to go through it once more. I can feel I picked some stuff up but I&rsquo;m not yet comfortable enough to start building the browser version of Blackjack, which is this week&rsquo;s goal. I have to say though that I love one thing -  I really start to feel like a developer a little bit by learning stuff kind of on the side of programming but much needed in the web environment. That&rsquo;s giving me an additional boost I really need now!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The New Hope - Ruby on Rails FTW]]></title>
+    <link href="http://webdeveloperfromscratch.com/blog/the-new-hope-ruby-on-rails-ftw/"/>
+    <updated>2014-05-19T12:15:58+02:00</updated>
+    <id>http://webdeveloperfromscratch.com/blog/the-new-hope-ruby-on-rails-ftw</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve been quiet for quite a while now. I got kind of lost in the process of learning so many various things related to web development, that I forgot about what I initially aimed for. And that is, building real things. Until recently, I tried so many different things and with each of these tools (languages, frameworks, whatever have you), I only barely scratched the surface. Luckily, I finally realized that it&rsquo;s not the best way to go about it all. I realized what I should&rsquo;ve been doing from the start is trying to master one thing. And if I succeed, then try something else. So I tried to follow this approach and actually become good at something.</p>
+
+<h2>Dig Deeper</h2>
+
+<p>I decided I should learn one language first. But not just &ldquo;go through some online tutorial&rdquo; learn. Learn it for real. Then go look for a job using that language and progress further. Still not knowing much about how to do it, I found a cool <a href="https://www.coursera.org/course/interactivepython">Python course at a popular MOOCs site Coursera</a> (if you&rsquo;re not sure what MOOC is, check this <a href="http://en.wikipedia.org/wiki/Massive_open_online_course">wikipedia page</a>). I can&rsquo;t say anything bad about it at all, to be honest. I like the approach (building games), the lecturers (Steve is simply hilarious!), forums and all, yet there was one thing that wouldn&rsquo;t stop bothering me. I was learning and having fun with it, but I had no idea how to put all that knowledge to good use in my soon-to-happen (LOL!) web development career. I ditched the final two-week long project and started to look for something that would suit my needs better.</p>
+
+<h2>Bootcamps</h2>
+
+<p>I got introduced to the idea of web development bootcamps. How do they work? In essence, you spend 3-4 months learning how to program in a given language, under the guidance of experience instructors (and learning many other related thins along the way). After that period, they (your former instructors) will likely introduce you to an employer. And bang - you just started your career as a developer. Sounds nice, right? Obviously, these camps do not come free, but it&rsquo;s an investments worth the price (which varies from around $5k to something like $20k). The thing is, those bootcamps seem to be very popular in the US, but not that much in other parts of the world (yet!)*.</p>
+
+<p>Still, I was hooked to the idea. I started to evaluate my options for something similar online. There is actually quite some choice. After googling for a while, reading a bunch of reviews and doing comparisons on my own, I decided to settle on <a href="https://www.gotealeaf.com">Tealeaf</a>.</p>
+
+<h2>Tealeaf Academy</h2>
+
+<p>What attracted me to it? For starters, I like the approach of dividing the whole learning material into three courses. If you are not a total beginner, you can start from the second or a third one. Plus, you don&rsquo;t have to pay for all of it at once. You pay for each module (course) separately, so I only needed to spend like $500 to get started with the first one.**</p>
+
+<p>Secondly, I love how they don&rsquo;t try to lure you in only to get your money. When you do your research, you&rsquo;ll see that Tealeaf representatives often use phrases like &ldquo;it&rsquo;s not for everyone&rdquo;, &ldquo;it might not suit you&rdquo;, &ldquo;for some people, other options might be better&rdquo;. They know that actually taking their courses involves a lot of self-discipline and motivation. You really need to be willing to do the job on your own if you are to accomplish their programme.</p>
+
+<p>Thirdly, there are no set, hard deadlines. Tealeaf guys understand well that not everyone has the same amount of time in hand. Each course is divided into weeks, but you can spend as much time on each week as you want. You only have 10 hours a week to spend on the course? No problem. You want to go at it full-time and finish well ahead of everyone else? Sure, why not. I love this because I don&rsquo;t have the same amount of free time every week, it varies. So whenever I can, I learn and if I need to do something else, the course is not going anywhere.</p>
+
+<p>Another thing. When you have a question, you ask it in a forums and one of the TAs will answer you often in a matter of minutes, so you can continue working on your code almost straight away. You don&rsquo;t need to wait for a specific day in the week, when you have your session with a mentor scheduled (that&rsquo;s how <a href="https://www.bloc.io/">Bloc</a>, another popular &ldquo;bootcampy&rdquo; site does it). I guess this depends on what you prefer, for me the forums is clearly a better fit.</p>
+
+<p>Finally, Tealeaf promises you moneyback option if you happen not to like how they go about stuff. That&rsquo;s a big sign of confidence in their own learning methods.</p>
+
+<p>Oh, and I almost forgot. THE MOST IMPORTANT: after completing all three courses, you should be able to build your own app using Ruby on Rails. And make it fully working on the web. That&rsquo;s exactly what I needed!***</p>
+
+<h2>So Where am I?</h2>
+
+<p>Well, not too far yet. I&rsquo;m only after pre-course and week 1 of the first course and tackling the material of the second. I actually am finding out, that my previous Coursera Python course is a big help right now. It appears that when you once figure out how programmers think, the language doesn&rsquo;t matter that much (but granted, Python and Ruby are quite similar, in my opinion at least).</p>
+
+<p>Starting a blog was actually one of the assignments/advice in the first week of the course. And I&rsquo;m glad it was there, because I seriously don&rsquo;t know if I would be writing here in the future if not for that&hellip; There will likely be a lot of Ruby (and Rails as I progress) related stuff here from now on but I&rsquo;ll try to post some useful stuff regarding other things as well from time to time. I actually have quite a large base of useful links that I gathered over that few months of my learning, so hopefully you might find some useful stuff if you&rsquo;re not Ruby-focused, too.</p>
+
+<hr/>
+
+
+<p>*To my surprise, I actually found out there are some options in Poland as well. For example <a href="http://coderslab.pl/">Coders Lab</a>. Still, it’s more expensive than Tealeaf, seems to cover less material and I would likely need to move to Warsaw (there is a weekend course, but it lasts for 16 weekends – no way I could have so many in a row free of other arrangements).</p>
+
+<p>**By the way, price for all three courses is quite advantegous too.</p>
+
+<p>***No, I am not associated with Tealeaf in any other way than learning from them. I do love their stuff and I simply wrote what I think of them.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA["Programming's Dirtiest Little Secret"]]></title>
+    <link href="http://webdeveloperfromscratch.com/blog/programmings-dirtiest-little-secret/"/>
+    <updated>2014-04-17T10:01:27+02:00</updated>
+    <id>http://webdeveloperfromscratch.com/blog/programmings-dirtiest-little-secret</id>
+    <content type="html"><![CDATA[<p>I did not come up with that title (maybe you figured by the quotes). I found a great blog post that explains what is the &ldquo;secret&rdquo;, it&rsquo;s a pretty good read in itself and it addresses the case so well: <a href="http://steve-yegge.blogspot.com/2008/09/programmings-dirtiest-little-secret.html">Stevey&rsquo;s Blog Rants</a>.</p>
+
+<p>I was actually already looking for ways to learn how to touchtype. I tried it once before a few months ago but I lacked persistence then. After reading Steve&rsquo;s post I don&rsquo;t anymore. I&rsquo;m not writing all that slow to be honest, but my technique is far from perfect. And I know this is something I simply need if I want to have a headstart in any type of programming career. So I practiced for the last four days, 30 minutes each day. And I&rsquo;m going to carry on for at least the next month and see where it takes me!</p>
+
+<h2>Typingweb</h2>
+
+<p>Looking for a tool that would help me here, I came across <a href="http://www.typingweb.com/">typingweb</a>. It&rsquo;s a great place where you can start learning touchtyping straight away, without the need  of even downloading anything. There are free courses for beginners and advanced. Seems pretty cool to me! I&rsquo;ll post an update afer some time to see how my writing speed developed.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[1st Project, Let's Go!]]></title>
+    <link href="http://webdeveloperfromscratch.com/blog/1st-project-lets-go/"/>
+    <updated>2014-04-14T12:53:14+02:00</updated>
+    <id>http://webdeveloperfromscratch.com/blog/1st-project-lets-go</id>
+    <content type="html"><![CDATA[<p>Okay, so it&rsquo;s high time to start really doing something real! I am already engaged in a few non-commercial projects, but here&rsquo;s my highest priority for some time to come: make Web Developer from Scratch my personal, custom website.</p>
+
+<p>While I have nothing against the WordPress theme I started here on (I actually think it&rsquo;s looking really nice(Hexa theme, I&rsquo;ll make some screenshot before I change looks to keep the good memories)), I did already see a couple blogs running on the very same one. Well, I want mine to be personalized. Plus, I want to do a little showing-off my web development skills ;)</p>
+
+<h2>Details</h2>
+
+<p>Okay, so what I plan on doing here:</p>
+
+<ul>
+<li><p>Build a cool home page (already started on this)</p></li>
+<li><p>Buy a .com domain and setting it all up again there</p></li>
+<li><p>Make other pages I&rsquo;ll likely need (blog page + posts, about and contact pages and another one where I could show my work)</p></li>
+</ul>
+
+
+<p>Just a 3 point, very simple plan. I&rsquo;m really excited as this will be the very first website I&rsquo;d do totally from scratch up to working stage. Needless to say I probably don&rsquo;t know everything I need for doing so but I&rsquo;ll be learning in the process. And after I&rsquo;m done I&rsquo;ll have something to show my potential future employer right there, so motivation is high. I actually hope to be able to find my first job in the industry in a few months, so definitely need a portfolio.</p>
+
+<p>Not rambling any longer, let&rsquo;s get to work!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Journey Starts Here]]></title>
+    <link href="http://webdeveloperfromscratch.com/blog/the-journey-starts-here/"/>
+    <updated>2014-04-10T17:28:12+02:00</updated>
+    <id>http://webdeveloperfromscratch.com/blog/the-journey-starts-here</id>
+    <content type="html"><![CDATA[<p>Hi there!</p>
+
+<p>This is the first post on this soon-to-be-very-cool-and-popular (lol, probably not!) website, so I am kind of excited about this. The site is supposed to be a way of keeping track of my progress in the web development world. Hopefully, it sticks with me for good and a few years from now I&rsquo;ll look at this post and think: &ldquo;Thank god I founded this site!&rdquo;.</p>
+
+<h2>Wait, What?</h2>
+
+<p>Okay, let&rsquo;s cut the crap and start properly. My name is Piotr, currently 28 year-old Polish guy. I have done various different stuff in my life so far, some exiting, others not too much. The important thing here is that until a few months ago I had totally zero knowledge about web development. I was never too bad with computers, but before I haven&rsquo;t really put my &ldquo;talents&rdquo; to good use. This changed though and I&rsquo;ve been really loving it since I started!</p>
+
+<h2>A Little Bit of Background</h2>
+
+<p>So, why web development? Well, as I said, I&rsquo;ve been doing other things before (another story, not going to bore you with this today) and while they have been interesting too, I realized at some point that I haven&rsquo;t really created anything in my life. Never have I built anything real, that made impact on the world and maybe helped someone in a way by doing so. I was just dealing with numbers, one way or another. And I had enough. It was time to finally make something that exists. Then there was only a question &ldquo;How?&rdquo;.</p>
+
+<p>I searched for something that would fit me well and I could possibly be good at. I had just this vague concept of &ldquo;creating&rdquo; as a start. Quickly I realized that things like building something physical in a real world, like a house for example, would not be all that easy. So naturally I wandered in the &ldquo;digital&rdquo; way. And that&rsquo;s pretty much in short how I got to this point.</p>
+
+<p>I&rsquo;ve been learning for this past few months. And I&rsquo;ve been learning hard. Yet I know I barely scratched the surface so far. I know HTML/CSS, some JavaScript (and jQuery) and a little bit of Python. Nothing too serious yet, but even with that limited knowledge I feel like I have powers to really make something of it. And that feels great!</p>
+
+<h2>What Can You Expect Here</h2>
+
+<p>I&rsquo;ll try to document my way from here on on this very website. Hopefully, if you decide to follow, you might learn something along. Since I am just a beginner, I will likely be writing in a language that everyone who has not much in common with web development could understand.</p>
+
+<p>Okay, I think this is more than enough for a short introduction. Next posts to follow soon. To the long and productive journey!</p>
 ]]></content>
   </entry>
   

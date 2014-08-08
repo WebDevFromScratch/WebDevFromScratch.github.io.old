@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Learning Continues - Some Rails Magic - Web Developer from Scratch</title>
+  <meta name="author" content="Piotr Klosinski">
+
+  
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://webdeveloperfromscratch.com/blog/the-learning-continues-some-rails-magic">
+  <link href="/favicon.png" type="image/png" rel="icon">
+  <link href="/atom.xml" rel="alternate" title="Web Developer from Scratch" type="application/atom+xml">
+
+  <script src="/javascripts/libs/jquery/jquery-2.0.3.min.js"></script>
+<script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+
+<!-- Google Fonts -->
+<link href="http://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
+
+<link href="http://fonts.googleapis.com/css?family=Lato:300,300italic" rel="stylesheet" type="text/css" />
+
+<!-- Font Awesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- fonts mfizz -->
+<link href="/assets/font-mfizz/font-mfizz.css" rel="stylesheet">
+
+
+  
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+  <body   >
+    <div id="wrap">
+      <header role="banner">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand navbar-brand-centered visible-xs">
+                <span>WD<span class="satisfy-font">f</span>S</span>
+            </a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <a href="/" class="navbar-brand navbar-brand-centered hidden-xs">
+                    <span>WD<span class="satisfy-font">f</span>S</span>
+                </a>
+                <li><a href="/blog">BLOG</a></li>
+                <li><a href="/work">WORK</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+      </header>
+      <div class="container">
+  <div class="row with-top-margin">
+    <div class="page-content col-md-8 col-md-offset-2" itemscope itemtype="http://schema.org/Blog">
+      <meta itemprop="name" content="Web Developer from Scratch" />
+      <meta itemprop="description" content="" />
+      <meta itemprop="url" content="http://webdeveloperfromscratch.com" />
+      <article class="hentry" role="article" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+        
+  <header class="page-header">
+    
+      <p class="meta text-center text-muted">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-06-12T10:09:35+02:00"  data-updated="true" itemprop="datePublished dateCreated">Jun 12<sup>th</sup>, 2014</time>
+        
+           | <a href="#disqus_thread" itemprop="discussionUrl"
+             data-disqus-identifier="http://webdeveloperfromscratch.com">Comments</a>
+        
+      </p>
+      
+    
+    <h1 class="entry-title" itemprop="name headline">
+        The Learning Continues - Some Rails Magic
+        
+    </h1>
+    
+  </header>
+
+
+<div class="entry-content clearfix" itemprop="articleBody"><p>I&rsquo;m long due another update on how my progress with <a href="http://www.gotealeaf.com">Tealeaf</a> is going, but I just can&rsquo;t force myself to write it&hellip; Let me just say I dived deep into Rails and am trying to wrap my head around it&rsquo;s magic (actually, there&rsquo;s no magic at all, just conventions that Rails assumes - definitely need to write something about it soon!).</p>
+
+<p>Meanwhile, I figured I&rsquo;ll post notes on the latest video lecture I watched. If you stumbled upon this blog of mine and are thinking about joining Tealeaf, this is an example of what we learn there. Making these sort of notes is not mandatory of course, everything you need is in video format. But I like to make them, it helps me memorize more. Okay, no more rambling, move on the notes (these are from Lecture 3 of the Rails course).</p>
+
+<h2>Rails Forms</h2>
+
+<p>sidenote: in Rails we can refer to a key by a symbol (in params hash, for example) even though it&rsquo;s a string (a hash with indifferent access)</p>
+
+<p>Creating a form
+- how to do that using 3 ways (on an example of a new (creating) post form)</p>
+
+<h3>1. Pure HTML</h3>
+
+<figure class='code'><figcaption><span>HTML form</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&#39;/posts&#39;</span> <span class="na">method=</span><span class="s">&#39;POST&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>  Title: <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&#39;text&#39;</span> <span class="na">name=</span><span class="s">&#39;my_title&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;br/&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&#39;submit&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;/form&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>this wouldn&rsquo;t as a deault work in Rails, because of a &lsquo;protect_from_forgery&rsquo; validation error (if we removed protect_from_forgery from application_controller.rb, this would work)</p>
+
+<p>this is not the best from the point of security of our app</p>
+
+<p>This is the most manual way, we never do this in Rails. We&rsquo;d need to hack our application_controller and we definitely don&rsquo;t want that.</p>
+
+<h3>2. Rails form helper</h3>
+
+<figure class='code'><figcaption><span>Form Helper</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sx">%= form_tag &#39;/posts&#39; do %&gt;</span>
+</span><span class='line'><span class="sx">  &lt;%=</span> <span class="n">label_tag</span> <span class="ss">:title</span> <span class="sx">%&gt;</span>
+</span><span class='line'><span class="sx">  &lt;%= text_field_tag :title %&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>  <span class="o">&lt;%=</span> <span class="n">submit_tag</span> <span class="s2">&quot;Create Post&quot;</span> <span class="sx">%&gt;</span>
+</span><span class='line'><span class="sx">&lt;% end %&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>this adds authenticity_token (which is hidden in html), which is needed for this &lsquo;protect_from_forgery&rsquo; validation to work
+helpers give us these little things that speeds up the work and saves us from some weird edge case errors</p>
+
+<p>label element is correlated with input element (refers to it); is used for screenreaders that recognizes what&rsquo;s what (useful for blind internet users for example, to help them) &lt;&mdash; try to develop a habit of setting label elements</p>
+
+<p>This would work just as the above HTML form.</p>
+
+<h3>3. Rails model-backed form</h3>
+
+<figure class='code'><figcaption><span>Model-Backed Form</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sx">%= form_for @post do |f| %&gt;</span>
+</span><span class='line'><span class="sx">  &lt;%=</span> <span class="n">f</span><span class="o">.</span><span class="n">label</span> <span class="ss">:title</span> <span class="sx">%&gt;</span>
+</span><span class='line'><span class="sx">  &lt;%= f.text_field :title %&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>  <span class="o">&lt;%=</span> <span class="n">f</span><span class="o">.</span><span class="n">submit</span> <span class="s2">&quot;Create Post&quot;</span> <span class="sx">%&gt;</span>
+</span><span class='line'><span class="sx">&lt;% end %&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>we need to set our @something variable in the controller (PostsController in case of @post) for it to work of course</p>
+
+<p>  it assumes a lot of things for us</p>
+
+<p>  creates an additional nested structure in our session params (adding another nested hash for &lsquo;post&rsquo; key, where it assigns stuff specific to post, like title, etc.)</p>
+
+<p>  naming conventions for how Rails saves these variables to create that nested structure can be seen when inspecting the HTML code (in browser), it has this format: post[title]</p>
+
+<p>  !(that&rsquo;s why in code (especially Rails 3.x) we can see a lot of code that looks like this: Post.new(params[:post]))</p>
+
+<p>  !also, thus we can do a mass assignment to Post object like this: Post.new(&lsquo;title&rsquo;=>&lsquo;some title&rsquo;) or Post.new(title: &lsquo;some title&rsquo;, url: &lsquo;some url&rsquo;) &lt;&mdash; these keys are our setter methods that come from ActiveRecord::Base; essentially that&rsquo;s because we have the columns called that in our database &lsquo;posts&rsquo; table</p>
+
+<p>  we can also use virtual attributes as keys here (like user:, category:, etc. &lt;&mdash; we set associations to these earlier)</p>
+
+<p>  we can&rsquo;t just add random fields here though (like f.text_field :whatever) do to the connection we have with other layers (that Rails assumes) - we can only use variables that we can use mass assignments with (our table columns) as keys</p>
+
+<p>  otherwise the connection (assumption, convention) breaks and we&rsquo;d get a &lsquo;NoMethod&rsquo; error
+  we can add whatever variable we please in case of &lsquo;Rails form helpers&rsquo;, because then we just save them in our session params and not using these model-backed relations</p>
+
+<p>Use whenever we can!</p>
+
+<p>To use this model-backed form, we need to appropriately set our &lsquo;create&rsquo; action in posts_controller.rb file:</p>
+
+<figure class='code'><figcaption><span>posts_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="vi">@post</span> <span class="o">=</span> <span class="no">Post</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:post</span><span class="o">]</span><span class="p">)</span> <span class="c1">#this way we access params specific for our post</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Strong parameters can be a cause of a lot of silent bugs (because they are security-related, there are usually no specific error messages)</p>
+
+<p>!note: we don&rsquo;t want to use .create, because first we need to fulfill validation requirements - strong parameters (check below, then continue here) - so we need to change this like:</p>
+
+<figure class='code'><figcaption><span>posts_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">create</span>
+</span><span class='line'>  <span class="vi">@post</span> <span class="o">=</span> <span class="no">Post</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">post_params</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">if</span> <span class="vi">@post</span><span class="o">.</span><span class="n">save</span>
+</span><span class='line'>    <span class="n">flash</span><span class="o">[</span><span class="ss">:notice</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;Your post was created!&quot;</span>
+</span><span class='line'>    <span class="n">redirect_to</span> <span class="n">posts_path</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="n">render</span> <span class="s1">&#39;new&#39;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>!!!!! This above is very important pattern that needs to be memorized !!!!!</p>
+
+<p>  if we create (.save method) our post, we want to redirect</p>
+
+<p>  else (in case we hit a validation error, etc.), we want to render our template where we tried to create from again (which would now show our errors, letting the user know what needs to be done to create)</p>
+
+<h3>Strong Parameters</h3>
+
+<p>back in Rails 3.x this was solved through &lsquo;attr_accessible&rsquo;, which we set in our models
+example:</p>
+
+<p>  attr_accessible :title, :url, :description</p>
+
+<p>this above essentially whitelisted the mentioned variables for mass assignment</p>
+
+<p>  Cons of this approach:</p>
+
+<ul>
+<li><p>people overdid that and whitelisted everything, whenever hit an error (thus, losing security)</p></li>
+<li><p>this needed to be set in the &lsquo;Model&rsquo; layer, and the concern is actually in the actions (&lsquo;Controller&rsquo;)</p></li>
+</ul>
+
+
+<p>Rails 4 solves this by using strong parameters instead of attr_accessible</p>
+
+<ul>
+<li><p>we can set this in the Controller</p></li>
+<li><p>we can set this based on an user</p></li>
+</ul>
+
+
+<p>We set it as a private method:</p>
+
+<figure class='code'><figcaption><span>posts_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">PostsController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+</span><span class='line'>  <span class="c1">#code code code</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">create</span>
+</span><span class='line'>    <span class="n">post</span> <span class="o">=</span> <span class="no">Post</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">post_params</span><span class="o">[</span><span class="ss">:post</span><span class="o">]</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kp">private</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">post_params</span>
+</span><span class='line'>    <span class="n">params</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="ss">:post</span><span class="p">)</span><span class="o">.</span><span class="n">permit</span><span class="p">(</span><span class="ss">:title</span><span class="p">,</span> <span class="ss">:url</span><span class="p">,</span> <span class="ss">:creator</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><p>this require(:post) relates to our nested structured hash (we need a :post top-level key in our params, and then we set which lower-level (post) keys we want to permit to mass assignment)</p></li>
+<li><p>.permit! - permits everything
+thus we can use it like this:</p></li>
+</ul>
+
+
+<figure class='code'><figcaption><span>posts_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">post_params</span>
+</span><span class='line'>  <span class="k">if</span> <span class="n">user</span><span class="o">.</span><span class="n">admin?</span>
+</span><span class='line'>    <span class="n">params</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="ss">:post</span><span class="p">)</span><span class="o">.</span><span class="n">permit!</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="n">params</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="ss">:post</span><span class="p">)</span><span class="o">.</span><span class="n">permit</span><span class="p">(</span><span class="ss">:title</span><span class="p">,</span> <span class="ss">:url</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Strong parameters can be a cause of a lot of silent bugs (because they are security-related, there are usually no specific error messages)</p>
+
+<h3>Validations</h3>
+
+<p>Always added to the &lsquo;Model&rsquo; layer</p>
+
+<p>We use them like this:</p>
+
+<figure class='code'><figcaption><span>post.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Post</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span>
+</span><span class='line'>  <span class="c1">#code code code</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">validates</span> <span class="ss">:title</span><span class="p">,</span> <span class="n">presence</span> <span class="ss">:true</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>this above means we need to have a title when creating a Post object</p>
+
+<p>if we try to create the Post without the title, we get a rollback (we get returned &lsquo;false&rsquo;; why? because we use if statement in our pattern in the Controller)</p>
+
+<p>note: we can create our post &lsquo;in memory&rsquo;, the error will only appear when we try to hit a database with a query (try to save it)</p>
+
+<p>to check what the error is, we can use .errors method (e.g. post.errors) in the console</p>
+
+<p>when we hit that, we get a @messages hash with errors</p>
+
+<p>then we can use a pre-set syntax post.error.full_messages, to return all the error communicates in an array (e.g. [&ldquo;Title can&rsquo;t be blank&rdquo;, &ldquo;Url can&rsquo;t be blank&rdquo;])</p>
+
+<p>This above is a weird way to save validation errors, but this is Rails convention (to set these types of errors on an object itself)</p>
+
+<p>Looking back at our model-backed form:</p>
+
+<figure class='code'><figcaption><span>posts_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="vi">@post</span> <span class="o">=</span> <span class="no">Post</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">post_params</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">if</span> <span class="vi">@post</span><span class="o">.</span><span class="n">save</span>
+</span><span class='line'>    <span class="n">flash</span><span class="o">[</span><span class="ss">:notice</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;Your post was created!&quot;</span>
+</span><span class='line'>    <span class="n">redirect_to</span> <span class="n">posts_path</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="n">render</span> <span class="s1">&#39;new&#39;</span> <span class="c1">#validation error</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We can see that if there&rsquo;s an error, we render the view with the form again. We do it, so the user (client) will be able to fix their mistakes (we also need to add specific error communicates to the view - need to display the errors):</p>
+
+<figure class='code'><figcaption><span>new.html.erb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='erb'><span class='line'><span class="cp">&lt;%</span> <span class="k">if</span> <span class="vi">@post</span><span class="o">.</span><span class="n">errors</span><span class="o">.</span><span class="n">any?</span> <span class="cp">%&gt;</span><span class="x"></span>
+</span><span class='line'><span class="x">  There were some errors:</span>
+</span><span class='line'><span class="x">  </span><span class="cp">&lt;%</span> <span class="vi">@post</span><span class="o">.</span><span class="n">errors</span><span class="o">.</span><span class="n">full_messages</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">msg</span><span class="o">|</span> <span class="cp">%&gt;</span><span class="x"></span>
+</span><span class='line'><span class="x">    </span><span class="cp">&lt;%=</span> <span class="n">msg</span> <span class="cp">%&gt;</span><span class="x"></span>
+</span><span class='line'><span class="x">  </span><span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span><span class="x"> </span>
+</span><span class='line'><span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span><span class="x"></span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>we can style these above appropriately ofc</p>
+
+<p>this is another pro to using model-backed forms, because we get those nice errors</p>
+
+<p>!Careful: if we hit an error, in our view (HTML in browser), our errors &lsquo;error fields&rsquo; automatically gets wrapped in an additional div (class=&ldquo;field_with_errors&rdquo;) - this is somethign Rails adds for us out of the box, then it&rsquo;s up to us to only give it a whatever style we want (CSS) (we can highlight the field, etc.)</p>
+
+<h3>Re-using our previously created form for edit and update action</h3>
+
+<figure class='code'><figcaption><span>posts_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">edit</span>
+</span><span class='line'>  <span class="vi">@post</span> <span class="o">=</span> <span class="no">Post</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span> <span class="c1">#GET method</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">update</span>
+</span><span class='line'>  <span class="vi">@post</span> <span class="o">=</span> <span class="no">Post</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span> <span class="c1">#PATCH/PUT method</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">if</span> <span class="vi">@post</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">post_params</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">flash</span><span class="o">[</span><span class="ss">:update</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;The post was updated&quot;</span> <span class="c1">#this will print us an alert</span>
+</span><span class='line'>    <span class="n">redirect_to</span> <span class="n">posts_path</span> <span class="c1">#we can redirect whenever feels logical (specific post ok too)</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="n">render</span> <span class="ss">:edit</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>looking at HTML, this issues a POST request to /posts/id, but we have no route for this - instead it goes to the &lsquo;update&rsquo; action</p>
+
+<p>if we look closer inspecting HTML, there are a few hidden things wrapped in a div, one of them looking like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;_method&quot;</span> <span class="na">type=</span><span class="s">&quot;hidden&quot;</span> <span class="na">value=</span><span class="s">&quot;patch&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>this is where our HTML verb (method) is actually re-assigned to PATCH (Rails uses session params for this, because some browsers only supports GET and POST methods &lt;&mdash; another Rails convention)</p>
+
+<p>!!!!! - form_for is smart enough to recognize if our instance variable (@post in the example) refers to an existing object or creating a new one and will set the correct verb/method (in the hidden element) accordingly &mdash;- thus we can extract our form to a partial and use it for different actions (create, edit, etc.) !!!!!</p>
+
+<p>Our form partial that we could create here would effectively be used by 4 actions (new, create, edit, update) - thus we need to be very careful here.</p>
+
+<p>since our form uses @post instance variable, each action needs to have it defined
+make sure to test all the paths that we use/redirect to (especially error cases)</p>
+
+<h3>before_action (in Rails 3.x - before_filters)</h3>
+
+<p>If we notice that in many of our actions we use some code many times, we can extract this to before_actions (which works like before filter in Sinatra):</p>
+
+<figure class='code'><figcaption><span>posts_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">PostController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+</span><span class='line'>  <span class="n">before_action</span> <span class="ss">:set_post</span><span class="p">,</span> <span class="ss">only</span><span class="p">:</span> <span class="o">[</span><span class="ss">:show</span><span class="p">,</span> <span class="ss">:edit</span><span class="p">,</span> <span class="ss">:update</span><span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">#code code code</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kp">private</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">set_post</span>
+</span><span class='line'>    <span class="no">Post</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>&lsquo;:set_post&rsquo; sets our action to be executed before each action</p>
+
+<p>&lsquo;only:&rsquo; filters this to certain actions we want</p>
+
+<p>since we can set some repeating actions to that kind of before filter, we can end up having some empty methods (Rails conventions again!)</p>
+
+<p>before_action is usually used for two purposes:</p>
+
+<ol>
+<li><p>to set up instance variable for action</p></li>
+<li><p>redirect based on some condition</p></li>
+</ol>
+
+
+<h3>Non-stadard flow</h3>
+
+<p>Example of non-standard flow: create comment form that appears on the post page (in opposition to stadard flow, where it would be on create comment page).</p>
+
+<figure class='code'><figcaption><span>posts/show.html.erb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1">#code code code</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">#Create a comment</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="sx">%= form_for [@post, @comment] do |f| %&gt;</span>
+</span><span class='line'><span class="sx">  &lt;%=</span> <span class="n">f</span><span class="o">.</span><span class="n">text_area</span> <span class="ss">:body</span> <span class="sx">%&gt;</span>
+</span><span class='line'><span class="sx">    </span>
+</span><span class='line'><span class="sx">  &lt;%= f.submit &quot;Create Comment&quot; %&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="sx">% end </span><span class="o">%&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>posts_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1">#code code code</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">show</span>
+</span><span class='line'>  <span class="vi">@comment</span> <span class="o">=</span> <span class="no">Comment</span><span class="o">.</span><span class="n">new</span> <span class="c1">#we need to set that for our form to work</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>comments_controller.rb      </span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1">#code code code</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">create</span>
+</span><span class='line'>  <span class="vi">@post</span> <span class="o">=</span> <span class="no">Post</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:post_id</span><span class="o">]</span><span class="p">)</span> <span class="c1">#this is how we need to refer to id here (post_id in opposition to just id when we&#39;re in post controller - that&#39;s because of how we get that saved by Rails in our params hash)</span>
+</span><span class='line'>  <span class="vi">@comment</span> <span class="o">=</span> <span class="no">Comment</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">params</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="ss">:comment</span><span class="p">)</span><span class="o">.</span><span class="n">permit</span><span class="p">(</span><span class="ss">:body</span><span class="p">))</span> <span class="c1">#strong parameters - normally we&#39;d extract that to a private method, but with no update action there is not much point there</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">if</span> <span class="vi">@comment</span><span class="o">.</span><span class="n">save</span>
+</span><span class='line'>    <span class="n">flash</span><span class="o">[</span><span class="ss">:notice</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;Your comment was added&quot;</span> <span class="c1">#need to ask how that works in next live session</span>
+</span><span class='line'>    <span class="n">redirect_to</span> <span class="n">post_path</span><span class="p">(</span><span class="vi">@post</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="n">render</span> <span class="s1">&#39;posts/show&#39;</span> <span class="c1">#we can&#39;t render comment view here, because we don&#39;t have that action (only create) and we want to see our comments on the post page</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The path we want here is: /posts/:post_id/comments(.:format)
+      - @post needs to be an existing object (we&rsquo;re on show post page, so that&rsquo;s okat)
+      - @comment needs to be a new object</p>
+
+<h2>Sum Up</h2>
+
+<p>And that&rsquo;s it. Quite some notes, as I look at it right now. I know that it&rsquo;s not too pretty (and really chaotic!), I&rsquo;m making notes in my text editor (<a href="http://www.sublimetext.com/3">Sublime 3</a>) and formatting it would take a lot of my precious time ;) But it&rsquo;s the content that matters, right? The least I could do was to extract and format the code, which I did with a help of a cool Wordpress plugin I just found yesterday, <a href="http://wordpress.org/plugins/codecolorer/">CodeColorer</a>.</p>
+
+<p>The video lasted for about 2.5 hours (split into two parts) and is just one in a series that there are in each Tealeaf course.</p>
+</div>
+<br/>
+
+  <p class="meta text-center text-muted">        
+    
+
+
+  </p>
+
+
+
+        <hr/>
+        <footer>
+          
+            <div class="sharing text-center">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://webdeveloperfromscratch.com/blog/the-learning-continues-some-rails-magic/" data-via="" data-counturl="http://webdeveloperfromscratch.com/blog/the-learning-continues-some-rails-magic/" >Tweet</a>
+  
+  
+  
+</div>
+
+          
+          
+            <ul class="meta text-muted pager">
+              
+              <li class="previous"><a href="/blog/tictactoe-ruby-game/" title="Previous Post: TicTacToe Ruby Game">&laquo; TicTacToe Ruby Game</a></li>
+              
+              
+              <li class="next"><a href="/blog/become-a-web-developer-for-free/" title="Next Post: Become a Web Developer for Free?">Become a Web Developer for Free? &raquo;</a></li>
+              
+            </ul>
+          
+        </footer>
+      </article>
+      
+        <section>
+          <h1>Comments</h1>
+          <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+        </section>
+      
+    </div>
+
+    
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>

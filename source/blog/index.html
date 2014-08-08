@@ -3,14 +3,31 @@ layout: default
 title: Blog
 ---
 
-<!-- copied from source/index -->
 
-<div class="container with-top-margin">
 
-  {% for post in site.posts reverse %}
-    {% include index_post.html %}
+
+<div class="blog-index container with-top-margin">
+  {% assign index = true %}
+  {% for post in paginator.posts %}
+  {% assign content = post.content %}
+    <article>
+      {% include index_post.html %}
+    </article>
   {% endfor %}
-
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      {% if paginator.next_page %}
+        <a class="prev" href="{{paginator.next_page_path}}">&larr; Older</a>
+      {% endif %}
+      {% if paginator.previous_page %}
+      <a class="next pull-right" href="{{paginator.previous_page_path}}">Newer &rarr;</a>
+      {% endif %}
+      <br/>
+      <div>
+        <a class="centered-link" href="/blog/archives">Blog Archives</a>
+      </div>
+    </div>
+  </div>
   <br/>
   <br/>
   <br/>
