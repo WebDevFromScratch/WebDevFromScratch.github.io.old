@@ -469,7 +469,7 @@ ul.inline-list li {
 
 /* -------------- MEDIA QUERIES ---------- */
 
-@media (max-width: 1279px) {
+@media screen and (max-width: 1279px), screen and (max-height: 799px) {
   .thumbnail-photo {
     display: block;
     width: 180px;
