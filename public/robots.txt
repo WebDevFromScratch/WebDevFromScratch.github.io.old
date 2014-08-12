@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://WebDevFromScratch.github.io/sitemap.xml 
+Sitemap: http://www.webdeveloperfromscratch.com/sitemap.xml 

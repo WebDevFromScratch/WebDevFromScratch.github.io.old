@@ -48,6 +48,10 @@ footer[role=contentinfo] {
   margin: 0 auto;
 }
 
+.fa, .glyphicon {
+  cursor: default;
+}
+
 /* ----------------- TYPOGRAPHY ----------------------*/
 
 p, a, nav, button {
@@ -465,7 +469,7 @@ ul.inline-list li {
 
 /* -------------- MEDIA QUERIES ---------- */
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   .thumbnail-photo {
     display: block;
     width: 180px;
