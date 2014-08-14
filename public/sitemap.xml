@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-dot-4-plus-wdfs-revamped/</loc>
+    <lastmod>2014-08-14T11:16:55+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://www.webdeveloperfromscratch.com/blog/building-is-fun/</loc>
     <lastmod>2014-07-24T14:50:34+02:00</lastmod>
     <priority>0.8</priority>
@@ -95,49 +101,49 @@
   
   <url>
     <loc>http://www.webdeveloperfromscratch.com/blog/archives/</loc>
-    <lastmod>2014-08-13T11:22:16+02:00</lastmod>
+    <lastmod>2014-08-14T12:15:45+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.webdeveloperfromscratch.com/work/</loc>
-    <lastmod>2014-08-13T11:22:16+02:00</lastmod>
+    <lastmod>2014-08-14T12:15:45+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.webdeveloperfromscratch.com/blog/</loc>
-    <lastmod>2014-08-13T11:22:16+02:00</lastmod>
+    <lastmod>2014-08-14T12:15:45+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.webdeveloperfromscratch.com/</loc>
-    <lastmod>2014-08-13T11:22:16+02:00</lastmod>
+    <lastmod>2014-08-14T12:15:45+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://www.webdeveloperfromscratch.com/about/</loc>
-    <lastmod>2014-08-13T11:22:16+02:00</lastmod>
+    <lastmod>2014-08-14T12:15:45+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.webdeveloperfromscratch.com/blog/categories/</loc>
-    <lastmod>2014-08-13T11:22:16+02:00</lastmod>
+    <lastmod>2014-08-14T12:15:45+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.webdeveloperfromscratch.com/blog/categories/</loc>
-    <lastmod>2014-08-13T11:22:16+02:00</lastmod>
+    <lastmod>2014-08-14T12:15:45+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

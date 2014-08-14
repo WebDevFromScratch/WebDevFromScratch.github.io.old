@@ -95,6 +95,66 @@
     <article>
       
 <h1 class="blog-h1" itemprop="name headline" class="text-center">
+  <a href="/blog/tealeaf-progress-check-no-dot-4-plus-wdfs-revamped/" itemprop="url">Tealeaf Progress Check No.4 + WDfS Revamped</a>
+</h1>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <p class="meta text-muted text-center blog-p">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-08-14T11:16:55+02:00"  data-updated="true" itemprop="datePublished dateCreated">Aug 14<sup>th</sup>, 2014</time>
+      <br/>
+      
+
+
+    </p>
+    <p>Long time no see. I just made a promise to myself <a href="http://www.webdeveloperfromscratch.com/blog/building-is-fun/">last time</a> that I will be writing at least one post each week and then go on a 20-day-no-post spell straigh away. Nicely played, man&hellip; It is a holiday season here and I did take a couple days breaks here and there, it&rsquo;s also not like I was doing nothing all the time, so let&rsquo;s get to what happened since last blog post.</p>
+
+<h2>Having Fun with rspec and HAML</h2>
+
+<p>So I wrapped up the first week of the <a href="http://www.gotealeaf.com/curriculum#!production-apps">3rd and last Tealeaf course</a>, which took me a little bit longer than I thought. The curriculum focuses strongly on <a href="http://en.wikipedia.org/wiki/Test-driven_development">Test Driven Development</a> (TDD) in Rails and this first week was a very good introduction. I learned how to use <a href="http://rspec.info/">rspec</a> and why it&rsquo;s good to have tests for my apps. It was also a whole new experience, writing a Rails app using tests. I have to say I like this way a lot! It&rsquo;s like first thinking about what each piece of code I&rsquo;m about to write should accomplish, laying out guidlines for it and only afterwards writing this code, so that it fulfills the set requirements. So far, I am a bit confused with tests and I seem to miss some cases writing them on my own. But solution videos are always there to clear any doubts I have any, so I can fix my mistakes on the go. Also, the course forums started to feel more alive as of late (even though I was not a part of it, lol).</p>
+
+<p>And then there&rsquo;s <a href="http://haml.info/">HAML</a>. I was really confused about what&rsquo;s going when I first saw mockups for pages wirtten in HAML. And I know that after these breaks I&rsquo;ve been having I will probably go through the confusions all over again (it should be a tad easier this time, hopefully). But after learning the basic rules of it, I love HAML! The markup is so much better than pure HTML, there&rsquo;s a lot less to write and it simply looks prettier when I look at my code! The only thing is, one really needs to be careful about what he&rsquo;s doing. Simple indentation mistake could cause a lot of problems, that seem really hard to catch later on.</p>
+
+<h2>A Whole New Web Developer from Scratch</h2>
+
+<p>This took me a good week, but finally I can say I am done. I decided I had it with <a href="https://wordpress.com/">Wordpress</a> and it&rsquo;s time to move to something else, my new choice being <a href="http://jekyllrb.com/">Jekyll</a> on speed, which is <a href="http://octopress.org/">Octopress</a>. It is different than WP, in a way that there&rsquo;s not really a database to work with. It&rsquo;s really a collection of static sites, generated each time when you use a specific rake command in the console.</p>
+
+<p>With the help of instructions that can be found on Octopress docs pages and some google search, I was able to create a brand new blog with it. Next thing to do was to customize the look (<a href="https://github.com/kAworu/octostrap3">Octostrap3</a> was exactly what I was looking for, needed only minor tweaking), import my stuff from Wordpress (easy!), deploy to Github pages (easier!) and delegating the comments to 3rd party system - <a href="http://disqus.com/">Disqus</a> (should be easy, but I had my hard times with this). Just like that, I had my blog re-created from scratch. Neat!</p>
+
+<p>Yet this was not enough. In the pre-course for the 3rd Tealeaf course, there was an exercise to do. Learn jQuery, it said, go to a great tutorial called &ldquo;<a href="http://try.jquery.com/">Try jQuery</a>&rdquo; and have fun. And I did. The tutorial was awesome and even though I had done some jQuery before, I had a great time with it. It&rsquo;s amazing how much can one accomplish on the front-end, knowing only the basics of jQuery. Simple, yet classy effects are extremely easy to create with it&rsquo;s help. Needless to say, after the tutorial I wanted some more practice. Building my personal website seemed like a perfect exercise.</p>
+
+<p>I am not going to write in details how it was done, but you can see the effects here on <a href="http://www.webdeveloperfromscratch.com/">Web Developer from Scratch</a>. It was really cool and made me realize that as much as I love writing back-end logic, I like working on the front-end almost just as much. Thus next time, when I write another Rails practice app, I&rsquo;ll also work on it&rsquo;s looks as well afterwards. Should be tons of fun!</p>
+
+<h2>What&rsquo;s Ahead</h2>
+
+<p>Well, I&rsquo;m not making any promises this time. I have my next few weekend full, so again less time for learning, which is not great. As I said before though, it&rsquo;s not a sprint. I just need to work hard whenever I can (as well as write here!) and that&rsquo;s it. I really miss learning with Tealeaf, so the motivation is there. I need to clean the code for my personal website, too. So far, I focused mostly on making it work and not too much on DRY and cleanliness.</p>
+
+<p>I&rsquo;ve also started to &lsquo;test the job market waters&rsquo; by sending a couple of resumes out. I&rsquo;m not 100% sure I&rsquo;m ready, but on the other hand I know that I could learn even faster if I got a job at this point. I guess we&rsquo;ll see what comes of it.</p>
+
+<p>Until next!</p>
+
+    <br/>
+    <hr/>
+  </div>
+</div>
+    </article>
+  
+  
+    <article>
+      
+<h1 class="blog-h1" itemprop="name headline" class="text-center">
   <a href="/blog/building-is-fun/" itemprop="url">Building Is Fun!</a>
 </h1>
 <div class="row">
@@ -377,247 +437,6 @@
 <p>Above checkboxes describes <strong>has_many :through</strong> relationship, between <strong>Post</strong> and <strong>Category</strong> classes (models).</p>
 
 <p>More on Rails helpers for checkboxes can be found in the various docs, for example on <a href="http://apidock.com/">Apidock</a>: <a href="http://apidock.com/rails/ActionView/Helpers/FormTagHelper/check_box_tag">check_box_tag</a>, <a href="http://apidock.com/rails/v4.0.2/ActionView/Helpers/FormOptionsHelper/collection_check_boxes">collection_check_boxes</a></p>
-
-    <br/>
-    <hr/>
-  </div>
-</div>
-    </article>
-  
-  
-    <article>
-      
-<h1 class="blog-h1" itemprop="name headline" class="text-center">
-  <a href="/blog/its-not-a-sprint/" itemprop="url">It&#8217;s Not a Sprint</a>
-</h1>
-<div class="row">
-  <div class="col-md-8 col-md-offset-2">
-    <p class="meta text-muted text-center blog-p">
-      
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-06-25T10:24:10+02:00"  data-updated="true" itemprop="datePublished dateCreated">Jun 25<sup>th</sup>, 2014</time>
-      <br/>
-      
-
-
-    </p>
-    <p>So I&rsquo;ve been having some time off learning. I stayed at my family&rsquo;s for almost a week and when I came back, it was my time to be a host for the weekend. My study time suffered a hard blow. I did what I could, but it wasn&rsquo;t much. The last two days though have been very fruitful learning-wise and I feel like I&rsquo;m regaining the good rhytm again. Here&rsquo;s what I&rsquo;ve been able to accomplish since the last blog post.</p>
-
-<h2>The Odin Project</h2>
-
-<p>As I promised <a href="http://www.webdeveloperfromscratch.com/blog/become-a-web-developer-for-free/">the last time</a>, I decided to check <a href="http://www.theodinproject.com/">The Odin Project</a> while I was away. Of course I had less time than I hoped (don&rsquo;t even ask&hellip;). Still, I did make some progress with it. I skimmed through <a href="http://www.theodinproject.com/web-development-101">&lsquo;Web Development 101&rsquo;</a> and dived into <a href="http://www.theodinproject.com/ruby-programming/">&lsquo;Ruby Programming&rsquo;</a> section.</p>
-
-<p>I thought I&rsquo;m already not too bad with my Ruby skills, but TOP exercises proved me wrong. Due to time constraints, I was only able to complete the basic &lsquo;Building Blocks&rsquo; part. And it was not easy&hellip; After doing some required reading (Very helpful! I not only refreshed my knowledge, but learned a few new tricks) I tried to tackle the building part. &lsquo;Estimated time: 3-5 hrs&rsquo; did not apply to me. I didn&rsquo;t measured it anyhow, but I think it was more like 7 hrs in my case. And I don&rsquo;t think my code is too great. I had to rely on the help from google quite a few times. Below are my solutions to the problems from this chapter:</p>
-
-<p><strong>Caesar&rsquo;s Cipher</strong></p>
-
-<figure class='code'><figcaption><span>ceasars_cipher.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="vi">@letters</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="o">.</span><span class="n">.</span><span class="s1">&#39;z&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">to_a</span> <span class="c1">#size = 26</span>
-</span><span class='line'><span class="vi">@capital_letters</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="o">.</span><span class="n">.</span><span class="s1">&#39;Z&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">to_a</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">def</span> <span class="nf">caesar_cipher</span>
-</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;Write a message to decode!&quot;</span>
-</span><span class='line'>  <span class="n">string</span> <span class="o">=</span> <span class="nb">gets</span><span class="o">.</span><span class="n">chomp</span>
-</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;What should the shift be?&quot;</span>
-</span><span class='line'>  <span class="n">shift</span> <span class="o">=</span> <span class="nb">gets</span><span class="o">.</span><span class="n">chomp</span><span class="o">.</span><span class="n">to_i</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="n">string</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sr">//</span><span class="p">)</span> <span class="c1">#turned into an array</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="n">string</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">char</span><span class="o">|</span>
-</span><span class='line'>    <span class="k">if</span> <span class="o">!</span><span class="vi">@letters</span><span class="o">.</span><span class="n">include?</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="vi">@capital_letters</span><span class="o">.</span><span class="n">include?</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
-</span><span class='line'>      <span class="nb">print</span> <span class="n">char</span>
-</span><span class='line'>    <span class="k">elsif</span> <span class="vi">@capital_letters</span><span class="o">.</span><span class="n">include?</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
-</span><span class='line'>      <span class="n">index</span> <span class="o">=</span> <span class="vi">@capital_letters</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
-</span><span class='line'>      <span class="n">index</span> <span class="o">+=</span> <span class="n">shift</span>
-</span><span class='line'>      <span class="n">index</span> <span class="sx">%= @capital_letters.size</span>
-</span><span class='line'>
-</span><span class='line'><span class="sx">      print @capital_letters[index]</span>
-</span><span class='line'><span class="sx">    else</span>
-</span><span class='line'><span class="sx">      index =</span> <span class="vi">@letters</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
-</span><span class='line'>      <span class="n">index</span> <span class="o">+=</span> <span class="n">shift</span>
-</span><span class='line'>      <span class="n">index</span> <span class="o">%=</span> <span class="vi">@letters</span><span class="o">.</span><span class="n">size</span>
-</span><span class='line'>
-</span><span class='line'>      <span class="nb">print</span> <span class="vi">@letters</span><span class="o">[</span><span class="n">index</span><span class="o">]</span>
-</span><span class='line'>    <span class="k">end</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'><span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'><span class="n">caesar_cipher</span>
-</span><span class='line'>
-</span><span class='line'><span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>Stock Picker</strong></p>
-
-<figure class='code'><figcaption><span>stock_picker.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">array</span> <span class="o">=</span> <span class="o">[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">122</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">54</span><span class="o">]</span>
-</span><span class='line'>
-</span><span class='line'><span class="nb">puts</span> <span class="s2">&quot;Prices of a stock in time: </span><span class="si">#{</span><span class="n">array</span><span class="si">}</span><span class="s2">&quot;</span>
-</span><span class='line'><span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">def</span> <span class="nf">stock_picker</span><span class="p">(</span><span class="n">some_array</span><span class="p">)</span>
-</span><span class='line'>  <span class="n">diff_array</span> <span class="o">=</span> <span class="nb">Array</span><span class="o">.</span><span class="n">new</span>
-</span><span class='line'>  <span class="n">diff_hash</span> <span class="o">=</span> <span class="no">Hash</span><span class="o">.</span><span class="n">new</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="n">some_array</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">num</span><span class="o">|</span>
-</span><span class='line'>    <span class="k">unless</span> <span class="n">some_array</span><span class="o">[</span><span class="n">some_array</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="o">]</span> <span class="o">==</span> <span class="kp">nil</span>
-</span><span class='line'>      <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
-</span><span class='line'>      <span class="k">until</span> <span class="n">some_array</span><span class="o">[</span><span class="n">some_array</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="n">x</span><span class="o">]</span> <span class="o">==</span> <span class="kp">nil</span>
-</span><span class='line'>        <span class="n">diff</span> <span class="o">=</span> <span class="n">some_array</span><span class="o">[</span><span class="n">some_array</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="n">x</span><span class="o">]</span> <span class="o">-</span> <span class="n">num</span>
-</span><span class='line'>        <span class="n">diff_array</span> <span class="o">&lt;&lt;</span> <span class="n">diff</span>
-</span><span class='line'>        <span class="n">diff_hash</span><span class="o">[</span><span class="n">diff</span><span class="o">]</span> <span class="o">=</span> <span class="o">[</span><span class="n">some_array</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">num</span><span class="p">),</span> <span class="n">some_array</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="n">x</span><span class="o">]</span>
-</span><span class='line'>        <span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>
-</span><span class='line'>      <span class="k">end</span>
-</span><span class='line'>    <span class="k">end</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="c1"># get the biggest difference and print the correct statement (corrected so that days starts at 1)</span>
-</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;Best day to buy is </span><span class="si">#{</span><span class="n">diff_hash</span><span class="o">[</span><span class="n">diff_array</span><span class="o">.</span><span class="n">max</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2"> and to sell is </span><span class="si">#{</span><span class="n">diff_hash</span><span class="o">[</span><span class="n">diff_array</span><span class="o">.</span><span class="n">max</span><span class="o">][</span><span class="mi">1</span><span class="o">]</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">.&quot;</span>
-</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;This would make you $</span><span class="si">#{</span><span class="n">diff_array</span><span class="o">.</span><span class="n">max</span><span class="si">}</span><span class="s2">.&quot;</span>
-</span><span class='line'><span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'><span class="n">stock_picker</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>Substrings</strong></p>
-
-<figure class='code'><figcaption><span>substrings.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">my_dictionary</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;below&quot;</span><span class="p">,</span><span class="s2">&quot;down&quot;</span><span class="p">,</span><span class="s2">&quot;go&quot;</span><span class="p">,</span><span class="s2">&quot;going&quot;</span><span class="p">,</span><span class="s2">&quot;horn&quot;</span><span class="p">,</span><span class="s2">&quot;how&quot;</span><span class="p">,</span><span class="s2">&quot;howdy&quot;</span><span class="p">,</span><span class="s2">&quot;it&quot;</span><span class="p">,</span><span class="s2">&quot;i&quot;</span><span class="p">,</span>
-</span><span class='line'>              <span class="s2">&quot;low&quot;</span><span class="p">,</span><span class="s2">&quot;own&quot;</span><span class="p">,</span><span class="s2">&quot;part&quot;</span><span class="p">,</span><span class="s2">&quot;partner&quot;</span><span class="p">,</span><span class="s2">&quot;sit&quot;</span><span class="o">]</span>
-</span><span class='line'>
-</span><span class='line'><span class="nb">puts</span> <span class="s2">&quot;Please enter text to check with our dictionary:&quot;</span>
-</span><span class='line'><span class="n">my_string</span> <span class="o">=</span> <span class="nb">gets</span><span class="o">.</span><span class="n">chomp</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">def</span> <span class="nf">substrings</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="n">dictionary</span><span class="p">)</span>
-</span><span class='line'>  <span class="n">substrings_hash</span> <span class="o">=</span> <span class="no">Hash</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-</span><span class='line'>  <span class="n">string</span><span class="o">.</span><span class="n">downcase!</span> <span class="c1">#to catch capital letters</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="n">dictionary</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">word</span><span class="o">|</span>
-</span><span class='line'>    <span class="c1">#new_string = string #how to make them not being the same var?</span>
-</span><span class='line'>    <span class="n">new_string</span> <span class="o">=</span> <span class="nb">String</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">string</span><span class="p">)</span> <span class="c1">#this works perfectly!</span>
-</span><span class='line'>    <span class="k">while</span> <span class="n">new_string</span><span class="o">.</span><span class="n">include?</span> <span class="n">word</span>
-</span><span class='line'>      <span class="n">substrings_hash</span><span class="o">[</span><span class="n">word</span><span class="o">]</span> <span class="o">+=</span> <span class="mi">1</span>
-</span><span class='line'>      <span class="n">new_string</span><span class="o">.</span><span class="n">slice!</span> <span class="n">word</span>
-</span><span class='line'>    <span class="k">end</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="c1">#sorting by occurence (additional feature)</span>
-</span><span class='line'>  <span class="n">substrings_hash</span> <span class="o">=</span> <span class="n">substrings_hash</span><span class="o">.</span><span class="n">sort_by</span> <span class="p">{</span> <span class="o">|</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="o">|</span> <span class="n">value</span> <span class="p">}</span><span class="o">.</span><span class="n">reverse</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
-</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;These words from our dictionary occur in your text:&quot;</span>
-</span><span class='line'>  <span class="nb">p</span> <span class="n">substrings_hash</span>
-</span><span class='line'><span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'><span class="n">substrings</span><span class="p">(</span><span class="n">my_string</span><span class="p">,</span> <span class="n">my_dictionary</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>I once got stuck for a really long time (during &lsquo;stockpicker&rsquo;) and thought this is too difficult. But the key was to just set what I need to achieve clearly, using pseudo code and then I just started from scratch again and it was a pretty smooth process from then on. I have to say though that I felt really, really bad having to spend so much time on so little code. I thought I&rsquo;m not that bad at Ruby! I definitely need to carry on with TOP to improve in this area, I will probably set aside one day a week for this.</p>
-
-<h2>Tealeaf</h2>
-
-<p>I also didn&rsquo;t do too much in regard to <a href="http://www.gotealeaf.com">Tealeaf</a>. I&rsquo;m catching on for the last two days though, I refreshed my knowledge by re-reading my notes and watched the lectures vids that appeared in the meanwhile. After that, I started implementing a Twitter-clone app on my own and I was able to get quite far! I feel like I got a good grasp of Rails basics by now and this makes me really happy. I know there&rsquo;s a long way to go from here, but I&rsquo;m glad I&rsquo;m actually able to make stuff on my own and understand what I&rsquo;m doing. That&rsquo;s exactly what I was expecting from Tealeaf Academy, so I&rsquo;m even more convinced now that what I paid for it is a money well spent.</p>
-
-<p>For the next few days I&rsquo;m going to work some more on my Twitter app and also my Postit app (Reddit clone) implementation. I&rsquo;ll hopefully also catch up with lessons a little, wrap up Week 2 and maybe even do the whole Week 3. I have a lot of time for these this week. Fingers crossed!</p>
 
     <br/>
     <hr/>
