@@ -48,8 +48,12 @@ footer[role=contentinfo] {
   margin: 0 auto;
 }
 
-.fa, .glyphicon {
+i, .glyphicon {
   cursor: default;
+}
+
+.icon-link {
+  cursor: pointer;
 }
 
 /* ----------------- TYPOGRAPHY ----------------------*/
@@ -529,6 +533,10 @@ ul.inline-list li {
     left: 50%;
     margin-top: -300px;
     margin-left: -200px;
+  }
+
+  .h5-no-margin {
+    margin-top: 3px;
   }
 
   .my-slideshow {
