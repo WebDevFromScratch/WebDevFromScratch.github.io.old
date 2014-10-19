@@ -95,6 +95,48 @@
     <article>
       
 <h1 class="blog-h1" itemprop="name headline" class="text-center">
+  <a href="/blog/im-not-dead-yet/" itemprop="url">I&#8217;m Not Dead Yet!</a>
+</h1>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <p class="meta text-muted text-center blog-p">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-10-18T20:05:09+02:00"  data-updated="true" itemprop="datePublished dateCreated">Oct 18<sup>th</sup>, 2014</time>
+      <br/>
+      
+
+
+    </p>
+    <p>Wow, so much dust in here! As if nobody posted here for two months or so. Oh, wait&hellip;</p>
+
+<p>That was a long break for me and I can&rsquo;t say that it was fully planned. I did plan about a month off learning (longer holidays with the fiancee was long due) but after that I lost focus and couldn&rsquo;t go back to <a href="http://www.gotealeaf.com">Tealeaf</a>. I also got back to my part-time side gig and that took a part of my time, too. But then one must make money somehow to finance the time sacrificed for learning new things.</p>
+
+<p>Overall, I once again feel ready for hard work (and lots of it!). I feel like I need a written plan, though, so I don&rsquo;t lose focus again. And I guess it&rsquo;s best to share that plan on a public forum (that means here, on this very blog), which should cause me being more responsible in sticking to it. I&rsquo;m going to post it as the next entry as soon as I figure this out, maybe I&rsquo;ll be updating the plan on the go, but I need at least a rough one ASAP.</p>
+
+<p>Meanwhile, for about a week now I was reminding myself the basics of Ruby and Rails again. Boy, I got really rusty during my time off! Right now I&rsquo;m in process of writing a simple blog app to repeat the basic concepts in practice, I&rsquo;ll post a link to it on <a href="https://github.com/WebDevFromScratch">my github</a> once it&rsquo;s done.</p>
+
+    <br/>
+    <hr/>
+  </div>
+</div>
+    </article>
+  
+  
+    <article>
+      
+<h1 class="blog-h1" itemprop="name headline" class="text-center">
   <a href="/blog/tealeaf-progress-check-no-dot-4-plus-wdfs-revamped/" itemprop="url">Tealeaf Progress Check No.4 + WDfS Revamped</a>
 </h1>
 <div class="row">
@@ -343,100 +385,6 @@
 <h2>Meetup Time</h2>
 
 <p>Tommorow I&rsquo;m going to my first live Ruby meetup (with <a href="http://www.meetup.com/Krakow-Ruby-Users-Group/">KRUG</a>) and am pretty excited about it. I&rsquo;m not really sure what to expect from it but I do hope to meet some more experienced developers and see where that might take me. Also, there&rsquo;s supposed to be free beer, so who wouldn&rsquo;t go? ;) I&rsquo;ll report on how the meetup went soon.</p>
-
-    <br/>
-    <hr/>
-  </div>
-</div>
-    </article>
-  
-  
-    <article>
-      
-<h1 class="blog-h1" itemprop="name headline" class="text-center">
-  <a href="/blog/rails-code-check_box_tag-vs-collection_check_boxes/" itemprop="url">Rails Code - Check_box_tag vs Collection_check_boxes</a>
-</h1>
-<div class="row">
-  <div class="col-md-8 col-md-offset-2">
-    <p class="meta text-muted text-center blog-p">
-      
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-06-27T10:11:44+02:00"  data-updated="true" itemprop="datePublished dateCreated">Jun 27<sup>th</sup>, 2014</time>
-      <br/>
-      
-
-
-    </p>
-    <p>Just a short post, that shows two ways of implementing checkbox feature in a Rails form. First using <strong>check_box_tag</strong> helper. I have to say I was quite happy getting to this:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sx">% Category.all.each </span><span class="k">do</span> <span class="o">|</span><span class="n">cat</span><span class="o">|</span> <span class="sx">%&gt;</span>
-</span><span class='line'><span class="sx">  &lt;%= cat.name %&gt;</span>
-</span><span class='line'>  <span class="o">&lt;%=</span> <span class="n">check_box_tag</span> <span class="ss">:category_ids</span><span class="p">,</span>
-</span><span class='line'>                     <span class="n">cat</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
-</span><span class='line'>                     <span class="vi">@post</span><span class="o">.</span><span class="n">categories</span><span class="o">.</span><span class="n">include?</span><span class="p">(</span><span class="n">cat</span><span class="p">),</span>
-</span><span class='line'>                     <span class="nb">name</span><span class="p">:</span> <span class="s1">&#39;post[category_ids][]&#39;</span> <span class="sx">%&gt;</span>
-</span><span class='line'><span class="sx">&lt;% end %&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>But then I discovered there is a more elegant way, using <strong>collection_check_boxes</strong>:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;%=</span> <span class="n">collection_check_boxes</span> <span class="ss">:post</span><span class="p">,</span> <span class="ss">:category_ids</span><span class="p">,</span> <span class="no">Category</span><span class="o">.</span><span class="n">all</span><span class="p">,</span> <span class="ss">:id</span><span class="p">,</span> <span class="ss">:category_name</span> <span class="o">%&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Yup, just that accomplishes pretty much the same. Below a more elegant way, with labels added. Also, the object is already set (as &lsquo;f&rsquo;) by our model backed form (see below, under (&lsquo;Form&rsquo;)):</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;%=</span> <span class="n">f</span><span class="o">.</span><span class="n">collection_check_boxes</span> <span class="ss">:category_ids</span><span class="p">,</span> <span class="no">Category</span><span class="o">.</span><span class="n">all</span><span class="p">,</span> <span class="ss">:id</span><span class="p">,</span> <span class="ss">:category_name</span> <span class="k">do</span> <span class="o">|</span><span class="n">cb</span><span class="o">|</span> <span class="sx">%&gt;</span>
-</span><span class='line'><span class="sx">  &lt;% cb.label {cb.check_box + cb.text} %&gt;</span>
-</span><span class='line'><span class="o">&lt;</span><span class="sx">% end </span><span class="o">%&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>Form</h2>
-
-<p>These snippets above assumes we have this form set up:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sx">%= form_for @post do |f| %&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="sx">  #our code goes here</span>
-</span><span class='line'>
-</span><span class='line'><span class="sx">  &lt;%=</span> <span class="n">f</span><span class="o">.</span><span class="n">submit</span> <span class="n">action_description</span><span class="p">,</span> <span class="ss">class</span><span class="p">:</span> <span class="s1">&#39;btn btn-primary&#39;</span> <span class="sx">%&gt;</span>
-</span><span class='line'><span class="sx">&lt;% end %&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Above checkboxes describes <strong>has_many :through</strong> relationship, between <strong>Post</strong> and <strong>Category</strong> classes (models).</p>
-
-<p>More on Rails helpers for checkboxes can be found in the various docs, for example on <a href="http://apidock.com/">Apidock</a>: <a href="http://apidock.com/rails/ActionView/Helpers/FormTagHelper/check_box_tag">check_box_tag</a>, <a href="http://apidock.com/rails/v4.0.2/ActionView/Helpers/FormOptionsHelper/collection_check_boxes">collection_check_boxes</a></p>
 
     <br/>
     <hr/>
