@@ -95,6 +95,219 @@
     <article>
       
 <h1 class="blog-h1" itemprop="name headline" class="text-center">
+  <a href="/blog/tictactoe-ruby-game/" itemprop="url">TicTacToe Ruby Game</a>
+</h1>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <p class="meta text-muted text-center blog-p">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-06-09T10:11:03+02:00"  data-updated="true" itemprop="datePublished dateCreated">Jun 9<sup>th</sup>, 2014</time>
+      <br/>
+      
+
+
+    </p>
+    <p>After writing a post here yesterday (<a href="http://www.webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-2-course-1-done/">Tealeaf Progress Check No. 2 – Course 1 Done!</a>), I went back to review the course 1 for the last time and found out that there was a new task to be done, building a simple command line TicTacToe game. As exercises is definitely something I need, I instantly decided that I want to try and write this of course :) Couple of hours later (and with a little help from the video on how to tackle this), my game was ready. I figured this should be a good piece of code to share as the first of hopefully many more here on the blog. So here it is:</p>
+
+<h2>Ruby TicTacToe</h2>
+
+<figure class='code'><figcaption><span>tictactoe.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">board_fields</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">2</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">3</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">4</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">5</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">6</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span>
+</span><span class='line'>                <span class="mi">7</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">8</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">9</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">}</span>
+</span><span class='line'><span class="n">empty_fields</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="o">]</span>
+</span><span class='line'><span class="vi">@game</span> <span class="o">=</span> <span class="kp">true</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">draw_board</span><span class="p">(</span><span class="n">bf</span><span class="p">)</span>
+</span><span class='line'>  <span class="nb">system</span> <span class="s2">&quot;clear&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;Fields Numbers:&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot; 1 | 2 | 3 &quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;---+---+---&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot; 4 | 5 | 6 &quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;---+---+---&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot; 7 | 8 | 9 &quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;Game Board:&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot; </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="si">}</span><span class="s2"> | </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span><span class="si">}</span><span class="s2"> | </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="si">}</span><span class="s2"> &quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;---+---+---&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot; </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">4</span><span class="o">]</span><span class="si">}</span><span class="s2"> | </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">5</span><span class="o">]</span><span class="si">}</span><span class="s2"> | </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">6</span><span class="o">]</span><span class="si">}</span><span class="s2"> &quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;---+---+---&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot; </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">7</span><span class="o">]</span><span class="si">}</span><span class="s2"> | </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">8</span><span class="o">]</span><span class="si">}</span><span class="s2"> | </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">9</span><span class="o">]</span><span class="si">}</span><span class="s2"> &quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">fill_field</span><span class="p">(</span><span class="n">bf</span><span class="p">,</span> <span class="n">ef</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">bf</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="o">|</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">value</span> <span class="o">!=</span> <span class="s2">&quot; &quot;</span>
+</span><span class='line'>      <span class="n">ef</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">all_fields_filled?</span><span class="p">(</span><span class="n">ef</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">if</span> <span class="n">ef</span> <span class="o">==</span> <span class="o">[]</span>
+</span><span class='line'>    <span class="nb">puts</span> <span class="s2">&quot;It&#39;s a tie!&quot;</span>
+</span><span class='line'>    <span class="vi">@game</span> <span class="o">=</span> <span class="kp">false</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">winner?</span><span class="p">(</span><span class="n">bf</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">winning_routes</span> <span class="o">=</span> <span class="o">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="o">]</span><span class="p">,</span>
+</span><span class='line'>                   <span class="o">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="o">]]</span>
+</span><span class='line'>  <span class="n">winning_routes</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">elem</span><span class="o">|</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">bf</span><span class="o">[</span><span class="n">elem</span><span class="o">[</span><span class="mi">0</span><span class="o">]]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">bf</span><span class="o">[</span><span class="n">elem</span><span class="o">[</span><span class="mi">1</span><span class="o">]]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">bf</span><span class="o">[</span><span class="n">elem</span><span class="o">[</span><span class="mi">2</span><span class="o">]]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span>
+</span><span class='line'>      <span class="nb">puts</span> <span class="s2">&quot;Congratulations! You win!&quot;</span>
+</span><span class='line'>      <span class="vi">@game</span> <span class="o">=</span> <span class="kp">false</span>
+</span><span class='line'>      <span class="nb">exit</span> <span class="c1">#else there could be two winners</span>
+</span><span class='line'>    <span class="k">elsif</span> <span class="n">bf</span><span class="o">[</span><span class="n">elem</span><span class="o">[</span><span class="mi">0</span><span class="o">]]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">bf</span><span class="o">[</span><span class="n">elem</span><span class="o">[</span><span class="mi">1</span><span class="o">]]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">bf</span><span class="o">[</span><span class="n">elem</span><span class="o">[</span><span class="mi">2</span><span class="o">]]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span>
+</span><span class='line'>      <span class="nb">puts</span> <span class="s2">&quot;Sorry! You lost!&quot;</span>
+</span><span class='line'>      <span class="vi">@game</span> <span class="o">=</span> <span class="kp">false</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">#game starts</span>
+</span><span class='line'><span class="n">draw_board</span><span class="p">(</span><span class="n">board_fields</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">while</span> <span class="vi">@game</span>
+</span><span class='line'>  <span class="c1">#player turn</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;Choose an empty field (1-9):&quot;</span>
+</span><span class='line'>  <span class="n">chosen_field</span> <span class="o">=</span> <span class="nb">gets</span><span class="o">.</span><span class="n">chomp</span><span class="o">.</span><span class="n">to_i</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">until</span> <span class="n">empty_fields</span><span class="o">.</span><span class="n">include?</span> <span class="n">chosen_field</span>
+</span><span class='line'>    <span class="nb">puts</span> <span class="s2">&quot;Wrong field number. Please choose again.&quot;</span>
+</span><span class='line'>    <span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'>    <span class="n">chosen_field</span> <span class="o">=</span> <span class="nb">gets</span><span class="o">.</span><span class="n">chomp</span><span class="o">.</span><span class="n">to_i</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">board_fields</span><span class="o">[</span><span class="n">chosen_field</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;X&quot;</span>
+</span><span class='line'>  <span class="n">fill_field</span><span class="p">(</span><span class="n">board_fields</span><span class="p">,</span> <span class="n">empty_fields</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">draw_board</span><span class="p">(</span><span class="n">board_fields</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">winner?</span><span class="p">(</span><span class="n">board_fields</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">all_fields_filled?</span><span class="p">(</span><span class="n">empty_fields</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">#computer turn</span>
+</span><span class='line'>  <span class="n">comp_chosen_field</span> <span class="o">=</span> <span class="n">empty_fields</span><span class="o">.</span><span class="n">sample</span> <span class="c1">#this picks a random element</span>
+</span><span class='line'>  <span class="n">board_fields</span><span class="o">[</span><span class="n">comp_chosen_field</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;O&quot;</span>
+</span><span class='line'>  <span class="n">fill_field</span><span class="p">(</span><span class="n">board_fields</span><span class="p">,</span> <span class="n">empty_fields</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">draw_board</span><span class="p">(</span><span class="n">board_fields</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">winner?</span><span class="p">(</span><span class="n">board_fields</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">all_fields_filled?</span><span class="p">(</span><span class="n">empty_fields</span><span class="p">)</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">#think about how to implement AI (google for it maybe)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Computer&rsquo;s decision are random at this point, implementing some AI for this is probably beyond me right now. But I&rsquo;d love to go back to this little game some time from now and add this feature. This can also be very easily changed into a game for two players, which would work nicely (no AI needed there!).</p>
+
+    <br/>
+    <hr/>
+  </div>
+</div>
+    </article>
+  
+  
+    <article>
+      
+<h1 class="blog-h1" itemprop="name headline" class="text-center">
   <a href="/blog/tealeaf-progress-check-no-2-course-1-done/" itemprop="url">Tealeaf Progress Check No. 2 - Course 1 Done!</a>
 </h1>
 <div class="row">
@@ -325,48 +538,6 @@
 <p>**By the way, price for all three courses is quite advantegous too.</p>
 
 <p>***No, I am not associated with Tealeaf in any other way than learning from them. I do love their stuff and I simply wrote what I think of them.</p>
-
-    <br/>
-    <hr/>
-  </div>
-</div>
-    </article>
-  
-  
-    <article>
-      
-<h1 class="blog-h1" itemprop="name headline" class="text-center">
-  <a href="/blog/programmings-dirtiest-little-secret/" itemprop="url">&#8220;Programming&#8217;s Dirtiest Little Secret&#8221;</a>
-</h1>
-<div class="row">
-  <div class="col-md-8 col-md-offset-2">
-    <p class="meta text-muted text-center blog-p">
-      
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-04-17T10:01:27+02:00"  data-updated="true" itemprop="datePublished dateCreated">Apr 17<sup>th</sup>, 2014</time>
-      <br/>
-      
-
-
-    </p>
-    <p>I did not come up with that title (maybe you figured by the quotes). I found a great blog post that explains what is the &ldquo;secret&rdquo;, it&rsquo;s a pretty good read in itself and it addresses the case so well: <a href="http://steve-yegge.blogspot.com/2008/09/programmings-dirtiest-little-secret.html">Stevey&rsquo;s Blog Rants</a>.</p>
-
-<p>I was actually already looking for ways to learn how to touchtype. I tried it once before a few months ago but I lacked persistence then. After reading Steve&rsquo;s post I don&rsquo;t anymore. I&rsquo;m not writing all that slow to be honest, but my technique is far from perfect. And I know this is something I simply need if I want to have a headstart in any type of programming career. So I practiced for the last four days, 30 minutes each day. And I&rsquo;m going to carry on for at least the next month and see where it takes me!</p>
-
-<h2>Typingweb</h2>
-
-<p>Looking for a tool that would help me here, I came across <a href="http://www.typingweb.com/">typingweb</a>. It&rsquo;s a great place where you can start learning touchtyping straight away, without the need  of even downloading anything. There are free courses for beginners and advanced. Seems pretty cool to me! I&rsquo;ll post an update afer some time to see how my writing speed developed.</p>
 
     <br/>
     <hr/>

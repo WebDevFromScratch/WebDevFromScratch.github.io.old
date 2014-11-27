@@ -4,7 +4,7 @@
   <title><![CDATA[Web Developer from Scratch]]></title>
   <link href="http://www.webdeveloperfromscratch.com/atom.xml" rel="self"/>
   <link href="http://www.webdeveloperfromscratch.com/"/>
-  <updated>2014-10-19T13:52:44+02:00</updated>
+  <updated>2014-11-27T15:18:53+01:00</updated>
   <id>http://www.webdeveloperfromscratch.com/</id>
   <author>
     <name><![CDATA[Piotr Klosinski]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Bootcamping and Stuff]]></title>
+    <link href="http://www.webdeveloperfromscratch.com/blog/bootcamping-and-stuff/"/>
+    <updated>2014-11-27T14:03:19+01:00</updated>
+    <id>http://www.webdeveloperfromscratch.com/blog/bootcamping-and-stuff</id>
+    <content type="html"><![CDATA[<p>Once more, I took quite some time off this blog. I hope this wouldn&rsquo;t become a habit of mine, to just post once a month or so&hellip; Nah, this can not happen! The blog really kept me going at times before and it may yet do it again. I know I should put more of the actual code here and not just what I think on this and that. I definitely plan to do so. But meanwhile, let me just write about what I was up to lately.</p>
+
+<h2>Pilot Bootcamp</h2>
+
+<p>So I had a chance to attend an actual, live bootcamp. It was a two-week thing, organized routinely a few times a year by a Wroclaw-based web development house, <a href="http://pilot.co/">Pilot</a>. Here&rsquo;s an excerpt from their website:</p>
+
+<blockquote><p><em>From nearly a hundred applicants we pick the best 15 to join our 2‑week Pilot Bootcamp. They will learn to build digital products with Ruby on Rails by working with best‑in‑class instructors in a fast‑paced, startup‑like environment.</em></p>
+
+<p><em>And the best thing? It’s completely free.</em></p></blockquote>
+
+<p>I have no idea how many people actually applied but I did feel lucky to get chosen. It was 100% free (as promised) and they were even so kind to provide sandwiches, snacks and drinks everyday. This was just a side benefit, though, because what was most important was of course knowledge to be gained. And I did learn a lot throughout this two weeks.</p>
+
+<p>A bunch of really smart people were chosen alongside me and I soon discovered I am nowhere near the level of some with my programming skills. There were also several guys from Pilot there everyday to supervise our progress and we could bother them with our questions for the whole time.</p>
+
+<p>We spent the first couple of days doing some vanilla Ruby, just to ensure that every participant are familiar with it (there were some who haven&rsquo;t written a single line in Ruby before the Bootcamp). It was quite fun and also involved writing tests, which was particularly great for me, having only written literally several test cases before in my life as a coder. Throughout the next eight days, we have been writing a Rails app from scratch (also with tests, yay!). This was a little boring for me for like the end of week 1, because we did some basic stuff I already knew. Nevertheless, it was a nice repetition. The fun started later on, during week 2, when I often found myself confused about how to proceed. With a little help, I was able to complete all the tasks, though, so they were on the right skill level for me*.</p>
+
+<p>Some stuff I have learned/improved during the Bootcamp:</p>
+
+<ul>
+<li>custom validations</li>
+<li>some stuff about security</li>
+<li>continous integration and deployment with <a href="https://semaphoreapp.com/">Semaphore</a></li>
+<li><a href="http://haml.info/">HAML</a></li>
+<li>localization</li>
+<li>ActionMailer and <a href="https://sendgrid.com/">Sendgrid</a></li>
+<li><a href="http://www.imagemagick.org/">ImageMagick</a> and <a href="https://github.com/markevans/dragonfly">Dragonfly</a></li>
+<li>Amazon S3</li>
+<li>integrating Facebook with <a href="https://github.com/mkdynamic/omniauth-facebook">omniauth</a></li>
+<li>and loads and loads about testing! (tools, gems, techniques and more)</li>
+</ul>
+
+
+<p>So as you can see, these two weeks was definitely a time well spent! I would gladly pay money for this amount of knowledge in such a short span of time. What&rsquo;s even more awesome, is that it is now quite likely that I&rsquo;ll join Pilot via their Pilot Academy programme (<a href="http://pilot.co/bootcamp">more about it here</a>) and am pretty excited to join the pros! This will not happen before the end of the year though, so I will keep learning on my own in the meanwhile.</p>
+
+<hr />
+
+<p>*You know, when the process goes something like this: &ldquo;wtf? I have no idea how to do this&hellip;&rdquo; &ndash;> google, stack overflow &ndash;> trial and error &ndash;> &ldquo;nope, that&rsquo;s not the way to go&rdquo; &ndash;> google some more, read some documentation &ndash;> &ldquo;aaarrrgh, this should work! why is this not working?!&rdquo; &ndash;> google, stack, docs, maybe ask for help &ndash;> &ldquo;hmm, that&rsquo;s actually easier than I thought!&rdquo;</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[I'm Not Dead Yet!]]></title>
