@@ -3,7 +3,7 @@ layout: post
 title: "Bootcamping and Stuff"
 date: 2014-11-27 14:03:19 +0100
 comments: true
-categories: 
+categories:
 ---
 
 Once more, I took quite some time off this blog. I hope this wouldn't become a habit of mine, to just post once a month or so... Nah, this can not happen! The blog really kept me going at times before and it may yet do it again. I know I should put more of the actual code here and not just what I think on this and that. I definitely plan to do so. But meanwhile, let me just write about what I was up to lately.
@@ -24,16 +24,25 @@ We spent the first couple of days doing some vanilla Ruby, just to ensure that e
 
 Some stuff I have learned/improved during the Bootcamp:
 
-+ custom validations
-+ some stuff about security
-+ continous integration and deployment with [Semaphore](https://semaphoreapp.com/)
-+ [HAML](http://haml.info/)
-+ localization
-- ActionMailer and [Sendgrid](https://sendgrid.com/)
-- [ImageMagick](http://www.imagemagick.org/) and [Dragonfly](https://github.com/markevans/dragonfly)
-- Amazon S3
-- integrating Facebook with [omniauth](https://github.com/mkdynamic/omniauth-facebook)
-- and loads and loads about testing! (tools, gems, techniques and more)
+  * custom validations
+
+  * some stuff about security
+
+  * continous integration and deployment with [Semaphore](https://semaphoreapp.com/)
+
+  * [HAML](http://haml.info/)
+
+  * localization
+
+  * ActionMailer and [Sendgrid](https://sendgrid.com/)
+
+  * [ImageMagick](http://www.imagemagick.org/) and [Dragonfly](https://github.com/markevans/dragonfly)
+
+  * Amazon S3
+
+  * integrating Facebook with [omniauth](https://github.com/mkdynamic/omniauth*facebook)
+
+  * and loads and loads about testing! (tools, gems, techniques and more)
 
 So as you can see, these two weeks was definitely a time well spent! I would gladly pay money for this amount of knowledge in such a short span of time. What's even more awesome, is that it is now quite likely that I'll join Pilot via their Pilot Academy programme ([more about it here](http://pilot.co/bootcamp)) and am pretty excited to join the pros! This will not happen before the end of the year though, so I will keep learning on my own in the meanwhile.
 

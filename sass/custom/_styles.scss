@@ -91,6 +91,10 @@ h1, h2, h3, h4, h5 {
   color: #FFFFFF;
 }
 
+.black {
+  color: #000;
+}
+
 .title {
   font-size: 5em;
   font-weight: 500;
@@ -141,7 +145,6 @@ h1, h2, h3, h4, h5 {
 
 #section1 {
   background-image: image-url("home/macbook.jpg");
-  color: white;
   position: relative;
   h5 {
     position: absolute;
@@ -159,12 +162,10 @@ h1, h2, h3, h4, h5 {
 
 #section3 {
   background-image: image-url("home/night-sky.jpg");
-  color: white;
 }
 
 #section4 {
   background-image: image-url("home/sky.jpg");
-  color: white;
   position: relative;
 
 }
@@ -188,7 +189,7 @@ h1, h2, h3, h4, h5 {
 .thumbnail-photo {
   display: block;
   width: 250px;
-  height: 250px; 
+  height: 250px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -203,17 +204,30 @@ h1, h2, h3, h4, h5 {
   background-size: cover;
 }
 
-ul {
+ul.about-skills {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-ul.inline-list li {
-  display: inline-block;
+ul.inline-list {
+  list-style-type: none;
+  margin-left: -40px;
+  li {
+    display: inline-block;
+  }
 }
 
 /* ------- Blog ----------- */
+
+body {
+  color: #fff;
+  background-image: image-url("low_contrast_linen.png");
+}
+
+.blog-post-title {
+  color: #fff;
+}
 
 /* -------- Work ----------- */
 
@@ -477,7 +491,7 @@ ul.inline-list li {
   .thumbnail-photo {
     display: block;
     width: 180px;
-    height: 180px; 
+    height: 180px;
     margin-right: auto;
     margin-left: auto;
   }
