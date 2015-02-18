@@ -7,7 +7,8 @@ title: Web Developer from Scratch
 subtitle: from zero to hero in web development
 author: Piotr Klosinski
 simple_search: https://www.google.com/search
-description: how to go from knowing absolutely nothing about web development to becoming a proficient web developer
+description: "How to become a web developer from scratch with Ruby on Rails"
+keywords: "web developer from scratch, web development, coding from scratch, ruby, rails, ruby on rails"
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -95,7 +96,7 @@ disqus_short_name: webdevfromscratch
 disqus_show_comment_count: true
 
 # Google Analytics
-google_analytics_tracking_id: UA-53773478-1
+google_analytics_tracking_id: UA-59911926-1
 
 # Facebook Like
 facebook_like: false
