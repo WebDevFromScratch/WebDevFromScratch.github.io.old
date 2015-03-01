@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Blog - Web Developer from Scratch</title>
+  <meta name="author" content="Piotr Klosinski">
+
+  
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.webdeveloperfromscratch.com/blog/posts/3">
+  <link href="/favicon.png" type="image/png" rel="icon">
+  <link href="/atom.xml" rel="alternate" title="Web Developer from Scratch" type="application/atom+xml">
+
+  <script src="/javascripts/libs/jquery/jquery-2.0.3.min.js"></script>
+<script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+
+<!-- Google Fonts -->
+<link href="http://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
+
+<link href="http://fonts.googleapis.com/css?family=Lato:300,300italic" rel="stylesheet" type="text/css" />
+
+<!-- Font Awesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- fonts mfizz -->
+<link href="/assets/font-mfizz/font-mfizz.css" rel="stylesheet">
+
+
+  
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  
+   <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-59911926-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+
+</head>
+
+  <body   >
+    <div id="wrap">
+      <header role="banner">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand navbar-brand-centered visible-xs">
+                <span>WD<span class="satisfy-font">f</span>S</span>
+            </a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <a href="/" class="navbar-brand navbar-brand-centered hidden-xs">
+                    <span>WD<span class="satisfy-font">f</span>S</span>
+                </a>
+                <li><a href="/blog">BLOG</a></li>
+                <li><a href="/work">WORK</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+      </header>
+      <div class="blog-index container with-top-margin">
+  
+  
+  
+    <article>
+      
+<h1 class="blog-h1" itemprop="name headline" class="text-center">
+  <a href="/blog/tictactoe-ruby-game/" itemprop="url">TicTacToe Ruby Game</a>
+</h1>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <p class="meta text-muted text-center blog-p">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-06-09T10:11:03+02:00"  data-updated="true" itemprop="datePublished dateCreated">Jun 9<sup>th</sup>, 2014</time>
+      <br/>
+      
+
+
+    </p>
+    <p>After writing a post here yesterday (<a href="http://www.webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-2-course-1-done/">Tealeaf Progress Check No. 2 – Course 1 Done!</a>), I went back to review the course 1 for the last time and found out that there was a new task to be done, building a simple command line TicTacToe game. As exercises is definitely something I need, I instantly decided that I want to try and write this of course :) Couple of hours later (and with a little help from the video on how to tackle this), my game was ready. I figured this should be a good piece of code to share as the first of hopefully many more here on the blog. So here it is:</p>
+
+<h2>Ruby TicTacToe</h2>
+
+<figure class='code'><figcaption><span>tictactoe.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">board_fields</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">2</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">3</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">4</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">5</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">6</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span>
+</span><span class='line'>                <span class="mi">7</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">8</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">9</span> <span class="o">=&gt;</span> <span class="s2">&quot; &quot;</span><span class="p">}</span>
+</span><span class='line'><span class="n">empty_fields</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="o">]</span>
+</span><span class='line'><span class="vi">@game</span> <span class="o">=</span> <span class="kp">true</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">draw_board</span><span class="p">(</span><span class="n">bf</span><span class="p">)</span>
+</span><span class='line'>  <span class="nb">system</span> <span class="s2">&quot;clear&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;Fields Numbers:&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot; 1 | 2 | 3 &quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;---+---+---&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot; 4 | 5 | 6 &quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;---+---+---&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot; 7 | 8 | 9 &quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;Game Board:&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot; </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="si">}</span><span class="s2"> | </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span><span class="si">}</span><span class="s2"> | </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="si">}</span><span class="s2"> &quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;---+---+---&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot; </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">4</span><span class="o">]</span><span class="si">}</span><span class="s2"> | </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">5</span><span class="o">]</span><span class="si">}</span><span class="s2"> | </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">6</span><span class="o">]</span><span class="si">}</span><span class="s2"> &quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;---+---+---&quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot; </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">7</span><span class="o">]</span><span class="si">}</span><span class="s2"> | </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">8</span><span class="o">]</span><span class="si">}</span><span class="s2"> | </span><span class="si">#{</span><span class="n">bf</span><span class="o">[</span><span class="mi">9</span><span class="o">]</span><span class="si">}</span><span class="s2"> &quot;</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">fill_field</span><span class="p">(</span><span class="n">bf</span><span class="p">,</span> <span class="n">ef</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">bf</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="o">|</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">value</span> <span class="o">!=</span> <span class="s2">&quot; &quot;</span>
+</span><span class='line'>      <span class="n">ef</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">all_fields_filled?</span><span class="p">(</span><span class="n">ef</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">if</span> <span class="n">ef</span> <span class="o">==</span> <span class="o">[]</span>
+</span><span class='line'>    <span class="nb">puts</span> <span class="s2">&quot;It&#39;s a tie!&quot;</span>
+</span><span class='line'>    <span class="vi">@game</span> <span class="o">=</span> <span class="kp">false</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">winner?</span><span class="p">(</span><span class="n">bf</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">winning_routes</span> <span class="o">=</span> <span class="o">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="o">]</span><span class="p">,</span>
+</span><span class='line'>                   <span class="o">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="o">]]</span>
+</span><span class='line'>  <span class="n">winning_routes</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">elem</span><span class="o">|</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">bf</span><span class="o">[</span><span class="n">elem</span><span class="o">[</span><span class="mi">0</span><span class="o">]]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">bf</span><span class="o">[</span><span class="n">elem</span><span class="o">[</span><span class="mi">1</span><span class="o">]]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">bf</span><span class="o">[</span><span class="n">elem</span><span class="o">[</span><span class="mi">2</span><span class="o">]]</span> <span class="o">==</span> <span class="s2">&quot;X&quot;</span>
+</span><span class='line'>      <span class="nb">puts</span> <span class="s2">&quot;Congratulations! You win!&quot;</span>
+</span><span class='line'>      <span class="vi">@game</span> <span class="o">=</span> <span class="kp">false</span>
+</span><span class='line'>      <span class="nb">exit</span> <span class="c1">#else there could be two winners</span>
+</span><span class='line'>    <span class="k">elsif</span> <span class="n">bf</span><span class="o">[</span><span class="n">elem</span><span class="o">[</span><span class="mi">0</span><span class="o">]]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">bf</span><span class="o">[</span><span class="n">elem</span><span class="o">[</span><span class="mi">1</span><span class="o">]]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">bf</span><span class="o">[</span><span class="n">elem</span><span class="o">[</span><span class="mi">2</span><span class="o">]]</span> <span class="o">==</span> <span class="s2">&quot;O&quot;</span>
+</span><span class='line'>      <span class="nb">puts</span> <span class="s2">&quot;Sorry! You lost!&quot;</span>
+</span><span class='line'>      <span class="vi">@game</span> <span class="o">=</span> <span class="kp">false</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">#game starts</span>
+</span><span class='line'><span class="n">draw_board</span><span class="p">(</span><span class="n">board_fields</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">while</span> <span class="vi">@game</span>
+</span><span class='line'>  <span class="c1">#player turn</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;Choose an empty field (1-9):&quot;</span>
+</span><span class='line'>  <span class="n">chosen_field</span> <span class="o">=</span> <span class="nb">gets</span><span class="o">.</span><span class="n">chomp</span><span class="o">.</span><span class="n">to_i</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">until</span> <span class="n">empty_fields</span><span class="o">.</span><span class="n">include?</span> <span class="n">chosen_field</span>
+</span><span class='line'>    <span class="nb">puts</span> <span class="s2">&quot;Wrong field number. Please choose again.&quot;</span>
+</span><span class='line'>    <span class="nb">puts</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'>    <span class="n">chosen_field</span> <span class="o">=</span> <span class="nb">gets</span><span class="o">.</span><span class="n">chomp</span><span class="o">.</span><span class="n">to_i</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">board_fields</span><span class="o">[</span><span class="n">chosen_field</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;X&quot;</span>
+</span><span class='line'>  <span class="n">fill_field</span><span class="p">(</span><span class="n">board_fields</span><span class="p">,</span> <span class="n">empty_fields</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">draw_board</span><span class="p">(</span><span class="n">board_fields</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">winner?</span><span class="p">(</span><span class="n">board_fields</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">all_fields_filled?</span><span class="p">(</span><span class="n">empty_fields</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">#computer turn</span>
+</span><span class='line'>  <span class="n">comp_chosen_field</span> <span class="o">=</span> <span class="n">empty_fields</span><span class="o">.</span><span class="n">sample</span> <span class="c1">#this picks a random element</span>
+</span><span class='line'>  <span class="n">board_fields</span><span class="o">[</span><span class="n">comp_chosen_field</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;O&quot;</span>
+</span><span class='line'>  <span class="n">fill_field</span><span class="p">(</span><span class="n">board_fields</span><span class="p">,</span> <span class="n">empty_fields</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">draw_board</span><span class="p">(</span><span class="n">board_fields</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">winner?</span><span class="p">(</span><span class="n">board_fields</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">all_fields_filled?</span><span class="p">(</span><span class="n">empty_fields</span><span class="p">)</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">#think about how to implement AI (google for it maybe)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Computer&rsquo;s decision are random at this point, implementing some AI for this is probably beyond me right now. But I&rsquo;d love to go back to this little game some time from now and add this feature. This can also be very easily changed into a game for two players, which would work nicely (no AI needed there!).</p>
+
+    <br/>
+    <hr/>
+  </div>
+</div>
+    </article>
+  
+  
+    <article>
+      
+<h1 class="blog-h1" itemprop="name headline" class="text-center">
+  <a href="/blog/tealeaf-progress-check-no-2-course-1-done/" itemprop="url">Tealeaf Progress Check No. 2 - Course 1 Done!</a>
+</h1>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <p class="meta text-muted text-center blog-p">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-06-08T11:55:07+02:00"  data-updated="true" itemprop="datePublished dateCreated">Jun 8<sup>th</sup>, 2014</time>
+      <br/>
+      
+
+
+    </p>
+    <p>Okay, so I&rsquo;m through with the Ruby course and I feel I should do a little sum up of that one. I actually finished about a week ago and am now well into the Rails (second) course, but let&rsquo;s not get ahead of myself</p>
+
+<h2>A Bit About the Course</h2>
+
+<p>So before I started the <a href="http://www.gotealeaf.com">Tealeaf Academy</a> I had basically zero Ruby knowledge. Haven&rsquo;t written a single line of code in Ruby. I was cruising through the course a little faster than the program suggests (it took me about 3 weeks altogether, including pre-course) but that was due to the fact that I had a lot of free time and was putting every second of that into learning Ruby. So do I feel I mastered the language after the course? Well, no, not really. But I do feel I can understand the code I read (for the most part). This is something that Tealeaf really excel in. Chris is doing a great job in explaining how everything works together. But I kind of wished that there was a little bit more of practice exercises. Yes, it is a valid point that practice is something I can do on my own, but still. I would love it there was more simple things that we had built throughout the course that would really helps the gained knowledge stick for good. One more thing I didn&rsquo;t like too much was that even though we built three programs/apps during the course, each of them was a Blackjack game. Sure, they were not the same, since we were using different concepts and tools on the way, but again, a little more variance here would be great. These things are something Tealeaf guys should probably do better in the future. Overall though, I have to say I was not disappointed by the course at all. I learned a lot. I learned in a nice, structured way. I learned fast. And it was fun!</p>
+
+<h2>What I learned</h2>
+
+<p>So let&rsquo;s move on to what I was able to learn. Starting with Ruby:</p>
+
+<ul>
+<li><p>how to install Ruby and it&rsquo;s gems and how they work</p></li>
+<li><p>Ruby syntax and style</p></li>
+<li><p>Ruby basics: variables (and their scope, methods, iterations, basic objects (arrays &amp; hashes), classes and more)</p></li>
+<li><p>procedural and OOP in Ruby</p></li>
+<li><p>how to tie all these concepts together to create a working program</p></li>
+</ul>
+
+
+<p>Aside of Ruby, I also learned a lot of stuff on the side:</p>
+
+<ul>
+<li><p>Git and Github</p></li>
+<li><p>choosing and working with text/code editor</p></li>
+<li><p>basics of command line</p></li>
+<li><p>pseudo code</p></li>
+<li><p>HTTP protocol</p></li>
+<li><p>HTML and CSS</p></li>
+<li><p>Javascript and jQuery</p></li>
+<li><p>AJAX</p></li>
+<li><p>Bootstrap front-end framework</p></li>
+<li><p>Sinatra Ruby framework</p></li>
+<li><p>Heroku deployment</p></li>
+</ul>
+
+
+<p>And most importantly, I learned how to solve problems/bugs on my own. And if I am not able to do so, how to explain the problem I&rsquo;m having to more experienced programmers, so that they would be able to help me.</p>
+
+<p>Needless to say, it was a lot of stuff in a very short time. I still don&rsquo;t feel super comfortable using all of that stuff, but I can now use this knowledge and gain practice on my own. I definitely need to look for a few simple Ruby programs that I can try to write on my own. I also need to review the things I&rsquo;m not 100% sure about and try to understand them fully when I have a while to spare. Oh, and I guess I should start posting some code on the blog as well!</p>
+
+<p>Still, I&rsquo;m not stopping here and am now going further with Rails. Loving it so far!</p>
+
+    <br/>
+    <hr/>
+  </div>
+</div>
+    </article>
+  
+  
+    <article>
+      
+<h1 class="blog-h1" itemprop="name headline" class="text-center">
+  <a href="/blog/program-or-be-programmed/" itemprop="url">Program or Be Programmed</a>
+</h1>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <p class="meta text-muted text-center blog-p">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-05-27T14:26:59+02:00"  data-updated="true" itemprop="datePublished dateCreated">May 27<sup>th</sup>, 2014</time>
+      <br/>
+      
+
+
+    </p>
+    <p>A cool video I was going to post some time ago and forgot.</p>
+
+    <br/>
+    <hr/>
+  </div>
+</div>
+    </article>
+  
+  
+    <article>
+      
+<h1 class="blog-h1" itemprop="name headline" class="text-center">
+  <a href="/blog/tealeaf-progress-check-no-1/" itemprop="url">Tealeaf Progress Check No.1</a>
+</h1>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <p class="meta text-muted text-center blog-p">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-05-22T16:48:17+02:00"  data-updated="true" itemprop="datePublished dateCreated">May 22<sup>nd</sup>, 2014</time>
+      <br/>
+      
+
+
+    </p>
+    <p>So I finished first two weeks&#8217; material from the first <a href="http://www.gotealeaf.com">Tealeaf</a> course. Time for some first impressions is due!</p>
+
+<h2>Procedural vs OOP</h2>
+
+<p>Let&rsquo;s start with what I&rsquo;ve learned through this time.</p>
+
+<p>First of all, it really is true that the more time you have for it, the faster you&rsquo;ll finish the course. It took me about 10 days to finish those first two weeks + pre-course. And pre-course is basically designed as a material for an additional week. So it&rsquo;s fair to say I was speeding through it quite nicely so far. But I have been really putting in the time. I haven&rsquo;t been tracking it or anything but most of my days I spent sitting in front of my computer from early morning right until well after dark (I did have breaks during the day though, sometimes they were pretty long - but still I was kind of thinking &lsquo;programming&rsquo; the whole time). I also had some advantage because the project we&rsquo;re building (Blackjack) is really something I did in the Python <a href="http://www.coursera.org">Coursera</a> course not too long ago. I was also introduced to <a href="http://en.wikipedia.org/wiki/Object-oriented_programming">Object Oriented Programming</a> before I started here (during the very same Python course). That definitely gave me a head start and I could focus on the most important thing at the beginning (in my opinion).</p>
+
+<h2>Basics of Ruby</h2>
+
+<p>This thing is of course learning the basics of Ruby programming language. Ruby is a foundation of Rails framework, so to learn Rails one should first (at least) familiarize oneself with Ruby. I have to say I really like how Tealeaf goes about it (I know, praising them again, but it&rsquo;s deserved so far). They wrote their own introduction book, which lays the backgrounds nicely. You learn the syntax and methods while doing (not too hard) exercises at the end of each chapter. I like that I was able to pick it up quite fast and move straight to writing my own first program in Ruby, which was the Blackjack project.</p>
+
+<p>We done it two ways, first using procedural code and then OOP. I have to say I am already falling in love with OOP. Once again, I have to say Tealeaf did their job very nicely explaining how to use OOP in Ruby and most importantly, why to use it at all. As I said before, with my limited programming experience, I was able to go through this pretty smoothly, with just a little help from TAs on the forum.</p>
+
+<p>I understand it&rsquo;s different for everyone and if you have an absolute zero programming experience, this would probably take a little more time and effort to accomplish. Fortunately, the course materials are structured in a way that you can learn with the help of solution videos. You may think it&rsquo;s not that effective, but I can guarantee you it works. I learned Python by mostly leaning on help from videos and code from others and I could see the difference now, I can do a lot of stuff that I wouldn&rsquo;t actually expect me to on my own.</p>
+
+<h2>Week Three</h2>
+
+<p>I moved to week three and well&hellip; I&rsquo;m confused so far. The material touches on a lot of new subjects, like details of the HTTP protocol (I never even though about how it works, always just took it all for granted) and Sinatra framework. My edge I had for the first two weeks of the course is gone. I&rsquo;ve watched the lectures for the material, did some required reading and I guess I need to go through it once more. I can feel I picked some stuff up but I&rsquo;m not yet comfortable enough to start building the browser version of Blackjack, which is this week&rsquo;s goal. I have to say though that I love one thing -  I really start to feel like a developer a little bit by learning stuff kind of on the side of programming but much needed in the web environment. That&rsquo;s giving me an additional boost I really need now!</p>
+
+    <br/>
+    <hr/>
+  </div>
+</div>
+    </article>
+  
+  
+    <article>
+      
+<h1 class="blog-h1" itemprop="name headline" class="text-center">
+  <a href="/blog/the-new-hope-ruby-on-rails-ftw/" itemprop="url">The New Hope - Ruby on Rails FTW</a>
+</h1>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <p class="meta text-muted text-center blog-p">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-05-19T12:15:58+02:00"  data-updated="true" itemprop="datePublished dateCreated">May 19<sup>th</sup>, 2014</time>
+      <br/>
+      
+
+
+    </p>
+    <p>I&rsquo;ve been quiet for quite a while now. I got kind of lost in the process of learning so many various things related to web development, that I forgot about what I initially aimed for. And that is, building real things. Until recently, I tried so many different things and with each of these tools (languages, frameworks, whatever have you), I only barely scratched the surface. Luckily, I finally realized that it&rsquo;s not the best way to go about it all. I realized what I should&rsquo;ve been doing from the start is trying to master one thing. And if I succeed, then try something else. So I tried to follow this approach and actually become good at something.</p>
+
+<h2>Dig Deeper</h2>
+
+<p>I decided I should learn one language first. But not just &ldquo;go through some online tutorial&rdquo; learn. Learn it for real. Then go look for a job using that language and progress further. Still not knowing much about how to do it, I found a cool <a href="https://www.coursera.org/course/interactivepython">Python course at a popular MOOCs site Coursera</a> (if you&rsquo;re not sure what MOOC is, check this <a href="http://en.wikipedia.org/wiki/Massive_open_online_course">wikipedia page</a>). I can&rsquo;t say anything bad about it at all, to be honest. I like the approach (building games), the lecturers (Steve is simply hilarious!), forums and all, yet there was one thing that wouldn&rsquo;t stop bothering me. I was learning and having fun with it, but I had no idea how to put all that knowledge to good use in my soon-to-happen (LOL!) web development career. I ditched the final two-week long project and started to look for something that would suit my needs better.</p>
+
+<h2>Bootcamps</h2>
+
+<p>I got introduced to the idea of web development bootcamps. How do they work? In essence, you spend 3-4 months learning how to program in a given language, under the guidance of experience instructors (and learning many other related thins along the way). After that period, they (your former instructors) will likely introduce you to an employer. And bang - you just started your career as a developer. Sounds nice, right? Obviously, these camps do not come free, but it&rsquo;s an investments worth the price (which varies from around $5k to something like $20k). The thing is, those bootcamps seem to be very popular in the US, but not that much in other parts of the world (yet!)*.</p>
+
+<p>Still, I was hooked to the idea. I started to evaluate my options for something similar online. There is actually quite some choice. After googling for a while, reading a bunch of reviews and doing comparisons on my own, I decided to settle on <a href="https://www.gotealeaf.com">Tealeaf</a>.</p>
+
+<h2>Tealeaf Academy</h2>
+
+<p>What attracted me to it? For starters, I like the approach of dividing the whole learning material into three courses. If you are not a total beginner, you can start from the second or a third one. Plus, you don&rsquo;t have to pay for all of it at once. You pay for each module (course) separately, so I only needed to spend like $500 to get started with the first one.**</p>
+
+<p>Secondly, I love how they don&rsquo;t try to lure you in only to get your money. When you do your research, you&rsquo;ll see that Tealeaf representatives often use phrases like &ldquo;it&rsquo;s not for everyone&rdquo;, &ldquo;it might not suit you&rdquo;, &ldquo;for some people, other options might be better&rdquo;. They know that actually taking their courses involves a lot of self-discipline and motivation. You really need to be willing to do the job on your own if you are to accomplish their programme.</p>
+
+<p>Thirdly, there are no set, hard deadlines. Tealeaf guys understand well that not everyone has the same amount of time in hand. Each course is divided into weeks, but you can spend as much time on each week as you want. You only have 10 hours a week to spend on the course? No problem. You want to go at it full-time and finish well ahead of everyone else? Sure, why not. I love this because I don&rsquo;t have the same amount of free time every week, it varies. So whenever I can, I learn and if I need to do something else, the course is not going anywhere.</p>
+
+<p>Another thing. When you have a question, you ask it in a forums and one of the TAs will answer you often in a matter of minutes, so you can continue working on your code almost straight away. You don&rsquo;t need to wait for a specific day in the week, when you have your session with a mentor scheduled (that&rsquo;s how <a href="https://www.bloc.io/">Bloc</a>, another popular &ldquo;bootcampy&rdquo; site does it). I guess this depends on what you prefer, for me the forums is clearly a better fit.</p>
+
+<p>Finally, Tealeaf promises you moneyback option if you happen not to like how they go about stuff. That&rsquo;s a big sign of confidence in their own learning methods.</p>
+
+<p>Oh, and I almost forgot. THE MOST IMPORTANT: after completing all three courses, you should be able to build your own app using Ruby on Rails. And make it fully working on the web. That&rsquo;s exactly what I needed!***</p>
+
+<h2>So Where am I?</h2>
+
+<p>Well, not too far yet. I&rsquo;m only after pre-course and week 1 of the first course and tackling the material of the second. I actually am finding out, that my previous Coursera Python course is a big help right now. It appears that when you once figure out how programmers think, the language doesn&rsquo;t matter that much (but granted, Python and Ruby are quite similar, in my opinion at least).</p>
+
+<p>Starting a blog was actually one of the assignments/advice in the first week of the course. And I&rsquo;m glad it was there, because I seriously don&rsquo;t know if I would be writing here in the future if not for that&hellip; There will likely be a lot of Ruby (and Rails as I progress) related stuff here from now on but I&rsquo;ll try to post some useful stuff regarding other things as well from time to time. I actually have quite a large base of useful links that I gathered over that few months of my learning, so hopefully you might find some useful stuff if you&rsquo;re not Ruby-focused, too.</p>
+
+<hr/>
+
+
+<p>*To my surprise, I actually found out there are some options in Poland as well. For example <a href="http://coderslab.pl/">Coders Lab</a>. Still, it’s more expensive than Tealeaf, seems to cover less material and I would likely need to move to Warsaw (there is a weekend course, but it lasts for 16 weekends – no way I could have so many in a row free of other arrangements).</p>
+
+<p>**By the way, price for all three courses is quite advantegous too.</p>
+
+<p>***No, I am not associated with Tealeaf in any other way than learning from them. I do love their stuff and I simply wrote what I think of them.</p>
+
+    <br/>
+    <hr/>
+  </div>
+</div>
+    </article>
+  
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      
+        <a class="prev" href="/blog/posts/4">&larr; Older</a>
+      
+      
+      <a class="next pull-right" href="/blog/posts/2">Newer &rarr;</a>
+      
+      <br/>
+      <div>
+        <a class="centered-link" href="/blog/archives">Blog Archives</a>
+      </div>
+    </div>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <div class="container">
+    <p class="text-center credits">
+  Copyright &copy; 2015 - Piotr Klosinski<br>
+  <small>
+      <span class="credit">powered by <a href="http://octopress.org">Octopress</a></span>,
+      <span class="credit">customized with <a href="https://github.com/kAworu/octostrap3">octostrap3</a> and built upon to create this cool website</span>
+  </small>
+</p>
+
+</div>
+
+</div>
+
+    </div>
+  </body>
+</html>

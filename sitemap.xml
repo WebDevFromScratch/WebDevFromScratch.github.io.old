@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/bootcamping-and-stuff/</loc>
+    <lastmod>2014-11-27T14:03:19+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/im-not-dead-yet/</loc>
+    <lastmod>2014-10-18T20:05:09+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-dot-4-plus-wdfs-revamped/</loc>
+    <lastmod>2014-08-14T11:16:55+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/building-is-fun/</loc>
+    <lastmod>2014-07-24T14:50:34+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-3-course-2-done/</loc>
+    <lastmod>2014-07-14T12:21:30+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/crawling-forward-with-rails/</loc>
+    <lastmod>2014-07-08T00:06:05+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/rails-code-check_box_tag-vs-collection_check_boxes/</loc>
+    <lastmod>2014-06-27T10:11:44+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/its-not-a-sprint/</loc>
+    <lastmod>2014-06-25T10:24:10+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/become-a-web-developer-for-free/</loc>
+    <lastmod>2014-06-15T13:38:44+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/the-learning-continues-some-rails-magic/</loc>
+    <lastmod>2014-06-12T10:09:35+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/tictactoe-ruby-game/</loc>
+    <lastmod>2014-06-09T10:11:03+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-2-course-1-done/</loc>
+    <lastmod>2014-06-08T11:55:07+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/program-or-be-programmed/</loc>
+    <lastmod>2014-05-27T14:26:59+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-1/</loc>
+    <lastmod>2014-05-22T16:48:17+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/the-new-hope-ruby-on-rails-ftw/</loc>
+    <lastmod>2014-05-19T12:15:58+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/programmings-dirtiest-little-secret/</loc>
+    <lastmod>2014-04-17T10:01:27+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/1st-project-lets-go/</loc>
+    <lastmod>2014-04-14T12:53:14+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/the-journey-starts-here/</loc>
+    <lastmod>2014-04-10T17:28:12+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/work/</loc>
+    <lastmod>2015-03-01T21:14:52+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/archives/</loc>
+    <lastmod>2015-03-01T21:14:52+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/</loc>
+    <lastmod>2015-03-01T21:14:52+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/categories/</loc>
+    <lastmod>2015-03-01T21:14:52+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/</loc>
+    <lastmod>2015-03-01T21:14:52+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/about/</loc>
+    <lastmod>2015-03-01T21:14:52+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/blog/categories/</loc>
+    <lastmod>2015-03-01T21:14:52+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
+    <loc>http://www.webdeveloperfromscratch.com/assets/font-mfizz/preview.html</loc>
+    <lastmod>2015-03-01T20:31:25Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+</urlset>

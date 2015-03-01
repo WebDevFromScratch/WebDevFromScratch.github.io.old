@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Crawling Forward With Rails - Web Developer from Scratch</title>
+  <meta name="author" content="Piotr Klosinski">
+
+  
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.webdeveloperfromscratch.com/blog/crawling-forward-with-rails">
+  <link href="/favicon.png" type="image/png" rel="icon">
+  <link href="/atom.xml" rel="alternate" title="Web Developer from Scratch" type="application/atom+xml">
+
+  <script src="/javascripts/libs/jquery/jquery-2.0.3.min.js"></script>
+<script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+
+<!-- Google Fonts -->
+<link href="http://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
+
+<link href="http://fonts.googleapis.com/css?family=Lato:300,300italic" rel="stylesheet" type="text/css" />
+
+<!-- Font Awesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- fonts mfizz -->
+<link href="/assets/font-mfizz/font-mfizz.css" rel="stylesheet">
+
+
+  
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  
+   <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-59911926-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+
+</head>
+
+  <body   >
+    <div id="wrap">
+      <header role="banner">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand navbar-brand-centered visible-xs">
+                <span>WD<span class="satisfy-font">f</span>S</span>
+            </a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <a href="/" class="navbar-brand navbar-brand-centered hidden-xs">
+                    <span>WD<span class="satisfy-font">f</span>S</span>
+                </a>
+                <li><a href="/blog">BLOG</a></li>
+                <li><a href="/work">WORK</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+      </header>
+      <div class="container">
+  <div class="row with-top-margin">
+    <div class="page-content col-md-8 col-md-offset-2" itemscope itemtype="http://schema.org/Blog">
+      <meta itemprop="name" content="Web Developer from Scratch" />
+      <meta itemprop="description" content="How to become a web developer from scratch with Ruby on Rails" />
+      <meta itemprop="url" content="http://www.webdeveloperfromscratch.com" />
+      <article class="hentry" role="article" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+        
+  <header class="page-header blog-header">
+    
+      <p class="meta text-center text-muted">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-07-08T00:06:05+02:00"  data-updated="true" itemprop="datePublished dateCreated">Jul 8<sup>th</sup>, 2014</time>
+        
+           | <a href="#disqus_thread" itemprop="discussionUrl"
+             data-disqus-identifier="http://www.webdeveloperfromscratch.com">Comments</a>
+        
+      </p>
+      
+    
+    <h1 class="entry-title" itemprop="name headline">
+        Crawling Forward With Rails
+        
+    </h1>
+    
+  </header>
+
+
+<div class="entry-content clearfix" itemprop="articleBody"><p>This will likely be a random rant about what I&rsquo;ve been doing for the last week or so. I feel really tired and don&rsquo;t have a real plan for a post right now but I do feel it&rsquo;s been quiet here for too long and I need to try and keep at least some consistency if this blog is to prevail.</p>
+
+<h2>Never Stop TeaLeaf-ing</h2>
+
+<p>No surprises here, I carry on with the <a href="http://www.gotealeaf.com">Tealeaf</a> curriculum. I&rsquo;ve been taking a little more time on each subject lately, but I really feel like the knowledge sticks with me more often and it all start to tie together for real. I have one last week left on the second course and am now 100% sure I&rsquo;m going to keep learning with the final one.</p>
+
+<p>Even though I kind of feel I could have learned all I&rsquo;ve learned so far on my own, I&rsquo;m also quite convinced it would take me (at least) twice as much time. And time is of the highest value to me. I do love how the curriculum is structured and how we dive deeper at some places, really getting to know how Rails ties many technologies together. I also love how we learn how to make things from scratch and really understand what we&rsquo;re doing, instead of relying on various gems from the start. I do have some &lsquo;buts&rsquo; as well, though I&rsquo;m going to leave them until I write a sum up post of the second course.</p>
+
+<h2>Odin is Calling</h2>
+
+<p>In regards to <a href="http://www.theodinproject.com/">The Odin Project</a>, I didn&rsquo;t really do anything here since the last time, so not much to write about. I do have big plans for it though, as I really see the potential to take a lot from it. Hopefully, next update on TOP will provide more content.</p>
+
+<h2>Time to Build</h2>
+
+<p>Since I finally feel I am able to build simple apps from start to finish, I think this is a good time to start creating some stuff. This will hopefully help me to get my first job some time from now. And I do already have a few ideas up my sleeve that I can start working on and hopefully be able to accomplish:</p>
+
+<ul>
+<li>A simple TO-DO app (never really found one that suits me well)</li>
+<li>Personal Finance Tracker (as above)</li>
+<li>Two apps that I&rsquo;ve found as an initial challenge for an internship/junior dev job (those should be a good practice of what I&rsquo;ve learned so far)</li>
+<li>Building a blog from scratch using Rails (<a href="http://www.webdeveloperfromscratch.com/blog/1st-project-lets-go/">I&rsquo;ve always wanted to do this!</a>)</li>
+</ul>
+
+
+<p>I plan on spending 1-2 hrs a day building those. Hopefully this will make most of what I&rsquo;ve learned so far really stick and become natural.</p>
+
+<h2>Meetup Time</h2>
+
+<p>Tommorow I&rsquo;m going to my first live Ruby meetup (with <a href="http://www.meetup.com/Krakow-Ruby-Users-Group/">KRUG</a>) and am pretty excited about it. I&rsquo;m not really sure what to expect from it but I do hope to meet some more experienced developers and see where that might take me. Also, there&rsquo;s supposed to be free beer, so who wouldn&rsquo;t go? ;) I&rsquo;ll report on how the meetup went soon.</p>
+</div>
+<br/>
+
+  <p class="meta text-center text-muted">        
+    
+
+
+  </p>
+
+
+
+        <hr/>
+        <footer>
+          
+            <div class="sharing text-center">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://www.webdeveloperfromscratch.com/blog/crawling-forward-with-rails/" data-via="" data-counturl="http://www.webdeveloperfromscratch.com/blog/crawling-forward-with-rails/" >Tweet</a>
+  
+  
+  
+</div>
+
+          
+          
+            <ul class="meta text-muted pager">
+              
+              <li class="previous"><a href="/blog/rails-code-check_box_tag-vs-collection_check_boxes/" title="Previous Post: Rails Code - check_box_tag vs collection_check_boxes">&laquo; Rails Code - check_box_tag vs collection_check_boxes</a></li>
+              
+              
+              <li class="next"><a href="/blog/tealeaf-progress-check-no-3-course-2-done/" title="Next Post: Tealeaf Progress Check No. 3 - Course 2 Done!">Tealeaf Progress Check No. 3 - Course 2 Done! &raquo;</a></li>
+              
+            </ul>
+          
+        </footer>
+      </article>
+      
+        <section>
+          <h1>Comments</h1>
+          <div id="disqus_thread" aria-live="polite">
+
+<script type="text/javascript">
+      var disqus_shortname = 'webdevfromscratch';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.webdeveloperfromscratch.com/blog/crawling-forward-with-rails/';
+        var disqus_url = 'http://www.webdeveloperfromscratch.com/blog/crawling-forward-with-rails/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+        </section>
+      
+    </div>
+
+    
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>
