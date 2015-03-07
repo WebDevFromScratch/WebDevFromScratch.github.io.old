@@ -7,10 +7,10 @@ slug: become-a-web-developer-for-free
 title: Become a Web Developer for Free?
 wordpress_id: 82
 tags:
-- Make it With Code
 - Tealeaf Academy
 - The Odin Project
-- web development
+keywords: "the odin project, make it with code, tealeaf academy"
+description: "Alternatives: how to learn web development for free"
 ---
 
 I have been slacking a bit for the last couple of days. Watching World Cup apparently is not good for my free time! I wasn't feeling too good physically-wise and it wasn't helping either. As with everything in life though, a coin have two sides. For this past month I tried to do everything I could to learn and be that several steps closer to hopefully getting my first web developer job and finally I had a while to gain different perspective.

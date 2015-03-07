@@ -7,9 +7,10 @@ slug: tealeaf-progress-check-no-2-course-1-done
 title: Tealeaf Progress Check No. 2 - Course 1 Done!
 wordpress_id: 53
 tags:
-- programming
 - Ruby
 - Tealeaf Academy
+keywords: "ruby, tealeaf, tealeaf academy"
+description: "First Tealeaf Academy course done!"
 ---
 
 Okay, so I'm through with the Ruby course and I feel I should do a little sum up of that one. I actually finished about a week ago and am now well into the Rails (second) course, but let's not get ahead of myself
@@ -32,55 +33,55 @@ So let's move on to what I was able to learn. Starting with Ruby:
 
 
 
-	
+
   * how to install Ruby and it's gems and how they work
 
-	
+
   * Ruby syntax and style
 
-	
+
   * Ruby basics: variables (and their scope, methods, iterations, basic objects (arrays & hashes), classes and more)
 
-	
+
   * procedural and OOP in Ruby
 
-	
+
   * how to tie all these concepts together to create a working program
 
 
 Aside of Ruby, I also learned a lot of stuff on the side:
 
-	
+
   * Git and Github
 
-	
+
   * choosing and working with text/code editor
 
-	
+
   * basics of command line
 
-	
+
   * pseudo code
 
-	
+
   * HTTP protocol
 
-	
+
   * HTML and CSS
 
-	
+
   * Javascript and jQuery
 
-	
+
   * AJAX
 
-	
+
   * Bootstrap front-end framework
 
-	
+
   * Sinatra Ruby framework
 
-	
+
   * Heroku deployment
 
 
@@ -89,5 +90,3 @@ And most importantly, I learned how to solve problems/bugs on my own. And if I a
 Needless to say, it was a lot of stuff in a very short time. I still don't feel super comfortable using all of that stuff, but I can now use this knowledge and gain practice on my own. I definitely need to look for a few simple Ruby programs that I can try to write on my own. I also need to review the things I'm not 100% sure about and try to understand them fully when I have a while to spare. Oh, and I guess I should start posting some code on the blog as well!
 
 Still, I'm not stopping here and am now going further with Rails. Loving it so far!
-
-

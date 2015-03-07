@@ -8,6 +8,9 @@ title: The Journey Starts Here
 wordpress_id: 10
 tags:
 - web development
+
+keywords: "web development"
+description: "The new life starts here"
 ---
 
 Hi there!

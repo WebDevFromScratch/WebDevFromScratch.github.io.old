@@ -7,13 +7,11 @@ slug: the-new-hope-ruby-on-rails-ftw
 title: The New Hope - Ruby on Rails FTW
 wordpress_id: 23
 tags:
-- Coursera
-- Python
 - Rails
 - Ruby
-- Tealeaf
 - Tealeaf Academy
-- web development
+keywords: "ruby, rails, python, tealeaf, tealeaf academy, web development"
+description: "How to start learning web development properly"
 ---
 
 I've been quiet for quite a while now. I got kind of lost in the process of learning so many various things related to web development, that I forgot about what I initially aimed for. And that is, building real things. Until recently, I tried so many different things and with each of these tools (languages, frameworks, whatever have you), I only barely scratched the surface. Luckily, I finally realized that it's not the best way to go about it all. I realized what I should've been doing from the start is trying to master one thing. And if I succeed, then try something else. So I tried to follow this approach and actually become good at something.

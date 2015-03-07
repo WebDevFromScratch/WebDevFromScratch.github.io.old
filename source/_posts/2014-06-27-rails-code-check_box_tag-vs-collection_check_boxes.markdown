@@ -7,11 +7,10 @@ slug: rails-code-check_box_tag-vs-collection_check_boxes
 title: Rails Code - check_box_tag vs collection_check_boxes
 wordpress_id: 111
 tags:
-- checkboxes
-- check_box_tag
-- collection_check_boxes
 - Rails
 - Ruby
+keywords: "ruby, rails, checkboxes"
+description: "My notes about checkboxes in Rails"
 ---
 
 Just a short post, that shows two ways of implementing checkbox feature in a Rails form. First using **check_box_tag** helper. I have to say I was quite happy getting to this:

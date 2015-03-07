@@ -7,10 +7,11 @@ slug: crawling-forward-with-rails
 title: Crawling Forward with Rails
 wordpress_id: 120
 tags:
-- KRUG
 - Rails
 - Tealeaf Academy
 - The Odin Project
+keywords: "KRUG, rails, ruby"
+description: ""
 ---
 
 This will likely be a random rant about what I've been doing for the last week or so. I feel really tired and don't have a real plan for a post right now but I do feel it's been quiet here for too long and I need to try and keep at least some consistency if this blog is to prevail.

@@ -7,8 +7,9 @@ slug: tictactoe-ruby-game
 title: TicTacToe Ruby Game
 wordpress_id: 55
 tags:
-- programming
 - Ruby
+keywords: "ruby, tictactoe"
+description: "A tictactoe implementation in Ruby"
 ---
 
 After writing a post here yesterday ([Tealeaf Progress Check No. 2 – Course 1 Done!](http://www.webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-2-course-1-done/)), I went back to review the course 1 for the last time and found out that there was a new task to be done, building a simple command line TicTacToe game. As exercises is definitely something I need, I instantly decided that I want to try and write this of course :) Couple of hours later (and with a little help from the video on how to tackle this), my game was ready. I figured this should be a good piece of code to share as the first of hopefully many more here on the blog. So here it is:

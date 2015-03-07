@@ -8,6 +8,9 @@ title: 1st Project, Let's Go!
 wordpress_id: 13
 tags:
 - web development
+
+keywords: ""
+description: "Let's get myself a website!"
 ---
 
 Okay, so it's high time to start really doing something real! I am already engaged in a few non-commercial projects, but here's my highest priority for some time to come: make Web Developer from Scratch my personal, custom website.
@@ -22,13 +25,13 @@ Okay, so what I plan on doing here:
 
 
 
-	
+
   * Build a cool home page (already started on this)
 
-	
+
   * Buy a .com domain and setting it all up again there
 
-	
+
   * Make other pages I'll likely need (blog page + posts, about and contact pages and another one where I could show my work)
 
 

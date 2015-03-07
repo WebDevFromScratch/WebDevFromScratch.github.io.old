@@ -9,9 +9,10 @@ wordpress_id: 91
 tags:
 - Rails
 - Ruby
-- Tealeaf
 - Tealeaf Academy
 - The Odin Project
+keywords: "ruby, rails, tealeaf, tealeaf academy, the odin project"
+description: ""
 ---
 
 So I've been having some time off learning. I stayed at my family's for almost a week and when I came back, it was my time to be a host for the weekend. My study time suffered a hard blow. I did what I could, but it wasn't much. The last two days though have been very fruitful learning-wise and I feel like I'm regaining the good rhytm again. Here's what I've been able to accomplish since the last blog post.
@@ -63,7 +64,7 @@ caesar_cipher
 
 puts ""
 ```
-  
+
 
 **Stock Picker**
 
@@ -96,7 +97,7 @@ end
 
 stock_picker(array)
 ```
-  
+
 
 **Substrings**
 
@@ -130,7 +131,7 @@ end
 
 substrings(my_string, my_dictionary)
 ```
-  
+
 
 I once got stuck for a really long time (during 'stockpicker') and thought this is too difficult. But the key was to just set what I need to achieve clearly, using pseudo code and then I just started from scratch again and it was a pretty smooth process from then on. I have to say though that I felt really, really bad having to spend so much time on so little code. I thought I'm not that bad at Ruby! I definitely need to carry on with TOP to improve in this area, I will probably set aside one day a week for this.
 

@@ -9,12 +9,12 @@ wordpress_id: 40
 tags:
 - progress check
 - Ruby
-- Tealeaf
 - Tealeaf Academy
-- web development
+keywords: "tealeaf, tealeaf academy, ruby"
+description: "My first impressions on Tealeaf Academy"
 ---
 
-So I finished first two weeks' material from the first [Tealeaf](http://www.gotealeaf.com) course. Time for some first impressions is due!
+So I finished first two weeks' material from the first [Tealeaf Academy](http://www.gotealeaf.com) course. Time for some first impressions is due!
 
 
 ## Procedural vs OOP
@@ -30,7 +30,7 @@ First of all, it really is true that the more time you have for it, the faster y
 
 This thing is of course learning the basics of Ruby programming language. Ruby is a foundation of Rails framework, so to learn Rails one should first (at least) familiarize oneself with Ruby. I have to say I really like how Tealeaf goes about it (I know, praising them again, but it's deserved so far). They wrote their own introduction book, which lays the backgrounds nicely. You learn the syntax and methods while doing (not too hard) exercises at the end of each chapter. I like that I was able to pick it up quite fast and move straight to writing my own first program in Ruby, which was the Blackjack project.
 
-We done it two ways, first using procedural code and then OOP. I have to say I am already falling in love with OOP. Once again, I have to say Tealeaf did their job very nicely explaining how to use OOP in Ruby and most importantly, why to use it at all. As I said before, with my limited programming experience, I was able to go through this pretty smoothly, with just a little help from TAs on the forum.
+We done it two ways, first using procedural code and then OOP. I have to say I am already falling in love with OOP. Once again, I have to say Tealeaf Academy did their job very nicely explaining how to use OOP in Ruby and most importantly, why to use it at all. As I said before, with my limited programming experience, I was able to go through this pretty smoothly, with just a little help from TAs on the forum.
 
 I understand it's different for everyone and if you have an absolute zero programming experience, this would probably take a little more time and effort to accomplish. Fortunately, the course materials are structured in a way that you can learn with the help of solution videos. You may think it's not that effective, but I can guarantee you it works. I learned Python by mostly leaning on help from videos and code from others and I could see the difference now, I can do a lot of stuff that I wouldn't actually expect me to on my own.
 

@@ -9,9 +9,9 @@ wordpress_id: 132
 tags:
 - Bootstrap
 - Rails
-- Rails App
-- Tealeaf Academy
-- todo list
+- Ruby
+keywords: "ruby, rails, bootstrap"
+description: "Building things, it's what web development is really about"
 ---
 
 [Last time](http://www.webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-3-course-2-done/) I reported I'll be taking a few days off Tealeaf to practice my skills by building something on my own. While I thought I'd be able to accomplish more, I have to say that after six days of hard work (I think I put about 30-35 hours into this) I was able to build a relatively simple, yet still useful ToDo list app. Yeah, I know - everyone is writing todo lists, nothing new under the sun, everybody could do it, etc. Well you know what? Maybe so, but this is the first real, working app that I built totally from scratch. And I'm f*cking happy about it :)
@@ -54,4 +54,4 @@ After those few days break for writing the app, I registered for the third Teale
 
 About the blog, [last time](http://www.webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-3-course-2-done/) I wrote about some plans I had for it. I was thinking about writing a blogging app from scratch but after putting some more thought to it, this is probably not the best idea, there are many problems with this I could think off the top of my head even now. Plus, all the time I wanted to give to practice was gone working on the ToDo! app. Still, I don't fully like how this site looks rigth now. I'll likely switch to some other theme, maybe leave [Wordpress](https://wordpress.com/) for good. I also would like to add some pages, like 'about me', resources I like and recommend and stuff like that. Oh yeah, and I want to stop being lazy here and update more often :P I really want to write this series about basic Rails and I do need to start working on this, so here's my promise to myself: I'll be writing at least one post a week here on WebDevFromScratch (let's say for two months, as a beginning). Let's end this post with that.
 
-Fruitful learning!   
+Fruitful learning!

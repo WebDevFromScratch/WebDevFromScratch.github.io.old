@@ -4,6 +4,10 @@ title: "Bootcamping and Stuff"
 date: 2014-11-27 14:03:19 +0100
 comments: true
 categories:
+tags:
+- Pilot Bootcamp
+keywords: "pilot, web development bootcamp, pilot bootcamp"
+description: "What I learned during Pilot Bootcamp"
 ---
 
 Once more, I took quite some time off this blog. I hope this wouldn't become a habit of mine, to just post once a month or so... Nah, this can not happen! The blog really kept me going at times before and it may yet do it again. I know I should put more of the actual code here and not just what I think on this and that. I definitely plan to do so. But meanwhile, let me just write about what I was up to lately.

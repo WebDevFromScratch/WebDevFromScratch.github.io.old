@@ -9,7 +9,6 @@ wordpress_id: 45
 post_format:
 - Video
 tags:
-- programming
 - youtube
 ---
 

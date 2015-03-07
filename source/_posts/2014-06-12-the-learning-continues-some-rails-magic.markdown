@@ -7,10 +7,11 @@ slug: the-learning-continues-some-rails-magic
 title: The Learning Continues - Some Rails Magic
 wordpress_id: 61
 tags:
-- programming
 - Rails
 - Ruby
-- Tealeaf
+- Tealeaf Academy
+keywords: "ruby, rails , tealeaf, tealeaf academy"
+description: "Some chaotic notes on my learning with Tealeaf Academy"
 ---
 
 I'm long due another update on how my progress with [Tealeaf](http://www.gotealeaf.com) is going, but I just can't force myself to write it... Let me just say I dived deep into Rails and am trying to wrap my head around it's magic (actually, there's no magic at all, just conventions that Rails assumes - definitely need to write something about it soon!).
@@ -36,7 +37,7 @@ Creating a form
   Title: <input type='text' name='my_title'>
   <br/>
   <input type='submit'>
-</form>    
+</form>
 ```
 
 this wouldn't as a deault work in Rails, because of a 'protect_from_forgery' validation error (if we removed protect_from_forgery from application_controller.rb, this would work)
@@ -55,7 +56,7 @@ This is the most manual way, we never do this in Rails. We'd need to hack our ap
 <%= form_tag '/posts' do %>
   <%= label_tag :title %>
   <%= text_field_tag :title %>
-    
+
 
   <%= submit_tag "Create Post" %>
 <% end %>
@@ -78,28 +79,28 @@ This would work just as the above HTML form.
 <%= form_for @post do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
-    
+
 
   <%= f.submit "Create Post" %>
 <% end %>
 ```
 
 we need to set our @something variable in the controller (PostsController in case of @post) for it to work of course
-  
+
   it assumes a lot of things for us
-      
+
   creates an additional nested structure in our session params (adding another nested hash for 'post' key, where it assigns stuff specific to post, like title, etc.)
-          
+
   naming conventions for how Rails saves these variables to create that nested structure can be seen when inspecting the HTML code (in browser), it has this format: post[title]
-      
+
   !(that's why in code (especially Rails 3.x) we can see a lot of code that looks like this: Post.new(params[:post]))
-      
+
   !also, thus we can do a mass assignment to Post object like this: Post.new('title'=>'some title') or Post.new(title: 'some title', url: 'some url') <--- these keys are our setter methods that come from ActiveRecord::Base; essentially that's because we have the columns called that in our database 'posts' table
-          
-  we can also use virtual attributes as keys here (like user:, category:, etc. <--- we set associations to these earlier)          
-      
+
+  we can also use virtual attributes as keys here (like user:, category:, etc. <--- we set associations to these earlier)
+
   we can't just add random fields here though (like f.text_field :whatever) do to the connection we have with other layers (that Rails assumes) - we can only use variables that we can use mass assignments with (our table columns) as keys
-          
+
   otherwise the connection (assumption, convention) breaks and we'd get a 'NoMethod' error
   we can add whatever variable we please in case of 'Rails form helpers', because then we just save them in our session params and not using these model-backed relations
 
@@ -128,9 +129,9 @@ end
 ```
 
 !!!!! This above is very important pattern that needs to be memorized !!!!!
-  
+
   if we create (.save method) our post, we want to redirect
-  
+
   else (in case we hit a validation error, etc.), we want to render our template where we tried to create from again (which would now show our errors, letting the user know what needs to be done to create)
 
 
@@ -141,21 +142,21 @@ end
 
 back in Rails 3.x this was solved through 'attr_accessible', which we set in our models
 example:
-  
+
   attr_accessible :title, :url, :description
 
 this above essentially whitelisted the mentioned variables for mass assignment
-  
+
   Cons of this approach:
-  
+
   - people overdid that and whitelisted everything, whenever hit an error (thus, losing security)
-  
+
   - this needed to be set in the 'Model' layer, and the concern is actually in the actions ('Controller')
 
 Rails 4 solves this by using strong parameters instead of attr_accessible
-  
+
   - we can set this in the Controller
-  
+
   - we can set this based on an user
 
 We set it as a private method:
@@ -212,15 +213,15 @@ end
 ```
 
 this above means we need to have a title when creating a Post object
-    
+
 if we try to create the Post without the title, we get a rollback (we get returned 'false'; why? because we use if statement in our pattern in the Controller)
-  
+
 note: we can create our post 'in memory', the error will only appear when we try to hit a database with a query (try to save it)
-  
+
 to check what the error is, we can use .errors method (e.g. post.errors) in the console
-  
+
 when we hit that, we get a @messages hash with errors
-  
+
 then we can use a pre-set syntax post.error.full_messages, to return all the error communicates in an array (e.g. ["Title can't be blank", "Url can't be blank"])
 
 This above is a weird way to save validation errors, but this is Rails convention (to set these types of errors on an object itself)
@@ -247,7 +248,7 @@ We can see that if there's an error, we render the view with the form again. We 
   There were some errors:
   <% @post.errors.full_messages.each do |msg| %>
     <%= msg %>
-  <% end %> 
+  <% end %>
 <% end %>
 ```
 
@@ -287,7 +288,7 @@ if we look closer inspecting HTML, there are a few hidden things wrapped in a di
 ```
 
 this is where our HTML verb (method) is actually re-assigned to PATCH (Rails uses session params for this, because some browsers only supports GET and POST methods <--- another Rails convention)
-        
+
 !!!!! - form_for is smart enough to recognize if our instance variable (@post in the example) refers to an existing object or creating a new one and will set the correct verb/method (in the hidden element) accordingly ---- thus we can extract our form to a partial and use it for different actions (create, edit, etc.) !!!!!
 
 Our form partial that we could create here would effectively be used by 4 actions (new, create, edit, update) - thus we need to be very careful here.
@@ -345,7 +346,7 @@ Example of non-standard flow: create comment form that appears on the post page 
 
 <%= form_for [@post, @comment] do |f| %>
   <%= f.text_area :body %>
-    
+
   <%= f.submit "Create Comment" %>
 <% end %>
 ```
@@ -358,7 +359,7 @@ def show
 end
 ```
 
-```ruby comments_controller.rb      
+```ruby comments_controller.rb
 #code code code
 
 def create

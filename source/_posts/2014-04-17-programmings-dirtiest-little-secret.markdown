@@ -8,11 +8,13 @@ title: '"Programming''s Dirtiest Little Secret"'
 wordpress_id: 15
 tags:
 - touchtyping
+keywords: "touchtyping, programming's secret, typingweb"
+description: "Learn touchtyping for your own good"
 ---
 
 I did not come up with that title (maybe you figured by the quotes). I found a great blog post that explains what is the "secret", it's a pretty good read in itself and it addresses the case so well: [Stevey's Blog Rants](http://steve-yegge.blogspot.com/2008/09/programmings-dirtiest-little-secret.html).
 
-I was actually already looking for ways to learn how to touchtype. I tried it once before a few months ago but I lacked persistence then. After reading Steve's post I don't anymore. I'm not writing all that slow to be honest, but my technique is far from perfect. And I know this is something I simply need if I want to have a headstart in any type of programming career. So I practiced for the last four days, 30 minutes each day. And I'm going to carry on for at least the next month and see where it takes me!
+I was actually already looking for ways to learn touchtyping. I tried it once before a few months ago but I lacked persistence then. After reading Steve's post I don't anymore. I'm not writing all that slow to be honest, but my technique is far from perfect. And I know this is something I simply need if I want to have a headstart in any type of programming career. So I practiced for the last four days, 30 minutes each day. And I'm going to carry on for at least the next month and see where it takes me!
 
 
 ## Typingweb

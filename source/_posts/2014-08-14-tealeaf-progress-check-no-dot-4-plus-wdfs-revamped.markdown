@@ -3,7 +3,11 @@ layout: post
 title: "Tealeaf Progress Check No.4 + WDfS revamped"
 date: 2014-08-14 11:16:55 +0200
 comments: true
-categories: 
+categories:
+tags:
+- Web Developer from Scratch
+keywords: "rails, rspec, haml, octopress"
+description: "Description for this post"
 ---
 
 Long time no see. I just made a promise to myself [last time](http://www.webdeveloperfromscratch.com/blog/building-is-fun/) that I will be writing at least one post each week and then go on a 20-day-no-post spell straigh away. Nicely played, man... It is a holiday season here and I did take a couple days breaks here and there, it's also not like I was doing nothing all the time, so let's get to what happened since last blog post.
