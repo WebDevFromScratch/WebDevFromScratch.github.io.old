@@ -4,7 +4,7 @@
   <title><![CDATA[Web Developer from Scratch]]></title>
   <link href="http://www.webdeveloperfromscratch.com/atom.xml" rel="self"/>
   <link href="http://www.webdeveloperfromscratch.com/"/>
-  <updated>2015-03-01T22:03:00+01:00</updated>
+  <updated>2015-03-07T14:18:13+01:00</updated>
   <id>http://www.webdeveloperfromscratch.com/</id>
   <author>
     <name><![CDATA[Piotr Klosinski]]></name>
@@ -831,7 +831,7 @@ thus we can use it like this:</p></li>
 </span><span class='line'><span class="x">  There were some errors:</span>
 </span><span class='line'><span class="x">  </span><span class="cp">&lt;%</span> <span class="vi">@post</span><span class="o">.</span><span class="n">errors</span><span class="o">.</span><span class="n">full_messages</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">msg</span><span class="o">|</span> <span class="cp">%&gt;</span><span class="x"></span>
 </span><span class='line'><span class="x">    </span><span class="cp">&lt;%=</span> <span class="n">msg</span> <span class="cp">%&gt;</span><span class="x"></span>
-</span><span class='line'><span class="x">  </span><span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span><span class="x"> </span>
+</span><span class='line'><span class="x">  </span><span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span><span class="x"></span>
 </span><span class='line'><span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span><span class="x"></span>
 </span></code></pre></td></tr></table></div></figure>
 
@@ -955,7 +955,7 @@ make sure to test all the paths that we use/redirect to (especially error cases)
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span><span class="sx">%= form_for [@post, @comment] do |f| %&gt;</span>
 </span><span class='line'><span class="sx">  &lt;%=</span> <span class="n">f</span><span class="o">.</span><span class="n">text_area</span> <span class="ss">:body</span> <span class="sx">%&gt;</span>
-</span><span class='line'><span class="sx">    </span>
+</span><span class='line'>
 </span><span class='line'><span class="sx">  &lt;%= f.submit &quot;Create Comment&quot; %&gt;</span>
 </span><span class='line'><span class="o">&lt;</span><span class="sx">% end </span><span class="o">%&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
@@ -978,7 +978,7 @@ make sure to test all the paths that we use/redirect to (especially error cases)
 
 
 
-<figure class='code'><figcaption><span>comments_controller.rb      </span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>comments_controller.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -1268,7 +1268,7 @@ make sure to test all the paths that we use/redirect to (especially error cases)
     <link href="http://www.webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-1/"/>
     <updated>2014-05-22T16:48:17+02:00</updated>
     <id>http://www.webdeveloperfromscratch.com/blog/tealeaf-progress-check-no-1</id>
-    <content type="html"><![CDATA[<p>So I finished first two weeks&#8217; material from the first <a href="http://www.gotealeaf.com">Tealeaf</a> course. Time for some first impressions is due!</p>
+    <content type="html"><![CDATA[<p>So I finished first two weeks&#8217; material from the first <a href="http://www.gotealeaf.com">Tealeaf Academy</a> course. Time for some first impressions is due!</p>
 
 <h2>Procedural vs OOP</h2>
 
@@ -1280,7 +1280,7 @@ make sure to test all the paths that we use/redirect to (especially error cases)
 
 <p>This thing is of course learning the basics of Ruby programming language. Ruby is a foundation of Rails framework, so to learn Rails one should first (at least) familiarize oneself with Ruby. I have to say I really like how Tealeaf goes about it (I know, praising them again, but it&rsquo;s deserved so far). They wrote their own introduction book, which lays the backgrounds nicely. You learn the syntax and methods while doing (not too hard) exercises at the end of each chapter. I like that I was able to pick it up quite fast and move straight to writing my own first program in Ruby, which was the Blackjack project.</p>
 
-<p>We done it two ways, first using procedural code and then OOP. I have to say I am already falling in love with OOP. Once again, I have to say Tealeaf did their job very nicely explaining how to use OOP in Ruby and most importantly, why to use it at all. As I said before, with my limited programming experience, I was able to go through this pretty smoothly, with just a little help from TAs on the forum.</p>
+<p>We done it two ways, first using procedural code and then OOP. I have to say I am already falling in love with OOP. Once again, I have to say Tealeaf Academy did their job very nicely explaining how to use OOP in Ruby and most importantly, why to use it at all. As I said before, with my limited programming experience, I was able to go through this pretty smoothly, with just a little help from TAs on the forum.</p>
 
 <p>I understand it&rsquo;s different for everyone and if you have an absolute zero programming experience, this would probably take a little more time and effort to accomplish. Fortunately, the course materials are structured in a way that you can learn with the help of solution videos. You may think it&rsquo;s not that effective, but I can guarantee you it works. I learned Python by mostly leaning on help from videos and code from others and I could see the difference now, I can do a lot of stuff that I wouldn&rsquo;t actually expect me to on my own.</p>
 
@@ -1345,7 +1345,7 @@ make sure to test all the paths that we use/redirect to (especially error cases)
     <id>http://www.webdeveloperfromscratch.com/blog/programmings-dirtiest-little-secret</id>
     <content type="html"><![CDATA[<p>I did not come up with that title (maybe you figured by the quotes). I found a great blog post that explains what is the &ldquo;secret&rdquo;, it&rsquo;s a pretty good read in itself and it addresses the case so well: <a href="http://steve-yegge.blogspot.com/2008/09/programmings-dirtiest-little-secret.html">Stevey&rsquo;s Blog Rants</a>.</p>
 
-<p>I was actually already looking for ways to learn how to touchtype. I tried it once before a few months ago but I lacked persistence then. After reading Steve&rsquo;s post I don&rsquo;t anymore. I&rsquo;m not writing all that slow to be honest, but my technique is far from perfect. And I know this is something I simply need if I want to have a headstart in any type of programming career. So I practiced for the last four days, 30 minutes each day. And I&rsquo;m going to carry on for at least the next month and see where it takes me!</p>
+<p>I was actually already looking for ways to learn touchtyping. I tried it once before a few months ago but I lacked persistence then. After reading Steve&rsquo;s post I don&rsquo;t anymore. I&rsquo;m not writing all that slow to be honest, but my technique is far from perfect. And I know this is something I simply need if I want to have a headstart in any type of programming career. So I practiced for the last four days, 30 minutes each day. And I&rsquo;m going to carry on for at least the next month and see where it takes me!</p>
 
 <h2>Typingweb</h2>
 
